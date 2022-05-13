@@ -22,9 +22,6 @@ export class CalculatorComponent implements OnInit {
     buttons.map(button => {
       button.addEventListener('click', (e) => {
         let eventButton = e.target as HTMLElement;
-        if (display.innerText == "Error!") {
-          display.innerText = '';
-        }
         switch (eventButton.innerText) {
           //when 'C' is pressed, the display's contents will be set to an empty string or "cleared"
           case 'C':
@@ -33,7 +30,7 @@ export class CalculatorComponent implements OnInit {
           //when '←' is pressed...
           case '←':
             //clear display if there is an 'article' element (a previous answer) inside the dislay
-            if (display.innerHTML.includes('<article>')) {
+            if (display.innerHTML.includes('<article>') || display.innerText == "Error!") {
               display.innerText = '';
             } else if (display.innerText) { //backspace 1 character
               display.innerText = display.innerText.slice(0, -1);
