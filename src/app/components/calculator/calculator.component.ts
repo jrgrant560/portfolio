@@ -57,6 +57,9 @@ export class CalculatorComponent implements OnInit {
             break;
           //when any other button is pressed, its text will be added to the display's contents
           default:
+            if (display.innerText == "Error!") {
+              display.innerText = '';
+            }
             display.innerText += eventButton.innerText;
         }
       });
