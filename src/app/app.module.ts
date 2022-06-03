@@ -3,10 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CalculatorComponent } from './components/projects/calculator/calculator.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { TictactoeBoardComponent } from './components/projects/tictactoe/board/board.component';
+import { TictactoeSquareComponent } from './components/projects/tictactoe/square/square.component';
+import { TictactoeComponent } from './components/projects/tictactoe/tictactoe.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalculatorComponent,
+    ProjectsComponent,
+    TictactoeComponent,
+    TictactoeBoardComponent,
+    TictactoeSquareComponent
   ],
   imports: [
     BrowserModule,

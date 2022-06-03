@@ -1,0 +1,18 @@
+<h1>Current Player: {{ player }}</h1>
+
+<!--button that uses a "click" event-->
+<button nbButton outline status="danger" (click)="newGame()">Start New Game</button>
+
+<h2 *ngIf="winner">
+    Player {{ player }} won the game!
+</h2>
+
+<main>
+    <app-tictactoe-square
+        *ngFor="let val of squares; let i = index"
+        [value]="val"
+        (click)="makeMove(i)"
+    >
+
+    </app-tictactoe-square>
+</main>
