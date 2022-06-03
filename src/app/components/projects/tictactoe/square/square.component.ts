@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-square',
+  selector: 'app-tictactoe-square',
   template: `
       <button nbButton *ngIf="!value">{{value}}</button>
       <button nbButton hero status="success" *ngIf="value == 'X'">{{ value }}</button>
@@ -10,7 +10,7 @@ import { Component, Input } from '@angular/core';
   styles: ['button { width: 100%; height: 100%; font-size: 5em !important; }']
 })
 //this is a 'Dumb' component, because it can't modify its own state; it can only be changed by the parent
-export class SquareComponent {
+export class TictactoeSquareComponent {
 
   @Input()
   value!: 'X' | 'O';

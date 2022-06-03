@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-board',
+  selector: 'app-tictactoe-board',
   templateUrl: './board.component.html',
-  styleUrls: ['./board.component.scss']
+  styleUrls: ['./board.component.css']
 })
-export class BoardComponent implements OnInit {
+export class TictactoeBoardComponent implements OnInit {
   //nine squares on the game board; an array of strings
   squares: any[] = [];
   //determines the current player using the gameboard
