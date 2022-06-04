@@ -1,0 +1,12 @@
+section {
+    background-color: grey;
+    max-width: 400px;
+    max-height: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.timeContainer {
+    font-weight:bold;
+    font-size: 20px;
+}
