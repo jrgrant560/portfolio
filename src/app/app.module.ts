@@ -8,6 +8,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { TictactoeBoardComponent } from './components/projects/tictactoe/board/board.component';
 import { TictactoeSquareComponent } from './components/projects/tictactoe/square/square.component';
 import { TictactoeComponent } from './components/projects/tictactoe/tictactoe.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { HomeComponent } from './components/home/home.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { TictactoeComponent } from './components/projects/tictactoe/tictactoe.co
     ProjectsComponent,
     TictactoeComponent,
     TictactoeBoardComponent,
-    TictactoeSquareComponent
+    TictactoeSquareComponent,
+    AboutMeComponent,
+    HomeComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
