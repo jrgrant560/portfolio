@@ -11,6 +11,7 @@ import { TictactoeComponent } from './components/projects/tictactoe/tictactoe.co
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { HomeComponent } from './components/home/home.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { SimpleClockComponent } from './components/projects/simple-clock/simple-clock.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     TictactoeSquareComponent,
     AboutMeComponent,
     HomeComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    SimpleClockComponent
   ],
   imports: [
     BrowserModule,
