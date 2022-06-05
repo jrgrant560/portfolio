@@ -12,6 +12,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { HomeComponent } from './components/home/home.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SimpleClockComponent } from './components/projects/simple-clock/simple-clock.component';
+import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SimpleClockComponent } from './components/projects/simple-clock/simple-
     AboutMeComponent,
     HomeComponent,
     ExperienceComponent,
-    SimpleClockComponent
+    SimpleClockComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,
