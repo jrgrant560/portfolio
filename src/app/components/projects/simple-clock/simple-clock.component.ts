@@ -10,12 +10,15 @@ export class SimpleClockComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    let displayDate = document.getElementById('displayDate')!;
-    let displayTime = document.getElementById('displayTime')!;
+    let displayDate = document.getElementsByClassName('displayDate')! as HTMLCollectionOf<HTMLElement>;
+    let displayTime = document.getElementsByClassName('displayTime')! as HTMLCollectionOf<HTMLElement>;
 
     function createTime() {
       //Date object that is the current timestamp when the browser runs the code
       let today = new Date();
+
+      console.log(today);
+      console.log(today.getTimezoneOffset());
 
       //variable that is the current date in yyyy-mm-dd format
       let date =
@@ -39,8 +42,13 @@ export class SimpleClockComponent implements OnInit {
         //the current second
         today.getSeconds();
 
-      displayDate.innerText = date;
-      displayTime.innerText = time;
+      for (let i=0; i<displayDate.length; i++) {
+        displayDate[i].innerText = date;
+      }
+
+      for (let i=0; i<displayDate.length; i++) {
+        displayTime[i].innerText = time;
+      }
     }
 
     setInterval(createTime, 1000);

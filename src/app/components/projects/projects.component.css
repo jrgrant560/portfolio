@@ -1,0 +1,13 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.project-container {
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(107, 109, 91);
+}

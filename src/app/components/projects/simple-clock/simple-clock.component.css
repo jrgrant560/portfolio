@@ -1,12 +1,41 @@
-section {
-    background-color: grey;
+#clock1, #clock2, #clock3 {
+    border: 6.5px solid #999;
     max-width: 400px;
     max-height: 200px;
-    margin: auto;
+    padding: 2vh;
+    margin: 4vh auto 0 auto;
     text-align: center;
 }
 
-.timeContainer {
-    font-weight:bold;
-    font-size: 20px;
+#timeContainer1, #timeContainer2, #timeContainer3 {
+    font-weight: bolder;
+    font-size: 3em;
+    color: rgb(43, 140, 47);
+}
+
+#clock1 {
+    background-color: rgba(62, 201, 67, 0.25);
+    box-shadow: inset 0px 0px 8px 4px rgba(62, 201, 67, 0.5);
+}
+
+#timeContainer1 {
+    color: rgb(43, 140, 47);
+}
+
+#clock2 {
+    background-color: rgba(235, 94, 66, 0.25);
+    box-shadow: inset 0px 0px 8px 4px rgba(235, 94, 66, 0.5);
+}
+
+#timeContainer2 {
+    color: rgb(160, 45, 22);
+}
+
+#clock3 {
+    background-color: rgba(209, 166, 36, 0.25);
+    box-shadow: inset 0px 0px 8px 4px rgba(209, 166, 36, 0.5);
+}
+
+#timeContainer3 {
+    color: rgb(162, 128, 24);
 }

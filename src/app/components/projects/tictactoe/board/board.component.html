@@ -1,18 +1,18 @@
-<h1>Current Player: {{ player }}</h1>
-
-<!--button that uses a "click" event-->
-<button nbButton outline status="danger" (click)="newGame()">Start New Game</button>
-
-<h2 *ngIf="winner">
-    Player {{ player }} won the game!
-</h2>
+<h2>Current Player: {{ player }}</h2>
 
 <main>
-    <app-tictactoe-square
-        *ngFor="let val of squares; let i = index"
-        [value]="val"
-        (click)="makeMove(i)"
-    >
-
-    </app-tictactoe-square>
+    <!--button that uses a "click" event-->
+    <button (click)="newGame()">Start New Game</button>
+    <br>
+    <!-- the tictactoe board -->
+    <span>
+        <app-tictactoe-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+        </app-tictactoe-square>
+    </span>
+    <!-- text that displays the winner -->
+    <div id="victory-display">
+        <h2 *ngIf="winner">
+            Player {{ player }} won the game!
+        </h2>
+    </div>
 </main>
