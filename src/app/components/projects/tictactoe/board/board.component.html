@@ -5,7 +5,7 @@
     <button (click)="newGame()">Start New Game</button>
     <br>
     <!-- the tictactoe board -->
-    <span>
+    <span id="board">
         <app-tictactoe-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
         </app-tictactoe-square>
     </span>
