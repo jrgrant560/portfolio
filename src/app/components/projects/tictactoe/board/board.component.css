@@ -18,4 +18,6 @@ button {
 }
   
 app-tictactoe-square {
+    border: 1px gray solid;
+    height: 100px;
 }
