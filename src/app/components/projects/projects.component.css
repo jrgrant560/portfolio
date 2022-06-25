@@ -16,10 +16,37 @@
 .url-connect {
     display: grid;
     grid-template-columns: 100%;
-    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
 }
 
-a {
+button {
+    display: grid;
+    grid-template-columns: 100%;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+}
+
+.web-title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.img-container {
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(107, 107, 107);
+    margin: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.4em;
 }

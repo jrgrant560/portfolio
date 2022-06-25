@@ -12,4 +12,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  reNav() {
+    window.location.href = "https://jrgrant560.github.io/Final-Project_The-Outdoorsman";
+  }
 }
