@@ -1,10 +1,14 @@
-<nav>
-    <a routerLink = "">Home</a> | 
-    <a routerLink = "aboutme">About Me</a> | 
-    <a routerLink = "experience">Experience</a> | 
-    <a routerLink = "projects">Projects</a> | 
-    <a routerLink = "blog">Blog</a>
+<nav class="navbar-dark bg-dark">
+    <div class="btn-group">
+        <button class="btn-dark nav-item" routerLink="">Home</button>
+        <button class="btn-dark nav-item" routerLink="aboutme">About Me</button>
+        <button class="btn-dark nav-item" routerLink="experience">Experience</button>
+        <button class="btn-dark nav-item" routerLink="projects">Projects</button>
+        <button class="btn-dark nav-item" routerLink="blog">Blog</button>
+    </div>
+    <div id="space-empty"></div>
 </nav>
-<hr>
 
-<router-outlet></router-outlet>
+<div id="boundary">
+    <router-outlet></router-outlet>
+</div>

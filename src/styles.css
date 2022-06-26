@@ -1,6 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url(app\styles\bootstrap_sandstone.css);
 
-* {
-    font-family: 'Source Sans Pro', sans-serif;
+body {
+    background-color: #f8f5f0;
 }
