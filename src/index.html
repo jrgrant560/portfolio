@@ -6,11 +6,178 @@
   <title>Jacob Grant</title>
   <base href="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/images/diamondIcon.png">
+  <link rel="icon" id="icon" href="assets/images/Tokens/Icon-Animated/Token-fade-00-01.png" type="image/png">
 </head>
 
 <body>
   <app-root></app-root>
 </body>
+<script>
+  var icon = document.getElementById("icon");
+
+  function imageLoop() {
+    console.log("Start Image Loop")
+    var images = [
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (2).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (3).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (4).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (5).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (6).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (7).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (8).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (9).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (10).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (11).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (12).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (13).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (14).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (15).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (16).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (17).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (18).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (19).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (20).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (21).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (22).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy (23).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01 - Copy.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-00-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-01-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-02-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-03-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-04-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-05-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-06-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-07-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-08-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-09-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-10-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-11-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-12-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (2).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (3).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (4).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (5).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (6).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (7).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (8).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (9).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (10).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (11).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (12).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (13).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (14).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (15).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (16).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (17).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (18).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (19).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (20).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (21).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (22).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy (23).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01 - Copy.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-13-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-14-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-15-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-16-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-17-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-18-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-19-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-20-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-21-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-22-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-23-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-24-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-25-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (2).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (3).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (4).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (5).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (6).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (7).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (8).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (9).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (10).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (11).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (12).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (13).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (14).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (15).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (16).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (17).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (18).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (19).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (20).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (21).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (22).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy (23).png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01 - Copy.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-26-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-27-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-28-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-29-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-30-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-31-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-32-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-33-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-34-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-35-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-36-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-37-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-38-01.png",
+      "assets/images/Tokens/Icon-Animated/Token-fade-39-01.png"
+    ]
+
+    function loopThroughArray(param) {
+      for (var i = 0; i < param.length; i++) {
+        (function (i) {
+          setTimeout(function () {
+            icon.href = param[i];
+          }, 100 * i);
+        })(i);
+      };
+    };
+
+    loopThroughArray(images);
+  }
+
+  setInterval(imageLoop, 10900);
+
+  // function iconChange(image) {
+  //   setTimeout(function () { icon.href = "assets/images/Tokens/Icon-Animated/Token-fade-06-01.png"; }, 1000);
+  // }
+
+  //
+  // for (i = 0; i < images.length; i++) {
+  //   setTimeout(function () {
+  //     icon.href = images[i];
+  //   }, 1000);
+  //   console.log(icon.href);
+  // };
+  // var arrayCount = [1, 2, 3, 4, 5]
+  // function arrayLoop() {
+  //   for (let i = 0; i < array.length; i++) {
+  //     setTimeout(console.log(array[i]), 2000);
+  //   };
+  // };
+  // setInterval(arrayLoop, 2000);
+
+  //Loops through 1 item in the array every second
+  // function arrayLoop() {
+  //   var arrayCount = [1, 2, 3, 4, 5]
+  //   function loopThroughArray(param) {
+  //     for (var i = 0; i < param.length; i++) {
+  //       (function (i) {
+  //         setTimeout(function () {
+  //           console.log(param[i]);
+  //         }, 1000 * i);
+  //       })(i);
+  //     };
+  //   }
+  //   loopThroughArray(arrayCount)
+  // }
+  // setInterval(arrayLoop, 5000);
+</script>
 
 </html>
