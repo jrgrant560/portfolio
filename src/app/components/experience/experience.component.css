@@ -15,6 +15,10 @@ main {
     font-size: 0.6em;
 }
 
+hr {
+    height: 4px;
+}
+
 table {
     display: grid;
 }

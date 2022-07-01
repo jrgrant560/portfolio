@@ -24,39 +24,19 @@
         <h1 class="title">Frameworks <div>that make Me lose Track of Time</div>
         </h1>
         <hr>
-        <table>
-            <tr>
+        <table class="table">
+            <tr *ngFor="let ExpData of ExpDataModelFrameworks">
                 <td class="token-container">
                     <div class="img-container">
-                        <img src="assets\images\Tokens\Frameworks\Token-Angular-01.png">
+                        <img src="{{ExpData.imgSrc}}">
                     </div>
                 </td>
                 <td>
-                <h2>Angular</h2>
-            </td>
-            <td>
-                <article>
-                    Angular is an open-source web framework that is used to compile sleek, highly functional Single-Page Applications (SPA's), which allow clients to download and upload new data on the front end without the need to refresh the application. It utilizes a hierarchical orchestra of components, modules, and services that divide tasks into dedicated documents that communicate with each other and allow for quick edits to specific parts of the application. Angular uses TypeScript as its core programming language. I have the most experience with the Angular framework. This portfolio site is built using Angular, and I have used it for several school and personal projects already, which I have added to the "Projects" section here.
-                </article>
-            </td>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <tr>
-                <td class="token-container">
-                    <div class="img-container">
-                        <img src="assets\images\Tokens\Frameworks\Token-DotNet-01.png">
-                    </div>
+                    <h2>{{ExpData.title}}</h2>
                 </td>
                 <td>
-                <h2>.NET</h2>
-            </td>
-            <td>
-                <article>
-                    .NET is an open-source software framework created by Microsoft. It is capable of compiling web applications using the Model-View-Controller (MVC) architectural pattern. However, the included object-relational mapping tool 'Entity Framework' and the strict requirement for Type declaration makes .NET a a popular choice for building backend Application Programming Interfaces (API's). I was put in charge of making half of the .NET backend for the E-Commerce store 'The Outdoorsman', my final group project in Bethel School of Technology.
-                </article>
-            </td>
+                    <article>{{ExpData.article}}</article>
+                </td>
             </tr>
         </table>
         <br>
@@ -65,76 +45,38 @@
         <h1 class="title">Dev Tools <div>that I can Swing</div>
         </h1>
         <hr>
-        <table>
-            <tr>
-                <div class="token-container">
+        <table class="table">
+            <tr *ngFor="let ExpData of ExpDataModelTools">
+                <td class="token-container">
                     <div class="img-container">
-                        <img src="assets\images\Tokens\Tools\Token-Github-01.png">
+                        <img src="{{ExpData.imgSrc}}">
                     </div>
-                </div>
-                <h2>GitHub</h2>
-                <article>
-                    [-]
-                </article>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <tr>
-                <div class="token-container">
-                    <div class="img-container">
-                        <img src="assets\images\Tokens\Tools\Token-AWS-01.png">
-                    </div>
-                </div>
-                <h2>Amazon Web Services</h2>
-                <article>
-                    [-]
-                </article>
+                </td>
+                <td>
+                    <h2>{{ExpData.title}}</h2>
+                </td>
+                <td>
+                    <article>{{ExpData.article}}</article>
+                </td>
             </tr>
         </table>
         <br>
         <h1 class="title">Other Skills <div>that I can...also Swing</div>
         </h1>
         <hr>
-        <table>
-            <tr>
-                <div class="token-container">
+        <table class="table">
+            <tr *ngFor="let ExpData of ExpDataModelSkills">
+                <td class="token-container">
                     <div class="img-container">
-                        <img src="assets\images\Tokens\Other\Token-Adobe Illustrator-01.png">
+                        <img src="{{ExpData.imgSrc}}">
                     </div>
-                </div>
-                <h2>Graphic Design with Adobe Illustrator</h2>
-                <article>
-                    [-]
-                </article>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <tr>
-                <div class="token-container">
-                    <div class="img-container">
-                        <img src="assets\images\Tokens\Other\Token-GSuite-01.png">
-                    </div>
-                </div>
-                <h2>Google Suite</h2>
-                <article>
-                    [-]
-                </article>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <tr>
-                <div class="token-container">
-                    <div class="img-container">
-                        <img src="assets\images\Tokens\Other\Token-MSOffice-01.png">
-                    </div>
-                </div>
-                <h2>Microsoft Office</h2>
-                <article>
-                    [-]
-                </article>
+                </td>
+                <td>
+                    <h2>{{ExpData.title}}</h2>
+                </td>
+                <td>
+                    <article>{{ExpData.article}}</article>
+                </td>
             </tr>
         </table>
         <br>
@@ -143,31 +85,19 @@
         <h1 class="title">Schools <div>that Learned Me Good</div>
         </h1>
         <hr>
-        <table>
-            <tr>
-                <div class="token-container">
+        <table class="table">
+            <tr *ngFor="let ExpData of ExpDataModelSchools">
+                <td class="token-container">
                     <div class="img-container">
-                        <img src="assets\images\Tokens\Other\Token-BethelTech-01.png">
+                        <img src="{{ExpData.imgSrc}}">
                     </div>
-                </div>
-                <h2>Bethel School of Technology</h2>
-                <article>
-                    [-]
-                </article>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <tr>
-                <div class="token-container">
-                    <div class="img-container">
-                        <img src="assets\images\Tokens\Other\Token-ButteCollege-01.png">
-                    </div>
-                </div>
-                <h2>Butte College</h2>
-                <article>
-                    [-]
-                </article>
+                </td>
+                <td>
+                    <h2>{{ExpData.title}}</h2>
+                </td>
+                <td>
+                    <article>{{ExpData.article}}</article>
+                </td>
             </tr>
         </table>
         <br>
@@ -176,17 +106,19 @@
         <h1 class="title">Past Employers <div>that Miss Me (I hope)</div>
         </h1>
         <hr>
-        <table>
-            <tr>
-                <div class="token-container">
+        <table class="table">
+            <tr *ngFor="let ExpData of ExpDataModelEmployers">
+                <td class="token-container">
                     <div class="img-container">
-                        <img src="assets\images\Tokens\Tools\Token-Github-01.png">
+                        <img src="{{ExpData.imgSrc}}">
                     </div>
-                </div>
-                <h2>[-]</h2>
-                <article>
-                    [-]
-                </article>
+                </td>
+                <td>
+                    <h2>{{ExpData.title}}</h2>
+                </td>
+                <td>
+                    <article>{{ExpData.article}}</article>
+                </td>
             </tr>
         </table>
         <br>
