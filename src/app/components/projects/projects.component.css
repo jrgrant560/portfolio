@@ -16,6 +16,10 @@
     padding: 1em;
 }
 
+.url-connect {
+    grid-template-rows: 10% 80% 10%;
+}
+
 button {
     display: grid;
     grid-template-columns: 100%;

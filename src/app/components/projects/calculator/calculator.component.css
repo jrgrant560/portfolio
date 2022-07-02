@@ -1,11 +1,16 @@
 #grid-container {
     display: grid;
+    grid-template-rows: 10% 80% 10%;
+    height: 100%
 }
 
 .calc-container {
+    display: grid;
     width: 100%;
-    margin: 10vh auto;
+    height: 90%;
     border: 4.5px solid #999;
+    grid-template-rows: 140px 1fr;
+    margin-top: 10%;
 }
 
 #display {
@@ -23,6 +28,8 @@
 .buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 0.75fr;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    height: 100%;
 }
 
 .buttons > div {
@@ -33,7 +40,6 @@
 .button {
     background-color: rgb(232, 230, 223);
     border: 0.5px solid #999;
-    line-height: 75px;
     text-align: center;
     font-size: 25px;
     cursor: pointer; /* makes the cursor a "pointer" icon, telling the user that the element is clickable */

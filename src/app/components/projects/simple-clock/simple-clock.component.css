@@ -1,19 +1,28 @@
 #grid-container {
     display: grid;
+    grid-template-rows: 10% 80% 10%;
+    height: 100%
+}
+
+#row-main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: auto;
+    margin-top: 10%;
+    height: 90%;
 }
 
 #clock1, #clock2, #clock3 {
     border: 6.5px solid #999;
     width: 100%;
-    max-height: 200px;
-    padding: 2vh;
-    margin: 4vh auto 0 auto;
+    height: 100%;
+    padding: 1vh;
     text-align: center;
 }
 
 #timeContainer1, #timeContainer2, #timeContainer3 {
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 2em;
     color: rgb(43, 140, 47);
 }
 
@@ -42,4 +51,8 @@
 
 #timeContainer3 {
     color: rgb(162, 128, 24);
+}
+
+#project-tokens {
+
 }
