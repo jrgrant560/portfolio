@@ -7,17 +7,13 @@
 }
 
 .project-container {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
     border: 4px;
     border-style: solid;
     border-color: rgb(107, 109, 91);
     padding: 1em;
-}
-
-.url-connect {
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: center;
-    align-items: center;
 }
 
 button {
@@ -28,12 +24,12 @@ button {
     cursor: pointer;
 }
 
-.web-title {
+/* .web-title {
     margin-left: auto;
     margin-right: auto;
     font-size: 1.6em;
     font-weight: bold;
-}
+} */
 
 .img-container {
     border: 4px;

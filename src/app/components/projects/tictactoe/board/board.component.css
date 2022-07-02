@@ -1,6 +1,11 @@
-main {
+*>main {
     display: grid;
     justify-content: center;
+}
+
+main {
+    display: grid;
+    width: 100%;
 }
 
 button {
@@ -12,12 +17,14 @@ button {
 
 #board {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0px;
     border: 1px rgb(217, 217, 217) solid;
 }
   
 app-tictactoe-square {
     border: 1px gray solid;
-    height: 100px;
+    min-height: 100%;
+    aspect-ratio: 1 / 1;
 }
