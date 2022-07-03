@@ -8,7 +8,10 @@ main {
 }
 
 #newGame {
-    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
     font-weight: bold;
     color: rgb(69, 69, 69);
     background-color:rgb(217, 217, 217);

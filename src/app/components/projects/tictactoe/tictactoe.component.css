@@ -4,6 +4,12 @@
     height: 100%
 }
 
+#row-title {
+    border-bottom: 2px solid;
+}
+
 #row-main {
-    margin-top: 12px;
+    display: grid;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }

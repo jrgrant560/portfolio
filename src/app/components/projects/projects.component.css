@@ -6,6 +6,16 @@
     align-content: center;
 }
 
+#row-title {
+    border-bottom: 2px solid;
+}
+
+#row-main {
+    display: grid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .project-container {
     display: grid;
     grid-template-columns: 100%;
@@ -14,6 +24,8 @@
     border-style: solid;
     border-color: rgb(107, 109, 91);
     padding: 1em;
+    margin: 0.1em;
+    border-radius: 0.5em;
 }
 
 .url-connect {
@@ -23,23 +35,14 @@
 button {
     display: grid;
     grid-template-columns: 100%;
-    margin-left: auto;
-    margin-right: auto;
     cursor: pointer;
+    padding: 2%;
 }
 
-/* .web-title {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.6em;
-    font-weight: bold;
-} */
-
 .img-container {
-    border: 4px;
+    border: 1px;
     border-style: solid;
     border-color: rgb(107, 107, 107);
-    margin: 8px;
 }
 
 img {
@@ -47,6 +50,21 @@ img {
     height: auto;
 }
 
-p {
-    font-size: 1.4em;
+.textbox {
+    font-size: 0.8em;
+}
+
+#row-tokens {
+    display: grid;
+}
+
+.tokens-languages, .tokens-frameworks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.img-token {
+    border: none;
+    width: 100%;
+    height: auto;
 }
