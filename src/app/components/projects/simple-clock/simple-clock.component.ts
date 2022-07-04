@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-simple-clock',
   templateUrl: './simple-clock.component.html',
-  styleUrls: ['./simple-clock.component.css']
+  styleUrls: ['./simple-clock.component.css', '../project-rows.css']
 })
 export class SimpleClockComponent implements OnInit {
 
