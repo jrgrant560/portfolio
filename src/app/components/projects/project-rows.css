@@ -1,14 +1,15 @@
 #grid-container {
     display: grid;
-    grid-template-rows: 10% 70% 20%;
-    height: 100%
+    grid-template-rows: 10% 59% 25%;
+    grid-row-gap: 3%;
+    height: 100%;
 }
 
-#row-title, #row-main, #row-tokens {
+/* #row-title, #row-main, #row-tokens {
     border-color: red;
     border-style: dashed;
     border-width: 1px;
-}
+} */
 
 #row-title {
     border-bottom: 2px solid;
@@ -16,22 +17,20 @@
 
 #row-main {
     display: grid;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 #row-tokens {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(9%, 1fr));;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .img-container {
-    border: 1px;
-    border-style: solid;
-    border-color: rgb(107, 107, 107);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 img {
@@ -47,5 +46,5 @@ img {
 
 .token-plus {
     margin: auto;
-    font-size: 3.5em;
+    font-size: 3em;
 }

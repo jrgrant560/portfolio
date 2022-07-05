@@ -3,7 +3,7 @@
 }
 
 #clock1, #clock2, #clock3 {
-    border: 6.5px solid #999;
+    border: 1vh solid #999;
     width: 100%;
     height: 100%;
     padding: 1vh;
@@ -12,6 +12,10 @@
 
 #timeContainer1, #timeContainer2, #timeContainer3 {
     display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #clock1 {
@@ -44,7 +48,7 @@
 .displayDate, .displayTime {
     align-items: center;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 3.5vh;
     font-weight: bolder;
     display: flex;
 }

@@ -19,18 +19,57 @@
 }
 
 .url-connect {
-    grid-template-rows: 10% 70% 20%;
+    grid-template-rows: 10% 59% 25%;
+    grid-row-gap: 3%;
+}
+
+#outdoorsman-title {
+    font-size: 2.5vw;
+}
+
+#row-main {
+    grid-template-rows: 75% 20%;
+    grid-row-gap: 5%;
+}
+
+.button-container {
 }
 
 .btn-outline-info {
-    display: grid;
-    grid-template-columns: 100%;
+    display: flex;
     cursor: pointer;
     padding: 2%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container-outdoorsman {
+    max-height: 100%;
+    aspect-ratio: 2668/1650;
+}
+
+.img-outdoorsman {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(107, 107, 107);
 }
 
 .textbox {
-    font-size: 0.8em;
-    padding-top: 10%;
-    padding-bottom: 10%
+    font-size: 2vh;
+}
+
+/* @media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3) {
+    #main-grid-container {
+        grid-template-columns: 1fr;
+    }
+} */
+
+@media (max-width: 736px) {
+    #main-grid-container {
+        grid-template-columns: 1fr;
+    }
 }

@@ -3,7 +3,7 @@ main {
     width: 100%;
     height: 100%;
     justify-content: center;
-    grid-template-rows: 8% 8% 1fr 8%;
+    grid-template-rows: 10% 10% 64% 10%;
     grid-row-gap: 2%;
 }
 
@@ -19,15 +19,21 @@ main {
 
 #board {
     display: grid;
-    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
     grid-gap: 0px;
     border: 1px rgb(217, 217, 217) solid;
+    margin-right: auto;
+    margin-left: auto;
 }
   
 app-tictactoe-square {
     border: 1px gray solid;
     min-height: 100%;
     aspect-ratio: 1 / 1;
+}
+
+h4 {
+    margin: auto;
 }

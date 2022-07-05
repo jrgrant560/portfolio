@@ -1,5 +1,5 @@
 <main>
-    <h3>Current Player: {{ player }}</h3>
+    <h4>Current Player: {{ player }}</h4>
     <!--button that uses a "click" event-->
     <button id="newGame" class="btn" (click)="newGame()">Start New Game</button>
     <!-- the tictactoe board -->
@@ -9,8 +9,8 @@
     </span>
     <!-- text that displays the winner -->
     <div id="victory-display">
-        <h3 *ngIf="winner">
+        <h4 *ngIf="winner">
             Player {{ player }} won the game!
-        </h3>
+        </h4>
     </div>
 </main>
