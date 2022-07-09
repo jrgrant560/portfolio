@@ -20,6 +20,7 @@
 }
 
 #row-tokens {
+    border-top: 2px solid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(9%, 1fr));;
     align-items: center;

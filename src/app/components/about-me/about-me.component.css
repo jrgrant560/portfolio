@@ -1,0 +1,39 @@
+#grid-container {
+    display: grid;
+    align-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+#p-close {
+    font-style:italic;
+    font-weight: bold;
+}
+
+#tokens {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-token {
+    border: none;
+    max-width: 100%;
+    margin: auto;
+}
