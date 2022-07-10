@@ -15,6 +15,8 @@ import { SimpleClockComponent } from './components/projects/simple-clock/simple-
 import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { BlogPageComponent } from './components/blog-page/blog-page.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { ContactFooterComponent } from './components/contact-me/contact-footer/contact-footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { BlogPageComponent } from './components/blog-page/blog-page.component';
     SimpleClockComponent,
     UnderConstructionComponent,
     BlogComponent,
-    BlogPageComponent
+    BlogPageComponent,
+    ContactMeComponent,
+    ContactFooterComponent
   ],
   imports: [
     BrowserModule,

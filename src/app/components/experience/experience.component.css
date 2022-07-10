@@ -2,6 +2,11 @@ main {
     display: grid;
 }
 
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .title {
     overflow: hidden;
     white-space: nowrap;

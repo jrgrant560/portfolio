@@ -12,11 +12,6 @@ button {
     width: 100%;
 }
 
-button:hover {
-    background-color: #fff;
-    color: #3e3f3a;
-}
-
 #space-empty {
     width: 40%;
 }

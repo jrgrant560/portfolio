@@ -1,0 +1,57 @@
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+table {
+    display: grid;
+    max-width: 450px;
+    width: 50%;
+    grid-row-gap: 17px;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    font-size: 2vw;
+    font-style: italic;
+}
+
+/* tr>* {
+    border-color: red;
+    border-style: dashed;
+    border-width: 1px;
+} */
+
+td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+hr {
+    border-radius: 100px;
+    height: 4px;
+    opacity: .75;
+}
+
+.material-icons-outlined {
+    font-size: 3.2vw;
+}
+
+.fa-linkedin {
+    border-radius: 4px;
+}
+
+.fa-github {
+    border-radius: 50%;
+}
+
+.copyButton {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+    border-radius: 6px;
+}
