@@ -12,6 +12,11 @@ button {
     width: 100%;
 }
 
+.contactNav:hover {
+    color: #29abe0;
+    background-color: #fff;
+}
+
 #space-empty {
     width: 40%;
 }
