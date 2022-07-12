@@ -60,15 +60,30 @@ export class ExperienceComponent implements OnInit {
     }
   ];
 
-  ExpDataModelTools: ExpDataModel[] = [
+  ExpDataModelLibraries: ExpDataModel[] = [
     {
       id: 5,
+      imgSrc: "assets\\images\\Tokens\\Libraries\\Token-p5js-03.png",
+      title: "p5.js",
+      article: "p5.js is an open-source Javascript library for creative coders that converts a web document into a 'sketchable' canvas. The functions are easy to learn and are made for developers of any experience level to understand and use."
+    },
+    {
+      id: 6,
+      imgSrc: "-",
+      title: "-",
+      article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ];
+
+  ExpDataModelTools: ExpDataModel[] = [
+    {
+      id: 7,
       imgSrc: "assets\\images\\Tokens\\Tools\\Token-Github-01.png",
       title: "GitHub",
       article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      id: 6,
+      id: 8,
       imgSrc: "assets\\images\\Tokens\\Tools\\Token-AWS-01.png",
       title: "Amazon Web Services",
       article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -78,19 +93,19 @@ export class ExperienceComponent implements OnInit {
 
   ExpDataModelSkills: ExpDataModel[] = [
     {
-      id: 7,
+      id: 9,
       imgSrc: "assets\\images\\Tokens\\Other\\Token-Adobe Illustrator-01.png",
       title: "Graphic Design with Adobe Illustrator",
       article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      id: 8,
+      id: 10,
       imgSrc: "assets\\images\\Tokens\\Other\\Token-GSuite-01.png",
       title: "Google Suite",
       article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      id: 9,
+      id: 11,
       imgSrc: "assets\\images\\Tokens\\Other\\Token-MSOffice-01.png",
       title: "Microsoft Office",
       article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -99,13 +114,13 @@ export class ExperienceComponent implements OnInit {
   
   ExpDataModelSchools: ExpDataModel[] = [
     {
-      id: 10,
+      id: 12,
       imgSrc: "assets\\images\\Tokens\\Other\\Token-BethelTech-01.png",
       title: "Bethel School of Technology",
       article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      id: 11,
+      id: 13,
       imgSrc: "assets\\images\\Tokens\\Other\\Token-ButteCollege-01.png",
       title: "Butte College",
       article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -114,7 +129,7 @@ export class ExperienceComponent implements OnInit {
 
   ExpDataModelEmployers: ExpDataModel[] = [
     {
-      id: 12,
+      id: 14,
       imgSrc: "assets\\images\\Tokens\\Other\\Token-WBP-01.png",
       title: "Western Business Products",
       article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
