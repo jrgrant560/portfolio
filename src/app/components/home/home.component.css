@@ -1,0 +1,36 @@
+#titles {
+    margin-top: 8vw;
+}
+
+h1 {
+    font-size: calc(1.375rem + 5.5vw);
+    font-weight: 500;
+    margin-bottom: 3.5vw;
+}
+
+h3 {
+    font-size: calc(1.375rem + 1vw);
+}
+
+hr {
+    height: 7px;
+    border-radius: 100px;
+    opacity: 0.8;
+    margin: 8vw 0;
+}
+
+.pageButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.projectsLinkButton {
+    min-width: 350px;
+    min-height: 70px;
+    font-size: 40px;
+}
+
+.projectsLinkButton:hover {
+    color: #d9534f;
+    background-color: #fff;
+}

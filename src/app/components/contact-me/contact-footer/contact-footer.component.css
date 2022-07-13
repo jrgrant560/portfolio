@@ -1,23 +1,10 @@
-hr {
-    margin: 2em 0 0 0;
-    height: 4px;
-    border-radius: 100px;
-    opacity: 0.4;
-}
-
 footer {
-    margin-top: 2em;
+    margin: 2em 0;
     padding: 0 2em 0 2em;
 }
 
-button {
-    min-width: 200px;
-    min-height: 40px;
-    font-size: 20px;
-
-}
-
-button:hover {
-    color: #29abe0;
-    background-color: #fff;
+hr {
+    height: 7px;
+    border-radius: 100px;
+    opacity: 0.8;
 }

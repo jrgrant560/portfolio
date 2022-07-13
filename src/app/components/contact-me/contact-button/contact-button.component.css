@@ -1,0 +1,10 @@
+button {
+    min-width: 200px;
+    min-height: 40px;
+    font-size: 20px;
+}
+
+button:hover {
+    color: #29abe0;
+    background-color: #fff;
+}
