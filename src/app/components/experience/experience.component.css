@@ -28,10 +28,6 @@ table {
     display: grid;
 }
 
-.table > :not(:first-child) {
-    padding: 1em 0em;
-}
-
 tr {
     display: grid;
     grid-template-columns: 20% 20% 60%;
