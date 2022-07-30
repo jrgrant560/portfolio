@@ -136,4 +136,60 @@ export class ExperienceComponent implements OnInit {
     }
   ];
 
+  // removes "expanded" class from all "expandable" elements
+unExpandAll() {
+  // selects all "expandable" elements
+  let expandableSectionsCollection = document.getElementsByClassName("expandable");
+
+  // converts collection of expandable elements to an array
+  let expandableSectionsArray = Array.from(expandableSectionsCollection);
+
+  // runs through each expandable element in the array, then removes the "expanded" class
+  expandableSectionsArray.map(expandableSection => {
+      expandableSection.classList.remove("expanded");
+  });
+};
+
+// adds "expandable" class to target element
+setExpanded(dropDownId: string) {
+  //variable for parameter element
+  let element = document.getElementById(dropDownId);
+  // adds "expanded" class
+  element?.classList.add("expanded");
+};
+
+// removes "nowVisible" class from all "swappable" elements
+setAllSwapsInvisible() {
+  // selects all "swappable" elements
+  let swappableSectionsCollection = document.getElementsByClassName("swappable");
+
+  // converts collection of swappable elements to an array
+  let swappableSectionsArray = Array.from(swappableSectionsCollection);
+
+  // runs through each swappable element in the array, then removes the "nowVisible" class
+  swappableSectionsArray.map(swappableSection => {
+      swappableSection.classList.remove("nowVisible");
+  });
+};
+
+// adds "nowVisible" class to target element
+setSwapVisible(swapId: string) {
+  //variable for parameter element
+  let element = document.getElementById(swapId);
+  // adds "nowVisible" class
+  element?.classList.add("nowVisible");
+}
+
+// performs expansion-related functions when the button is clicked
+dropDownButtonClick(dropDownId: string) {
+  this.unExpandAll();
+  this.setExpanded(dropDownId);
+}
+
+// performs swap-related functions when the button is clicked
+swapButtonClick(swapId: string) {
+  this.setAllSwapsInvisible();
+  this.setSwapVisible(swapId);
+}
+
 }

@@ -3,145 +3,147 @@
         <h1 class="title">Languages <div>that I can speak</div>
         </h1>
         <hr>
-        <table class="table">
-            <tr *ngFor="let ExpData of ExpDataModelLanguages">
-                <td class="token-container">
-                    <div class="img-container">
+        <button (click)="dropDownButtonClick('dropDown0')">expand</button>
+        <button (click)="unExpandAll()">unexpand</button>
+        <div id="dropDown0" class="divTable expandable">
+            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelLanguages">
+                <div class="divTableCell" class="tokenContainer">
+                    <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <article>{{ExpData.article}}</article>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
         <br>
     </section>
     <section>
         <h1 class="title">Frameworks <div>that make my life easier</div>
         </h1>
         <hr>
-        <table class="table">
-            <tr *ngFor="let ExpData of ExpDataModelFrameworks">
-                <td class="token-container">
-                    <div class="img-container">
+        <div class="divTable expandable">
+            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelFrameworks">
+                <div class="divTableCell" class="tokenContainer">
+                    <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <article>{{ExpData.article}}</article>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
         <br>
     </section>
     <section>
         <h1 class="title">Libraries <div>that make me lose track of time</div>
         </h1>
         <hr>
-        <table class="table">
-            <tr *ngFor="let ExpData of ExpDataModelLibraries">
-                <td class="token-container">
-                    <div class="img-container">
+        <div class="divTable expandable">
+            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelLibraries">
+                <div class="divTableCell" class="tokenContainer">
+                    <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <article>{{ExpData.article}}</article>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
         <br>
     </section>
     <section>
         <h1 class="title">Dev Tools <div>that I can swing</div>
         </h1>
         <hr>
-        <table class="table">
-            <tr *ngFor="let ExpData of ExpDataModelTools">
-                <td class="token-container">
-                    <div class="img-container">
+        <div class="divTable expandable">
+            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelTools">
+                <div class="divTableCell" class="tokenContainer">
+                    <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <article>{{ExpData.article}}</article>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
         <br>
         <h1 class="title">Other Skills <div>that I can...also swing</div>
         </h1>
         <hr>
-        <table class="table">
-            <tr *ngFor="let ExpData of ExpDataModelSkills">
-                <td class="token-container">
-                    <div class="img-container">
+        <div class="divTable expandable">
+            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelSkills">
+                <div class="divTableCell" class="tokenContainer">
+                    <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <article>{{ExpData.article}}</article>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
         <br>
     </section>
     <section>
         <h1 class="title">Schools <div>that learned me good</div>
         </h1>
         <hr>
-        <table class="table">
-            <tr *ngFor="let ExpData of ExpDataModelSchools">
-                <td class="token-container">
-                    <div class="img-container">
+        <div class="divTable expandable">
+            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelSchools">
+                <div class="divTableCell" class="tokenContainer">
+                    <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <article>{{ExpData.article}}</article>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
         <br>
     </section>
     <section>
         <h1 class="title">Past Employers <div>that miss me</div>
         </h1>
         <hr>
-        <table class="table">
-            <tr *ngFor="let ExpData of ExpDataModelEmployers">
-                <td class="token-container">
-                    <div class="img-container">
+        <div class="divTable expandable">
+            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelEmployers">
+                <div class="divTableCell" class="tokenContainer">
+                    <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </td>
-                <td>
+                </div>
+                <div class="divTableCell">
                     <article>{{ExpData.article}}</article>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
         <br>
     </section>
 </main>

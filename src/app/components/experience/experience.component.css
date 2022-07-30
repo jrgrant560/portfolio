@@ -24,51 +24,101 @@ hr {
     height: 4px;
 }
 
-table {
-    display: grid;
+.expandable, .divTable, .divTableRow, .divTableCell, .tokencontainer, .imgContainer, img, h2, article {
+    transition: all 1s ease-in-out;
 }
 
-tr {
+.divTable {
+    display: grid;
+    color: transparent;
+    padding: 0em;
+}
+
+.divTableRow {
     display: grid;
     grid-template-columns: 20% 20% 60%;
     align-items: center;
-    /* border: 1px;
-    border-style: solid;
-    border-color: rgb(255, 12, 4); */
+    padding: 0em;
+    border: 0px;
 }
 
-/* tr>* {
-    border: 1px;
-    border-style: solid;
-    border-color: rgb(77, 255, 0);
-} */
-
-tr>.token-container {
-    display: flex;
-    align-items: center;
+.divTableCell {
+    color: transparent;
+    line-height: 0;
+    padding: 0em;
 }
 
-.token-container {
+.tokenContainer {
     display: flex;
-    width: 100%;
-    height: 100%;
     align-items: center;
     justify-content: center;
 }
 
-/* #fs-token {
-    max-width: 180px;
-} */
-
-.img-container {
+.imgContainer {
+    display: flex;
     max-width: 150px;
 }
 
 img {
-    max-width: 100%;
+    width: 0%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin: 0em;
+    line-height: 0em;
+    color: transparent;
 }
 
 article {
     font-weight: bold;
+    line-height: 0em;
+    color: transparent;
+}
+
+
+/* EXPANSION CONTROLS */
+/* expandable presets */
+.expandable {
+    overflow: hidden;
+    padding: 0em;
+    color: transparent;
+}
+
+/* when the 'expandable' element is turned on */
+.expandable.expanded {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.expandable.expanded article {
+    line-height: 1.6em;
+    color: initial;
+}
+
+.expandable.expanded h2 {
+    line-height: 1em;
+    color: initial;
+}
+
+.expandable.expanded img {
+    width: 100%;
+}
+
+/* divTable & divTable children */
+.expandable.expanded .divTable {
+    color: initial;
+}
+
+.expandable.expanded .divTableRow {
+    padding: 1em 0em;
+    border-bottom: 2px gray solid;
+}
+
+.expandable.expanded .divTableCell {
+    color: initial;
+    padding: 0.8em 1.2em;
 }
