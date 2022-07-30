@@ -6,6 +6,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { HomeComponent } from './components/home/home.component';
+import { InterestsComponent } from './components/interests/interests.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
 const routes: Routes = [
@@ -29,13 +30,17 @@ const routes: Routes = [
     path: "contactMe",
     component: ContactMeComponent
   },
+  // {
+  //   path: "blog",
+  //   component:BlogComponent
+  // },
+  // {
+  //   path: "blog/:blogId",
+  //   component:BlogPageComponent
+  // },
   {
-    path: "blog",
-    component:BlogComponent
-  },
-  {
-    path: "blog/:blogId",
-    component:BlogPageComponent
+    path: "interests",
+    component: InterestsComponent
   }
 ];
 

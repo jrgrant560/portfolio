@@ -12,7 +12,12 @@ button {
     width: 100%;
 }
 
-.contactNav:hover {
+.contactNav:focus {
+    background-color: #fff;
+    color: #3e3f3a;
+  }
+
+.contactNav:hover, .contactNav:focus {
     color: #29abe0;
     background-color: #fff;
 }

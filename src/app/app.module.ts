@@ -18,6 +18,7 @@ import { BlogPageComponent } from './components/blog-page/blog-page.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { ContactFooterComponent } from './components/contact-me/contact-footer/contact-footer.component';
 import { ContactButtonComponent } from './components/contact-me/contact-button/contact-button.component';
+import { InterestsComponent } from './components/interests/interests.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ContactButtonComponent } from './components/contact-me/contact-button/c
     BlogPageComponent,
     ContactMeComponent,
     ContactFooterComponent,
-    ContactButtonComponent
+    ContactButtonComponent,
+    InterestsComponent
   ],
   imports: [
     BrowserModule,
