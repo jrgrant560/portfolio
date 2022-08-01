@@ -1,11 +1,12 @@
 <main>
     <button (click)="unExpandAll()">unexpand all lines</button>
     <section>
-        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown0', 'dropDownIcon0')">
-            <h1 class="title">Languages <div>that I can speak</div></h1>
-            <span id="dropDownIcon0" class="dropDownIcon material-symbols-outlined">expand_more</span>
+        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown00', 'dropDownIcon00')">
+            <h1 class="title">Languages <div>that I can speak</div>
+            </h1>
+            <span id="dropDownIcon00" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
-        <div id="dropDown0" class="divTable expandable">
+        <span id="dropDown00" class="divTable expandable">
             <div class="divTableRow" *ngFor="let ExpData of ExpDataModelLanguages">
                 <div class="divTableCell" class="tokenContainer">
                     <div class="imgContainer">
@@ -19,14 +20,15 @@
                     <article>{{ExpData.article}}</article>
                 </div>
             </div>
-        </div>
-        <div class="sectionFoot"></div>
+        </span>
     </section>
     <section>
-        <h1 class="title">Frameworks <div>that make my life easier</div>
-        </h1>
-        <hr>
-        <div class="divTable expandable">
+        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown01', 'dropDownIcon01')">
+            <h1 class="title">Frameworks <div>that make my life easier</div>
+            </h1>
+            <span id="dropDownIcon01" class="dropDownIcon material-symbols-outlined">expand_more</span>
+        </button>
+        <span id="dropDown01" class="divTable expandable">
             <div class="divTableRow" *ngFor="let ExpData of ExpDataModelFrameworks">
                 <div class="divTableCell" class="tokenContainer">
                     <div class="imgContainer">
@@ -40,14 +42,15 @@
                     <article>{{ExpData.article}}</article>
                 </div>
             </div>
-        </div>
-        <br>
+        </span>
     </section>
     <section>
-        <h1 class="title">Libraries <div>that make me lose track of time</div>
-        </h1>
-        <hr>
-        <div class="divTable expandable">
+        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown02', 'dropDownIcon02')">
+            <h1 class="title">Libraries <div>that make me lose track of time</div>
+            </h1>
+            <span id="dropDownIcon02" class="dropDownIcon material-symbols-outlined">expand_more</span>
+        </button>
+        <span id="dropDown02" class="divTable expandable">
             <div class="divTableRow" *ngFor="let ExpData of ExpDataModelLibraries">
                 <div class="divTableCell" class="tokenContainer">
                     <div class="imgContainer">
@@ -61,14 +64,15 @@
                     <article>{{ExpData.article}}</article>
                 </div>
             </div>
-        </div>
-        <br>
+        </span>
     </section>
     <section>
-        <h1 class="title">Dev Tools <div>that I can swing</div>
-        </h1>
-        <hr>
-        <div class="divTable expandable">
+        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown03', 'dropDownIcon03')">
+            <h1 class="title">Dev Tools <div>that I can swing</div>
+            </h1>
+            <span id="dropDownIcon03" class="dropDownIcon material-symbols-outlined">expand_more</span>
+        </button>
+        <span id="dropDown03" class="divTable expandable">
             <div class="divTableRow" *ngFor="let ExpData of ExpDataModelTools">
                 <div class="divTableCell" class="tokenContainer">
                     <div class="imgContainer">
@@ -82,12 +86,15 @@
                     <article>{{ExpData.article}}</article>
                 </div>
             </div>
-        </div>
-        <br>
-        <h1 class="title">Other Skills <div>that I can...also swing</div>
-        </h1>
-        <hr>
-        <div class="divTable expandable">
+        </span>
+    </section>
+    <section>
+        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown04', 'dropDownIcon04')">
+            <h1 class="title">Other Skills <div>that I can...also swing</div>
+            </h1>
+            <span id="dropDownIcon04" class="dropDownIcon material-symbols-outlined">expand_more</span>
+        </button>
+        <span id="dropDown04" class="divTable expandable">
             <div class="divTableRow" *ngFor="let ExpData of ExpDataModelSkills">
                 <div class="divTableCell" class="tokenContainer">
                     <div class="imgContainer">
@@ -101,14 +108,15 @@
                     <article>{{ExpData.article}}</article>
                 </div>
             </div>
-        </div>
-        <br>
+        </span>
     </section>
     <section>
-        <h1 class="title">Schools <div>that learned me good</div>
-        </h1>
-        <hr>
-        <div class="divTable expandable">
+        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown05', 'dropDownIcon05')">
+            <h1 class="title">Schools <div>that learned me good</div>
+            </h1>
+            <span id="dropDownIcon05" class="dropDownIcon material-symbols-outlined">expand_more</span>
+        </button>
+        <span id="dropDown05" class="divTable expandable">
             <div class="divTableRow" *ngFor="let ExpData of ExpDataModelSchools">
                 <div class="divTableCell" class="tokenContainer">
                     <div class="imgContainer">
@@ -122,14 +130,15 @@
                     <article>{{ExpData.article}}</article>
                 </div>
             </div>
-        </div>
-        <br>
+        </span>
     </section>
     <section>
-        <h1 class="title">Past Employers <div>that miss me</div>
-        </h1>
-        <hr>
-        <div class="divTable expandable">
+        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown06', 'dropDownIcon06')">
+            <h1 class="title">Past Employers <div>that miss me</div>
+            </h1>
+            <span id="dropDownIcon06" class="dropDownIcon material-symbols-outlined">expand_more</span>
+        </button>
+        <span id="dropDown06" class="divTable expandable">
             <div class="divTableRow" *ngFor="let ExpData of ExpDataModelEmployers">
                 <div class="divTableCell" class="tokenContainer">
                     <div class="imgContainer">
@@ -143,7 +152,8 @@
                     <article>{{ExpData.article}}</article>
                 </div>
             </div>
-        </div>
-        <br>
+        </span>
+        <!-- added a foot for the final section -->
+        <div class="sectionFoot"></div>
     </section>
 </main>

@@ -108,7 +108,7 @@ article {
     height: 4px;
     background-color: buttonface;
     border-color: buttonborder;
-    border-width: 0px 3px;
+    border-width: 0px 3px 3px 3px;
     border-style: solid;
 }
 
@@ -141,8 +141,11 @@ article {
 }
 
 .expandable.expanded .divTableRow {
-    padding: 1em 0em;
-    border-bottom: 2px gray solid;
+    padding: 0.5em 0em;
+}
+
+.expandable.expanded .divTableRow + .divTableRow {
+    border-top: 2px gray solid;
 }
 
 .expandable.expanded .divTableCell {
