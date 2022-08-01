@@ -136,7 +136,7 @@ export class ExperienceComponent implements OnInit {
     }
   ];
 
-  // removes "expanded" class from all "expandable" elements
+  // removes "expanded" class from all "expandable" elements; removes "iconFlipped" class from all "iconFlipped" elements
 unExpandAll() {
   // selects all "expandable" elements
   let expandableSectionsCollection = document.getElementsByClassName("expandable");
@@ -148,14 +148,30 @@ unExpandAll() {
   expandableSectionsArray.map(expandableSection => {
       expandableSection.classList.remove("expanded");
   });
+
+  // selects all "iconFlipped" elements
+  let dropDownIconsCollection = document.getElementsByClassName("iconFlipped");
+
+  // converts collection of iconFlipped elements to an array
+  let dropDownIconsArray = Array.from(dropDownIconsCollection);
+
+  // runs through each iconFlipped element in the array, then removes the "iconFlipped" class
+  dropDownIconsArray.map(dropDownIcon => {
+    dropDownIcon.classList.remove("iconFlipped");
+  });
 };
 
 // adds "expandable" class to target element
-setExpanded(dropDownId: string) {
-  //variable for parameter element
-  let element = document.getElementById(dropDownId);
+setExpanded(dropDownId: string, dropDownIconId: string) {
+  //variable for parameter element dropDownId
+  let elementDropDown = document.getElementById(dropDownId);
   // adds "expanded" class
-  element?.classList.add("expanded");
+  elementDropDown?.classList.add("expanded");
+
+  //variable for parameter element dropDownIconId
+  let elementDropDownIcon = document.getElementById(dropDownIconId);
+  // adds "expanded" class
+  elementDropDownIcon?.classList.add("iconFlipped");
 };
 
 // removes "nowVisible" class from all "swappable" elements
@@ -181,9 +197,9 @@ setSwapVisible(swapId: string) {
 }
 
 // performs expansion-related functions when the button is clicked
-dropDownButtonClick(dropDownId: string) {
+dropDownButtonClick(dropDownId: string, dropDownIconId:string) {
   this.unExpandAll();
-  this.setExpanded(dropDownId);
+  this.setExpanded(dropDownId, dropDownIconId);
 }
 
 // performs swap-related functions when the button is clicked

@@ -1,10 +1,10 @@
 <main>
+    <button (click)="unExpandAll()">unexpand all lines</button>
     <section>
-        <h1 class="title">Languages <div>that I can speak</div>
-        </h1>
-        <hr>
-        <button (click)="dropDownButtonClick('dropDown0')">expand</button>
-        <button (click)="unExpandAll()">unexpand</button>
+        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown0', 'dropDownIcon0')">
+            <h1 class="title">Languages <div>that I can speak</div></h1>
+            <span id="dropDownIcon0" class="dropDownIcon material-symbols-outlined">expand_more</span>
+        </button>
         <div id="dropDown0" class="divTable expandable">
             <div class="divTableRow" *ngFor="let ExpData of ExpDataModelLanguages">
                 <div class="divTableCell" class="tokenContainer">
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <br>
+        <div class="sectionFoot"></div>
     </section>
     <section>
         <h1 class="title">Frameworks <div>that make my life easier</div>
