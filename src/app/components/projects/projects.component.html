@@ -1,13 +1,13 @@
 <nav id="projectNav">
     <div></div>
-    <button>A</button>
-    <button>B</button>
-    <button>C</button>
-    <button>D</button>
+    <button (click)="revealProject('project00')">project00</button>
+    <button (click)="revealProject('project01')">project01</button>
+    <button (click)="revealProject('project02')">project02</button>
+    <button (click)="revealProject('project03')">project03</button>
     <div></div>
 </nav>
 <main id="displayContainer">
-    <section class="project-container url-connect">
+    <section id="project00" class="project-container url-connect">
         <div id="row-title">
             <h3 id="outdoorsman-title">Group Project: "The Outdoorsman"</h3>
         </div>
@@ -36,13 +36,13 @@
             </div>
         </span>
     </section>
-    <section class="project-container">
+    <section id="project01" class="project-container">
         <app-tictactoe></app-tictactoe>
     </section>
-    <section class="project-container">
+    <section id="project02" class="project-container">
         <app-simple-clock></app-simple-clock>
     </section>
-    <section class="project-container">
+    <section id="project03" class="project-container">
         <app-calculator></app-calculator>
     </section>
 </main>

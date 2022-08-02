@@ -15,4 +15,32 @@ export class ProjectsComponent implements OnInit {
   reNavA() {
     window.location.href = "https://jrgrant560.github.io/Final-Project_The-Outdoorsman";
   }
+
+  // removes "projectVisible" class from all "project-container" elements
+  hideAllProjects() {
+    // selects all "project-container" elements
+    let projectContainersCollection = document.getElementsByClassName("project-container");
+
+    // converts collection of project-container elements to an array
+    let projectsContainersArray = Array.from(projectContainersCollection);
+
+    // runs through each project-container element in the array, then removes the "projectVisible" class
+    projectsContainersArray.map(projectContainer => {
+      projectContainer.classList.remove("projectVisible");
+    });
+  }
+
+  // adds "projectVisible" class to target element
+  setProjectVisible(projectId: string) {
+    //variable for parameter element
+    let projectContainer = document.getElementById(projectId);
+    // adds "projectVisible" class
+    projectContainer?.classList.add("projectVisible");
+  }
+
+  // performs expansion-related functions when the button is clicked
+  revealProject(projectId: string) {
+    this.hideAllProjects();
+    this.setProjectVisible(projectId);
+  }
 }
