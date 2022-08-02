@@ -1,23 +1,23 @@
 <main>
-    <button (click)="unExpandAll()">unexpand all lines</button>
+    <span class="masterButtons">
+        <button class="masterButton" (click)="expandAll()">Expand All</button>
+        <button class="masterButton" (click)="unExpandAll()">Collapse All</button>
+    </span>
     <section>
         <button class="dropDownButton" (click)="dropDownButtonClick('dropDown00', 'dropDownIcon00')">
             <h1 class="title">Languages <div>that I can speak</div>
             </h1>
             <span id="dropDownIcon00" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
-        <span id="dropDown00" class="divTable expandable">
-            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelLanguages">
-                <div class="divTableCell" class="tokenContainer">
+        <span id="dropDown00" class="divTable divTableTwoColumn expandable">
+            <div class="divTableRow divTableRowTwoColumn" *ngFor="let ExpData of ExpDataModelLanguages">
+                <div class="divTableCell tokenContainer">
                     <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
                 <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </div>
-                <div class="divTableCell">
-                    <article>{{ExpData.article}}</article>
                 </div>
             </div>
         </span>
@@ -28,18 +28,15 @@
             </h1>
             <span id="dropDownIcon01" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
-        <span id="dropDown01" class="divTable expandable">
-            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelFrameworks">
-                <div class="divTableCell" class="tokenContainer">
+        <span id="dropDown01" class="divTable divTableTwoColumn expandable">
+            <div class="divTableRow divTableRowTwoColumn" *ngFor="let ExpData of ExpDataModelFrameworks">
+                <div class="divTableCell tokenContainer">
                     <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
                 <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </div>
-                <div class="divTableCell">
-                    <article>{{ExpData.article}}</article>
                 </div>
             </div>
         </span>
@@ -50,18 +47,15 @@
             </h1>
             <span id="dropDownIcon02" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
-        <span id="dropDown02" class="divTable expandable">
-            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelLibraries">
-                <div class="divTableCell" class="tokenContainer">
+        <span id="dropDown02" class="divTable divTableTwoColumn expandable">
+            <div class="divTableRow divTableRowTwoColumn" *ngFor="let ExpData of ExpDataModelLibraries">
+                <div class="divTableCell tokenContainer">
                     <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
                 <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </div>
-                <div class="divTableCell">
-                    <article>{{ExpData.article}}</article>
                 </div>
             </div>
         </span>
@@ -72,18 +66,15 @@
             </h1>
             <span id="dropDownIcon03" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
-        <span id="dropDown03" class="divTable expandable">
-            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelTools">
-                <div class="divTableCell" class="tokenContainer">
+        <span id="dropDown03" class="divTable divTableTwoColumn expandable">
+            <div class="divTableRow divTableRowTwoColumn" *ngFor="let ExpData of ExpDataModelTools">
+                <div class="divTableCell tokenContainer">
                     <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
                 <div class="divTableCell">
                     <h2>{{ExpData.title}}</h2>
-                </div>
-                <div class="divTableCell">
-                    <article>{{ExpData.article}}</article>
                 </div>
             </div>
         </span>
@@ -95,8 +86,8 @@
             <span id="dropDownIcon04" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
         <span id="dropDown04" class="divTable expandable">
-            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelSkills">
-                <div class="divTableCell" class="tokenContainer">
+            <div class="divTableRow divTableRowThreeColumn" *ngFor="let ExpData of ExpDataModelSkills">
+                <div class="divTableCell tokenContainer">
                     <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
@@ -117,8 +108,8 @@
             <span id="dropDownIcon05" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
         <span id="dropDown05" class="divTable expandable">
-            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelSchools">
-                <div class="divTableCell" class="tokenContainer">
+            <div class="divTableRow divTableRowThreeColumn" *ngFor="let ExpData of ExpDataModelSchools">
+                <div class="divTableCell tokenContainer">
                     <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
@@ -139,8 +130,8 @@
             <span id="dropDownIcon06" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
         <span id="dropDown06" class="divTable expandable">
-            <div class="divTableRow" *ngFor="let ExpData of ExpDataModelEmployers">
-                <div class="divTableCell" class="tokenContainer">
+            <div class="divTableRow divTableRowThreeColumn" *ngFor="let ExpData of ExpDataModelEmployers">
+                <div class="divTableCell tokenContainer">
                     <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
@@ -156,4 +147,8 @@
         <!-- added a foot for the final section -->
         <div class="sectionFoot"></div>
     </section>
+    <span class="masterButtons">
+        <button class="masterButton" (click)="expandAll()">Expand All</button>
+        <button class="masterButton" (click)="unExpandAll()">Collapse All</button>
+    </span>
 </main>

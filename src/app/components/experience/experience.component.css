@@ -2,6 +2,14 @@ main {
     display: grid;
 }
 
+.masterButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 0.5em 0em 0.5em auto;
+    width: 20%;
+}
+
 section {
     border-color: buttonborder;
     border-width: 3px 0px 0px 0px;
@@ -19,8 +27,13 @@ section {
     display: inline-block;
 }
 
+button:hover {
+    background-color: rgb(163,163,163);
+    color: rgb(240, 240, 240);
+}
+
 .title {
-    font-size: 2rem;
+    font-size: 1.75em;
     font-weight: bold;
     margin: 0px;
     overflow: hidden;
@@ -33,7 +46,8 @@ section {
 
 .title>div {
     font-size: 0.6em;
-}
+    font-style: italic;
+    margin-right: 3px;}
 
 .dropDownIcon {
     font-size: 2.4em;
@@ -60,10 +74,21 @@ section {
 
 .divTableRow {
     display: grid;
-    grid-template-columns: 20% 20% 60%;
     align-items: center;
     padding: 0em;
     border: 0px;
+}
+
+.divTableTwoColumn {
+    grid-template-columns: 50% 50%;
+}
+
+.divTableRowTwoColumn {
+    grid-template-columns: 40% 60%;
+}
+
+.divTableRowThreeColumn {
+    grid-template-columns: 20% 20% 60%;
 }
 
 .divTableCell {
@@ -80,7 +105,7 @@ section {
 
 .imgContainer {
     display: flex;
-    max-width: 150px;
+    max-width: 120px;
 }
 
 img {
@@ -141,11 +166,8 @@ article {
 }
 
 .expandable.expanded .divTableRow {
-    padding: 0.5em 0em;
-}
-
-.expandable.expanded .divTableRow + .divTableRow {
     border-top: 2px gray solid;
+    padding: 1em 0em;
 }
 
 .expandable.expanded .divTableCell {
