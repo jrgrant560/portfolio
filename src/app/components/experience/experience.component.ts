@@ -15,9 +15,6 @@ export class ExperienceComponent implements OnInit {
   // constructor(private outdoorsmanService:OutdoorsmanService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    console.log(this.today.getFullYear())
-    console.log(this.today.getMonth())
-    console.log(this.today.getDate())
   }
 
   // createTime() {

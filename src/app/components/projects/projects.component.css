@@ -1,13 +1,17 @@
-#main-grid-container {
+#projectNav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 1em;
+}
+
+#displayContainer {
+    display: flex;
     justify-content: center;
     align-content: center;
 }
 
 .project-container {
-    display: grid;
+    display: none;
     grid-template-columns: 100%;
     justify-content: center;
     border: 4px;
@@ -16,6 +20,10 @@
     padding: 1em;
     margin: 0.1em;
     border-radius: 0.5em;
+}
+
+.projectVisible {
+    display: grid;
 }
 
 .url-connect {
@@ -68,8 +76,8 @@ and (-webkit-min-device-pixel-ratio: 3) {
     }
 } */
 
-@media (max-width: 736px) {
-    #main-grid-container {
+/* @media (max-width: 736px) {
+    #displayContainer {
         grid-template-columns: 1fr;
     }
-}
+} */
