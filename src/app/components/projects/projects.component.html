@@ -1,13 +1,13 @@
 <nav id="projectNav">
     <div></div>
-    <button (click)="revealProject('project00')">project00</button>
-    <button (click)="revealProject('project01')">project01</button>
-    <button (click)="revealProject('project02')">project02</button>
-    <button (click)="revealProject('project03')">project03</button>
+    <button (click)="revealProject('project00')">Group Project: "The Outdoorsman"</button>
+    <button (click)="revealProject('project01')">TicTacToe</button>
+    <button (click)="revealProject('project02')">Simple Clock</button>
+    <button (click)="revealProject('project03')">Calculator</button>
     <div></div>
 </nav>
-<main id="displayContainer">
     <section id="project00" class="project-container url-connect">
+        <main id="flexContainer">
         <div id="row-title">
             <h3 id="outdoorsman-title">Group Project: "The Outdoorsman"</h3>
         </div>
@@ -35,14 +35,14 @@
                 <img src="assets\images\Tokens\Frameworks\Token-DotNet2-01.png">
             </div>
         </span>
+        </main>
     </section>
     <section id="project01" class="project-container">
-        <app-tictactoe></app-tictactoe>
+        <app-tictactoe class="projectRoute"></app-tictactoe>
     </section>
     <section id="project02" class="project-container">
-        <app-simple-clock></app-simple-clock>
+        <app-simple-clock class="projectRoute"></app-simple-clock>
     </section>
     <section id="project03" class="project-container">
-        <app-calculator></app-calculator>
+        <app-calculator class="projectRoute"></app-calculator>
     </section>
-</main>

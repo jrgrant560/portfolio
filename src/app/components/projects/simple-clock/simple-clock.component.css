@@ -1,21 +1,23 @@
-#row-main {
-    grid-template-rows: 1fr 1fr 1fr;
+#clockRows {
+    width: 100%;
+    aspect-ratio: 1.5 / 1;
+    display: flex;
+    flex-direction: column;
 }
 
 #clock1, #clock2, #clock3 {
-    border: 1vh solid #999;
+    display: flex;
     width: 100%;
     height: 100%;
+    border: 1vh solid #999;
     padding: 1vh;
     text-align: center;
 }
 
 #timeContainer1, #timeContainer2, #timeContainer3 {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 10%;
-    margin-right: 10%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 #clock1 {

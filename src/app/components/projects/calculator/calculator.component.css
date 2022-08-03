@@ -1,7 +1,9 @@
-.calc-container {
-    display: grid;
+#calculator {
     width: 100%;
+    max-width: 450px;
     border: 4.5px solid #999;
+    aspect-ratio: 1 / 1;
+    display: grid;
     grid-template-rows: 2.5fr 5fr;
 }
 

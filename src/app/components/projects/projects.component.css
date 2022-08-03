@@ -4,15 +4,9 @@
     margin-bottom: 1em;
 }
 
-#displayContainer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
 .project-container {
     display: none;
-    grid-template-columns: 100%;
+    width: 100%;
     justify-content: center;
     border: 4px;
     border-style: solid;
@@ -23,7 +17,11 @@
 }
 
 .projectVisible {
-    display: grid;
+    display: flex;
+}
+
+.projectRoute {
+    width: 100%;
 }
 
 .url-connect {
