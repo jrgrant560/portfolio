@@ -1,14 +1,14 @@
 <main>
     <h4>Current Player: {{ player }}</h4>
     <!--button that uses a "click" event-->
-    <button id="newGame" class="btn" (click)="newGame()">Start New Game</button>
+    <button id="newGameButton" class="btn" (click)="newGame()">Start New Game</button>
     <!-- the tictactoe board -->
     <span id="board">
         <app-tictactoe-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
         </app-tictactoe-square>
     </span>
     <!-- text that displays the winner -->
-    <div id="victory-display">
+    <div id="winnerDisplay">
         <h4 *ngIf="winner">
             Player {{ player }} won the game!
         </h4>

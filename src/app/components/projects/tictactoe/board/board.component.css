@@ -1,13 +1,17 @@
 main {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 10% 10% 64% 10%;
-    grid-row-gap: 2%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-#newGame {
+h4 {
+    width: 100%;
+    text-align: center;
+}
+
+#newGameButton {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +22,12 @@ main {
 }
 
 #board {
+    width: 100%;
     display: grid;
-    height: 100%;
     aspect-ratio: 1/1;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0px;
     border: 1px rgb(217, 217, 217) solid;
-    margin-right: auto;
-    margin-left: auto;
 }
   
 app-tictactoe-square {
@@ -34,6 +36,12 @@ app-tictactoe-square {
     aspect-ratio: 1 / 1;
 }
 
+#winnerDisplay {
+    height: calc(2.1rem + 0.3vw);
+    width: 100%;
+}
+
+/* 
 h4 {
     margin: auto;
-}
+} */

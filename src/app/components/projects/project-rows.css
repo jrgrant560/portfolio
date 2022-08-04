@@ -26,6 +26,7 @@
     border-top: 2px solid;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .img-container {
@@ -34,6 +35,7 @@
 
 .img-token {
     max-width: 120px;
+    max-height: 104px;
     aspect-ratio: 1038 / 900;
 }
 
