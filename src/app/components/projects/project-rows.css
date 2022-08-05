@@ -39,8 +39,8 @@
 }
 
 .img-token {
-    max-width: 120px;
-    max-height: 104px;
+    /* max-width: 120px; */
+    max-height: 90px;
     aspect-ratio: 1038 / 900;
 }
 
@@ -51,7 +51,7 @@ img {
 }
 
 .token-plus {
-    font-size: 9vw;
+    font-size: 5.5vw;
     margin-top: auto;
     margin-bottom: auto;
 }

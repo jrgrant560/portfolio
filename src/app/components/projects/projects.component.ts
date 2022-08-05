@@ -30,6 +30,14 @@ export class ProjectsComponent implements OnInit {
     });
   }
 
+  // removes "projectNavExpanded" class from "projectNav" element
+  minimizeNavBar() {
+    // selects "projectNav" element
+    let projectNavbar = document.getElementById("projectNav")!;
+    // removes "projectNavExpanded" class from "projectNav" element
+    projectNavbar.classList.remove("projectNavExpanded");
+  }
+
   // adds "projectVisible" class to target element
   setProjectVisible(projectId: string) {
     //variable for parameter element
@@ -41,6 +49,15 @@ export class ProjectsComponent implements OnInit {
   // performs expansion-related functions when the button is clicked
   revealProject(projectId: string) {
     this.hideAllProjects();
+    this.minimizeNavBar();
     this.setProjectVisible(projectId);
+  }
+
+  // adds "projectNavExpanded" class to "projectNav" element
+  maximizeNavBar() {
+    // selects "projectNav" element
+    let projectNavbar = document.getElementById("projectNav")!;
+    // adds "projectNavExpanded" class to "projectNav" element
+    projectNavbar.classList.add("projectNavExpanded");
   }
 }

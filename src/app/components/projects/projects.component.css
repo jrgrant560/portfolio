@@ -1,7 +1,15 @@
 #projectNav {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 0.5fr repeat(6, 1fr) 0.5fr;
     margin-bottom: 1em;
+}
+
+.projectNavExpanded {
+    height: 30vw;
+}
+
+.projectNavButtonEmpty {
+    color: gray;
 }
 
 .project-container {
