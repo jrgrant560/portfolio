@@ -1,6 +1,7 @@
 #flexContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* #row-title, #row-main, #row-tokens {
@@ -19,6 +20,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#row-main>* {
+    max-width: 450px;
 }
 
 #row-tokens {
@@ -56,8 +61,7 @@ img {
 
 /* Borders for Testing */
 
-#grid-container {
-
+#flexContainer {
     border: 1px red dashed;
 }
 
