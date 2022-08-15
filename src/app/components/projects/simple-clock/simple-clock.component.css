@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-#clock1, #clock2, #clock3 {
+#clockBox1, #clockBox2, #clockBox3 {
     display: flex;
     width: 100%;
     height: 100%;
@@ -20,7 +20,7 @@
     justify-content: space-evenly;
 }
 
-#clock1 {
+#clockBox1 {
     background-color: rgba(62, 201, 67, 0.25);
     box-shadow: inset 0px 0px 8px 4px rgba(62, 201, 67, 0.5);
 }
@@ -29,7 +29,7 @@
     color: rgb(43, 140, 47);
 }
 
-#clock2 {
+#clockBox2 {
     background-color: rgba(235, 94, 66, 0.25);
     box-shadow: inset 0px 0px 8px 4px rgba(235, 94, 66, 0.5);
 }
@@ -38,7 +38,7 @@
     color: rgb(160, 45, 22);
 }
 
-#clock3 {
+#clockBox3 {
     background-color: rgba(209, 166, 36, 0.25);
     box-shadow: inset 0px 0px 8px 4px rgba(209, 166, 36, 0.5);
 }

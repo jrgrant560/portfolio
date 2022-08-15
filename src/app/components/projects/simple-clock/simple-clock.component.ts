@@ -17,8 +17,8 @@ export class SimpleClockComponent implements OnInit {
       //Date object that is the current timestamp when the browser runs the code
       let today = new Date();
 
-      console.log(today);
-      console.log(today.getTimezoneOffset());
+      // console.log(today);
+      // console.log(today.getTimezoneOffset());
 
       //variable that is the current date in yyyy-mm-dd format
       let date =
