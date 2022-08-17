@@ -3,9 +3,9 @@
     <div></div>
     <button class="projectNavButton" (click)="revealProject('project00')">Group Project: "The Outdoorsman"</button>
     <button class="projectNavButton" (click)="revealProject('project01')">TicTacToe</button>
-    <button class="projectNavButton" (click)="revealProject('project02')">Simple Clock</button>
-    <button class="projectNavButton" (click)="revealProject('project03')">Calculator</button>
-    <button class="projectNavButtonEmpty">[ empty ]</button>
+    <button class="projectNavButton" (click)="revealProject('project02')">Clocks (Analog)</button>
+    <button class="projectNavButton" (click)="revealProject('project03')">Clocks (Digital)</button>
+    <button class="projectNavButton" (click)="revealProject('project04')">Calculator</button>
     <button class="projectNavButtonEmpty" (click)="hideAllProjects(); maximizeNavBar()">[ Hide All ]</button>
     <div></div>
     <!-- Nav Row 2 -->
@@ -61,9 +61,15 @@
 <section id="project01" class="project-container">
     <app-tictactoe class="projectRoute"></app-tictactoe>
 </section>
-<section id="project02" class="project-container">
+<!-- <section id="project02" class="project-container">
     <app-simple-clock class="projectRoute"></app-simple-clock>
+</section> -->
+<section id="project02" class="project-container">
+    <app-clocks-analog class="projectRoute"></app-clocks-analog>
 </section>
 <section id="project03" class="project-container">
+    <app-clocks-digital class="projectRoute"></app-clocks-digital>
+</section>
+<section id="project04" class="project-container">
     <app-calculator class="projectRoute"></app-calculator>
 </section>

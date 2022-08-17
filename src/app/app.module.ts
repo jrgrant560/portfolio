@@ -19,6 +19,8 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { ContactFooterComponent } from './components/contact-me/contact-footer/contact-footer.component';
 import { ContactButtonComponent } from './components/contact-me/contact-button/contact-button.component';
 import { InterestsComponent } from './components/interests/interests.component';
+import { ClocksAnalogComponent } from './components/projects/clocks-analog/clocks-analog.component';
+import { ClocksDigitalComponent } from './components/projects/clocks-digital/clocks-digital.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { InterestsComponent } from './components/interests/interests.component';
     ContactMeComponent,
     ContactFooterComponent,
     ContactButtonComponent,
-    InterestsComponent
+    InterestsComponent,
+    ClocksAnalogComponent,
+    ClocksDigitalComponent
   ],
   imports: [
     BrowserModule,
