@@ -52,7 +52,7 @@ p {
 
 .clock {
     width: 32%;
-    min-width: 7em;
+    min-width: 5.5em;
     aspect-ratio: 1 / 1;
     position: relative;
     padding: 0.5rem;
@@ -180,9 +180,9 @@ p {
 
     text-align: center;
     font-weight: bold;
-    font-size: 3.75vw;
+    font-size: .45em;
 
-    padding-top: 3%;
+    padding-top: 2%;
     border: 2px solid;
     border-radius: 8px;
     border-color: var(--clockA-marking);
@@ -192,7 +192,6 @@ p {
 
     background: var(--clockA-bg);
     color: var(--clockA-marking);
-    font-size: 1.5vw;
 }
 
 /* -LOCAL CLOCK- */
@@ -385,6 +384,14 @@ p {
     background: var(--clockSplit-bg);
 }
 
+/* inner clockface positioning */
+.clockSplit .clock .inner-clock-face {
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+}
+
 /* clock center color */
 .clockSplit .clock .inner-clock-face::before {
     background: var(--clockSplit-center);
@@ -402,27 +409,9 @@ p {
     background: var(--clockSplit-marking);
 }
 
-/* clock hands color */
-.clockSplit .clock .hand {
-    background: var(--clockSplit-hand);
-}
-
-/* clock second-hand color */
-/* .clockSplit .clock .hand.second-hand {
-    background: var(--clockSplit-hand-second);
-}
-
-.clockSplit .clock .hand.millisecond-hand {
-    background: red;
-} */
-
+/* clock hands color & dimensions */
 .clockSplit .hand {
-    width: 50%;
-    height: 6px;
-}
-
-.clockSplit .clock .hand.second-hand,
-.clockSplit .clock .hand.millisecond-hand {
-    width: 50%;
+    background: var(--clockSplit-hand);
+    width: 65%;
     height: 6px;
 }
