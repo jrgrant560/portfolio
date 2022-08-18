@@ -1,5 +1,6 @@
 #calculator {
     width: 100%;
+    max-width: 450px;
     /* max-width: 450px; */
     border: 4.5px solid #999;
     aspect-ratio: 0.9 / 1;

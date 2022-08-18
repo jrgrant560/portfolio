@@ -4,7 +4,7 @@ import { ClockModel } from 'src/app/models/exp-data-model/clock-model';
 @Component({
   selector: 'app-clocks-analog',
   templateUrl: './clocks-analog.component.html',
-  styleUrls: ['./clocks-analog.component.css']
+  styleUrls: ['./clocks-analog.component.css', '../project-rows.css']
 })
 export class ClocksAnalogComponent implements OnInit {
 

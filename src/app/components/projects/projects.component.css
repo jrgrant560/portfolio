@@ -41,7 +41,11 @@
     font-size: 2.5vw;
 } */
 
-.button-container {
+.urlContainer {
+    max-width: 450px;
+}
+
+.buttonContainer {
 }
 
 .btn-outline-info {
