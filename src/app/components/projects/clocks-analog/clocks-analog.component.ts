@@ -8,7 +8,6 @@ import { ClockModel } from 'src/app/models/exp-data-model/clock-model';
 })
 export class ClocksAnalogComponent implements OnInit {
 
-  // clockModel: ClockModel = new ClockModel();
   constructor() { }
 
   ngOnInit(): void {
