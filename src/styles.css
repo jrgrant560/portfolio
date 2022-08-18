@@ -196,3 +196,61 @@ body {
   background: navy;
   color: white;
 }
+
+
+/* Analog CLock Shared Color Variables */
+:root {
+  --bg-grey-light: #4d4b63;
+  --bg-grey-dark: #282828;
+  --shadow-grey-light: rgba(67, 67, 67, 0.5);
+  --shadow-grey-dark: rgba(0, 0, 0, 0.5);
+
+  --bg-red-light: rgb(255, 45, 45);
+  --bg-red-dark: rgb(172, 30, 30);
+  --shadow-red-light: rgba(255, 45, 45, 0.5);
+  --shadow-red-dark: rgba(172, 30, 30, 0.5);
+
+  --clockWhite: #ededed;
+
+  /* Clock A */
+  --clockA-bg: var(--bg-grey-dark);
+  --clockA-border: var(--bg-grey-dark);
+  --clockA-center: var(--bg-grey-light);
+
+  --clockA-marking-quarter: #1df52f;
+  --clockA-marking: #bdbdcb;
+
+  --clockA-hand: #61afff;
+  --clockA-hand-second: #ee791a;
+
+  --clockA-shadow-light: var(--shadow-grey-light);
+  --clockA-shadow-dark: var(--shadow-grey-dark);
+
+  /* clock B */
+  --clockB-bg: var(--bg-red-dark);
+  --clockB-border: var(--bg-red-light);
+  --clockB-center: var(--bg-red-light);
+
+  --clockB-marking-quarter: var(--bg-red-light);
+  --clockB-marking: #bdbdcb;
+
+  --clockB-hand: #61afff;
+  --clockB-hand-second: var(--bg-red-light);
+
+  --clockB-shadow-light: var(--shadow-red-light);
+  --clockB-shadow-dark: var(--shadow-red-dark);
+
+  /* clockSplit */
+  --clockSplit-bg: #ffeeb0;
+  --clockSplit-border: rgb(32 99 181);
+  --clockSplit-center: rgb(32 99 181);
+
+  --clockSplit-marking-quarter: rgb(32 99 181);
+  --clockSplit-marking: #bdbdcb;
+
+  --clockSplit-hand: #282828;
+  --clockSplit-hand-second: #ee791a;
+
+  --clockSplit-shadow-light: rgba(67, 67, 67, 0.5);
+  --clockSplit-shadow-dark: rgba(0, 0, 0, 0.5);
+}
