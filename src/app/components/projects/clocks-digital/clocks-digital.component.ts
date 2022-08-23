@@ -12,103 +12,103 @@ export class ClocksDigitalComponent implements OnInit {
 
   ngOnInit(): void {
     const clockLocal = {
-      millisecondHand: document.querySelector('.clockLocal .millisecond-hand'),
-      secondHand: document.querySelector('.clockLocal .second-hand'),
-      minuteHand: document.querySelector('.clockLocal .minute-hand'),
-      hourHand: document.querySelector('.clockLocal .hour-hand'),
-      timeZoneDisplay: document.querySelector('.clockLocalContainer .timeZoneDisplay'),
-      zoneDate: document.querySelector('.clockLocalContainer .timeZoneDate'),
-      midDayIndicator: document.querySelector('.clockLocal .midDayIndicator'),
+      millisecondHand: document.querySelector('.clocksDigital  .clockLocal .millisecond-hand'),
+      secondHand: document.querySelector('.clocksDigital  .clockLocal .second-hand'),
+      minuteHand: document.querySelector('.clocksDigital  .clockLocal .minute-hand'),
+      hourHand: document.querySelector('.clocksDigital  .clockLocal .hour-hand'),
+      timeZoneDisplay: document.querySelector('.clocksDigital  .clockLocalContainer .timeZoneDisplay'),
+      zoneDate: document.querySelector('.clocksDigital  .clockLocalContainer .timeZoneDate'),
+      midDayIndicator: document.querySelector('.clocksDigital  .clockLocal .midDayIndicator'),
       timeZoneHours: "local"
     };
   
     const clockC = {
-      millisecondHand: document.querySelector('.clockC .millisecond-hand'),
-      secondHand: document.querySelector('.clockC .second-hand'),
-      minuteHand: document.querySelector('.clockC .minute-hand'),
-      hourHand: document.querySelector('.clockC .hour-hand'),
-      timeZoneDisplay: document.querySelector('.clockC .timeZoneDisplay'),
-      zoneDate: document.querySelector('.clockC .timeZoneDate'),
-      midDayIndicator: document.querySelector('.clockC .midDayIndicator'),
+      millisecondHand: document.querySelector('.clocksDigital  .clockC .millisecond-hand'),
+      secondHand: document.querySelector('.clocksDigital  .clockC .second-hand'),
+      minuteHand: document.querySelector('.clocksDigital  .clockC .minute-hand'),
+      hourHand: document.querySelector('.clocksDigital  .clockC .hour-hand'),
+      timeZoneDisplay: document.querySelector('.clocksDigital  .clockC .timeZoneDisplay'),
+      zoneDate: document.querySelector('.clocksDigital  .clockC .timeZoneDate'),
+      midDayIndicator: document.querySelector('.clocksDigital  .clockC .midDayIndicator'),
       timeZoneHours: "local"
     }
   
     const clockD = {
-      millisecondHand: document.querySelector('.clockD .millisecond-hand'),
-      secondHand: document.querySelector('.clockD .second-hand'),
-      minuteHand: document.querySelector('.clockD .minute-hand'),
-      hourHand: document.querySelector('.clockD .hour-hand'),
-      timeZoneDisplay: document.querySelector('.clockD .timeZoneDisplay'),
-      zoneDate: document.querySelector('.clockD .timeZoneDate'),
-      midDayIndicator: document.querySelector('.clockD .midDayIndicator'),
+      millisecondHand: document.querySelector('.clocksDigital  .clockD .millisecond-hand'),
+      secondHand: document.querySelector('.clocksDigital  .clockD .second-hand'),
+      minuteHand: document.querySelector('.clocksDigital  .clockD .minute-hand'),
+      hourHand: document.querySelector('.clocksDigital  .clockD .hour-hand'),
+      timeZoneDisplay: document.querySelector('.clocksDigital  .clockD .timeZoneDisplay'),
+      zoneDate: document.querySelector('.clocksDigital  .clockD .timeZoneDate'),
+      midDayIndicator: document.querySelector('.clocksDigital  .clockD .midDayIndicator'),
       timeZoneHours: "local"
     }
   
     const clockE = {
-      millisecondHand: document.querySelector('.clockE .millisecond-hand'),
-      secondHand: document.querySelector('.clockE .second-hand'),
-      minuteHand: document.querySelector('.clockE .minute-hand'),
-      hourHand: document.querySelector('.clockE .hour-hand'),
-      timeZoneDisplay: document.querySelector('.clockE .timeZoneDisplay'),
-      zoneDate: document.querySelector('.clockE .timeZoneDate'),
-      midDayIndicator: document.querySelector('.clockE .midDayIndicator'),
+      millisecondHand: document.querySelector('.clocksDigital  .clockE .millisecond-hand'),
+      secondHand: document.querySelector('.clocksDigital  .clockE .second-hand'),
+      minuteHand: document.querySelector('.clocksDigital  .clockE .minute-hand'),
+      hourHand: document.querySelector('.clocksDigital  .clockE .hour-hand'),
+      timeZoneDisplay: document.querySelector('.clocksDigital  .clockE .timeZoneDisplay'),
+      zoneDate: document.querySelector('.clocksDigital  .clockE .timeZoneDate'),
+      midDayIndicator: document.querySelector('.clocksDigital  .clockE .midDayIndicator'),
       timeZoneHours: "local"
     }
   
     const clockF = {
-      millisecondHand: document.querySelector('.clockF .millisecond-hand'),
-      secondHand: document.querySelector('.clockF .second-hand'),
-      minuteHand: document.querySelector('.clockF .minute-hand'),
-      hourHand: document.querySelector('.clockF .hour-hand'),
-      timeZoneDisplay: document.querySelector('.clockF .timeZoneDisplay'),
-      zoneDate: document.querySelector('.clockF .timeZoneDate'),
-      midDayIndicator: document.querySelector('.clockF .midDayIndicator'),
+      millisecondHand: document.querySelector('.clocksDigital  .clockF .millisecond-hand'),
+      secondHand: document.querySelector('.clocksDigital  .clockF .second-hand'),
+      minuteHand: document.querySelector('.clocksDigital  .clockF .minute-hand'),
+      hourHand: document.querySelector('.clocksDigital  .clockF .hour-hand'),
+      timeZoneDisplay: document.querySelector('.clocksDigital  .clockF .timeZoneDisplay'),
+      zoneDate: document.querySelector('.clocksDigital  .clockF .timeZoneDate'),
+      midDayIndicator: document.querySelector('.clocksDigital  .clockF .midDayIndicator'),
       timeZoneHours: "local"
     }
   
     // zoneUTC: number = 0;
   
     const clockNYC = {
-      millisecondHand: document.querySelector('.clockNYC .millisecond-hand'),
-      secondHand: document.querySelector('.clockNYC .second-hand'),
-      minuteHand: document.querySelector('.clockNYC .minute-hand'),
-      hourHand: document.querySelector('.clockNYC .hour-hand'),
-      timeZoneDisplay: document.querySelector('.clockNYC .timeZoneDisplay'),
-      zoneDate: document.querySelector('.clockNYCContainer .timeZoneDate'),
-      midDayIndicator: document.querySelector('.clockNYC .midDayIndicator'),
+      millisecondHand: document.querySelector('.clocksDigital  .clockNYC .millisecond-hand'),
+      secondHand: document.querySelector('.clocksDigital  .clockNYC .second-hand'),
+      minuteHand: document.querySelector('.clocksDigital  .clockNYC .minute-hand'),
+      hourHand: document.querySelector('.clocksDigital  .clockNYC .hour-hand'),
+      timeZoneDisplay: document.querySelector('.clocksDigital  .clockNYC .timeZoneDisplay'),
+      zoneDate: document.querySelector('.clocksDigital  .clockNYCContainer .timeZoneDate'),
+      midDayIndicator: document.querySelector('.clocksDigital  .clockNYC .midDayIndicator'),
       timeZoneHours: -4
     }
   
     const clockLosAngeles = {
-      millisecondHand: document.querySelector('.clockLosAngeles .millisecond-hand'),
-      secondHand: document.querySelector('.clockLosAngeles .second-hand'),
-      minuteHand: document.querySelector('.clockLosAngeles .minute-hand'),
-      hourHand: document.querySelector('.clockLosAngeles .hour-hand'),
-      timeZoneDisplay: document.querySelector('.clockLosAngeles .timeZoneDisplay'),
-      zoneDate: document.querySelector('.clockLosAngelesContainer .timeZoneDate'),
-      midDayIndicator: document.querySelector('.clockLosAngeles .midDayIndicator'),
+      millisecondHand: document.querySelector('.clocksDigital  .clockLosAngeles .millisecond-hand'),
+      secondHand: document.querySelector('.clocksDigital  .clockLosAngeles .second-hand'),
+      minuteHand: document.querySelector('.clocksDigital  .clockLosAngeles .minute-hand'),
+      hourHand: document.querySelector('.clocksDigital  .clockLosAngeles .hour-hand'),
+      timeZoneDisplay: document.querySelector('.clocksDigital  .clockLosAngeles .timeZoneDisplay'),
+      zoneDate: document.querySelector('.clocksDigital  .clockLosAngelesContainer .timeZoneDate'),
+      midDayIndicator: document.querySelector('.clocksDigital  .clockLosAngeles .midDayIndicator'),
       timeZoneHours: -7
     }
   
     const clockHongKong = {
-      millisecondHand: document.querySelector('.clockHongKong .millisecond-hand'),
-      secondHand: document.querySelector('.clockHongKong .second-hand'),
-      minuteHand: document.querySelector('.clockHongKong .minute-hand'),
-      hourHand: document.querySelector('.clockHongKong .hour-hand'),
-      timeZoneDisplay: document.querySelector('.clockHongKong .timeZoneDisplay'),
-      zoneDate: document.querySelector('.clockHongKongContainer .timeZoneDate'),
-      midDayIndicator: document.querySelector('.clockHongKong .midDayIndicator'),
+      millisecondHand: document.querySelector('.clocksDigital  .clockHongKong .millisecond-hand'),
+      secondHand: document.querySelector('.clocksDigital  .clockHongKong .second-hand'),
+      minuteHand: document.querySelector('.clocksDigital  .clockHongKong .minute-hand'),
+      hourHand: document.querySelector('.clocksDigital  .clockHongKong .hour-hand'),
+      timeZoneDisplay: document.querySelector('.clocksDigital  .clockHongKong .timeZoneDisplay'),
+      zoneDate: document.querySelector('.clocksDigital  .clockHongKongContainer .timeZoneDate'),
+      midDayIndicator: document.querySelector('.clocksDigital  .clockHongKong .midDayIndicator'),
       timeZoneHours: 8
     }
   
     const clockLondon = {
-      millisecondHand: document.querySelector('.clockLondon .millisecond-hand'),
-      secondHand: document.querySelector('.clockLondon .second-hand'),
-      minuteHand: document.querySelector('.clockLondon .minute-hand'),
-      hourHand: document.querySelector('.clockLondon .hour-hand'),
-      timeZoneDisplay: document.querySelector('.clockLondon .timeZoneDisplay'),
-      zoneDate: document.querySelector('.clockLondonContainer .timeZoneDate'),
-      midDayIndicator: document.querySelector('.clockLondon .midDayIndicator'),
+      millisecondHand: document.querySelector('.clocksDigital  .clockLondon .millisecond-hand'),
+      secondHand: document.querySelector('.clocksDigital  .clockLondon .second-hand'),
+      minuteHand: document.querySelector('.clocksDigital  .clockLondon .minute-hand'),
+      hourHand: document.querySelector('.clocksDigital  .clockLondon .hour-hand'),
+      timeZoneDisplay: document.querySelector('.clocksDigital  .clockLondon .timeZoneDisplay'),
+      zoneDate: document.querySelector('.clocksDigital  .clockLondonContainer .timeZoneDate'),
+      midDayIndicator: document.querySelector('.clocksDigital  .clockLondon .midDayIndicator'),
       timeZoneHours: 1
     }
   
