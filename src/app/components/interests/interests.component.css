@@ -1,0 +1,187 @@
+main {
+    display: grid;
+}
+
+.masterButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 0.5em 0em 0.5em auto;
+    width: 20%;
+}
+
+section {
+    border-color: buttonborder;
+    border-width: 3px 0px 0px 0px;
+    border-style: solid;
+}
+
+.dropDownButton {
+    justify-content: space-between;
+    display: flex;
+    border-width: 0px 3px;
+    width: 100%;
+}
+
+.dropDownButton>* {
+    display: inline-block;
+}
+
+button:hover {
+    background-color: rgb(163,163,163);
+    color: rgb(240, 240, 240);
+}
+
+.title {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.title>* {
+    display: inline-block;
+}
+
+.title>div {
+    font-size: 0.6em;
+    font-style: italic;
+    margin-right: 3px;}
+
+.dropDownIcon {
+    font-size: 2.4em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.dropDownIcon.iconFlipped {
+    transform: rotate(180deg);
+}
+
+/* hr {
+    height: 4px;
+} */
+
+.expandable, .divTable, .divTableRow, .divTableCell, .tokencontainer, .imgContainer, img, h2, article {
+    transition: all 1s ease-in-out;
+}
+
+.divTable {
+    display: grid;
+    color: transparent;
+    padding: 0em;
+}
+
+.divTableRow {
+    display: grid;
+    align-items: center;
+    padding: 0em;
+    border: 0px;
+}
+
+.divTableTwoColumn {
+    grid-template-columns: 50% 50%;
+}
+
+.divTableRowTwoColumn {
+    grid-template-columns: 40% 60%;
+}
+
+.divTableRowThreeColumn {
+    grid-template-columns: 22% 25% 53%;
+}
+
+.divTableCellDesc {
+    display: grid;
+    grid-template-rows: 50% 20% 20% 10%;
+    height: 100%;
+    align-items: center;
+    color: transparent;
+    line-height: 0;
+    padding: 0em;
+}
+
+.tokenContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainer {
+    display: flex;
+    max-width: 120px;
+}
+
+img {
+    width: 0%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: calc(1rem + 0.9vw);
+    margin: 0em;
+    line-height: 0em;
+    color: transparent;
+}
+
+.yearsExp, .yearsExpNumber {
+    font-size: calc(0.5em + 0.9vw);
+    font-style: italic;
+    font-weight: 500;
+}
+
+article {
+    font-weight: bold;
+    line-height: 0em;
+    color: transparent;
+}
+
+.sectionFoot {
+    width: 100%;
+    height: 4px;
+    background-color: buttonface;
+    border-color: buttonborder;
+    border-width: 0px 3px 3px 3px;
+    border-style: solid;
+}
+
+/* EXPANSION CONTROLS */
+/* expandable presets */
+.expandable {
+    overflow: hidden;
+    padding: 0em;
+    color: transparent;
+}
+
+/* when the 'expandable' element is turned on */
+.expandable.expanded article {
+    line-height: 1.6em;
+    color: initial;
+}
+
+.expandable.expanded h2 {
+    line-height: 1em;
+    color: initial;
+}
+
+.expandable.expanded img {
+    width: 100%;
+}
+
+/* divTable & divTable children */
+.expandable.expanded .divTable {
+    color: initial;
+}
+
+.expandable.expanded .divTableRow {
+    border-top: 2px gray solid;
+    padding: 1em 0em;
+}
+
+.expandable.expanded .divTableCell {
+    color: initial;
+    padding: 0.25em;
+}
