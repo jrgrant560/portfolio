@@ -16,29 +16,43 @@ export class InterestsComponent implements OnInit {
   ExpDataModelInterests: ExpDataModel[] = [
     {
       id: 0,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-HTML-01.png",
+      imgSrc: "assets\\images\\Interests\\stocksChart.png",
       title: "Stock Investing",
       experience: 0,
       article: ""
     },
     {
       id: 1,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-HTML-01.png",
+      imgSrc: "assets\\images\\Interests\\finance.png",
       title: "Finance & Economics",
       experience: 0,
       article: ""
     },
     {
       id: 2,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-CSS-01.png",
+      imgSrc: "assets\\images\\Interests\\business.png",
       title: "Business",
       experience: 0,
       article: ""
     },
     {
       id: 3,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      imgSrc: "assets\\images\\Interests\\emotions.png",
       title: "Emotional Wholeness",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 4,
+      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      title: "Animation",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 5,
+      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      title: "Storytelling",
       experience: 0,
       article: ""
     }
@@ -48,28 +62,35 @@ export class InterestsComponent implements OnInit {
     {
       id: 0,
       imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
-      title: "The Art of Animation",
+      title: "Electric Bike Riding",
       experience: 0,
       article: ""
     },
     {
       id: 1,
       imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
-      title: "The Art of Storytelling",
+      title: "Paddleboarding",
       experience: 0,
       article: ""
     },
     {
       id: 2,
       imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
-      title: "Electric Bikes",
+      title: "Pickleball",
       experience: 0,
       article: ""
     },
     {
       id: 3,
       imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
-      title: "Playing with Legos!",
+      title: "Exploring New Places",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 4,
+      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      title: "Legos!",
       experience: 0,
       article: ""
     }
