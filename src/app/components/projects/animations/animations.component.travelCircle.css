@@ -1,0 +1,130 @@
+.travelCanvas {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #cff;
+}
+
+.bounceBallContainer .travelCanvas {
+    background: none;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 6s;
+}
+
+.travelBar {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+
+    -webkit-animation-name: travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 4.8s;
+
+    animation-name: travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 4.8s;
+}
+
+.bounceBallContainer .travelBar {
+    animation-duration: 2.4s;
+}
+
+#travelBarC {
+    animation-delay: 1.2s;
+}
+
+#travelBarD {
+    animation-delay: 1.8s;
+}
+
+#travelBarE {
+    animation-delay: 2.1s;
+}
+
+.travelCircle {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+
+    background-image: radial-gradient(ellipse farthest-corner at 25% 25%, #ffffff,#000);
+
+    -webkit-animation-name: jump;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 4.2s;
+
+    animation-name: jump;
+    animation-iteration-count: infinite;
+    animation-duration: 4.2s;
+}
+
+.bounceBallContainer .travelCircle {
+    animation-duration: 2.0s;
+}
+
+#travelCircleC {
+    animation-delay: 1.0s;
+}
+
+#travelCircleC {
+    animation-delay: 1.5s;
+}
+
+#travelCircleE {
+    animation-delay: 1.8s;
+}
+
+
+@-webkit-keyframes travel {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 95%;
+    }
+}
+
+@keyframes travel {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 95%;
+    }
+}
+
+@-webkit-keyframes jump {
+
+    from,
+    to {
+        bottom: 0%;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    50% {
+        bottom: 95%;
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+@keyframes jump {
+
+    from,
+    to {
+        bottom: 0%;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    50% {
+        bottom: 95%;
+        -webkit-animation-timing-function: ease-in;
+    }
+}

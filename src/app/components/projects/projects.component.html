@@ -2,15 +2,15 @@
     <!-- Nav Row 1 -->
     <div></div>
     <button class="projectNavButton" (click)="revealProject('project00')">Group Project: "The Outdoorsman"</button>
-    <button class="projectNavButton" (click)="revealProject('project01')">TicTacToe</button>
-    <button class="projectNavButton" (click)="revealProject('project02')">Clocks (Analog)</button>
-    <button class="projectNavButton" (click)="revealProject('project03')">Clocks (Digital)</button>
-    <button class="projectNavButton" (click)="revealProject('project04')">Calculator</button>
+    <button class="projectNavButton" (click)="revealProject('project01')">❎<br>TicTacToe</button>
+    <button class="projectNavButton" (click)="revealProject('project02')">🕑<br>Clocks (Analog)</button>
+    <button class="projectNavButton" (click)="revealProject('project03')">🕑<br>Clocks (Digital)</button>
+    <button class="projectNavButton" (click)="revealProject('project04')">➕➖✖️➗<br>Calculator</button>
     <button class="projectNavButtonEmpty" (click)="hideAllProjects(); maximizeNavBar()">[ Hide All ]</button>
     <div></div>
     <!-- Nav Row 2 -->
     <div></div>
-    <button class="projectNavButtonEmpty">[ empty ]</button>
+    <button class="projectNavButton" (click)="revealProject('project05')">▶️<br>Web Animations</button>
     <button class="projectNavButtonEmpty">[ empty ]</button>
     <button class="projectNavButtonEmpty">[ empty ]</button>
     <button class="projectNavButtonEmpty">[ empty ]</button>
@@ -74,4 +74,7 @@
 </section>
 <section id="project04" class="project-container">
     <app-calculator class="projectRoute"></app-calculator>
+</section>
+<section id="project05" class="project-container">
+    <app-animations class="projectRoute"></app-animations>
 </section>

@@ -8,6 +8,11 @@
     height: 30vw;
 }
 
+button:hover {
+    background-color: rgb(163,163,163);
+    color: rgb(240, 240, 240);
+}
+
 .projectNavButtonEmpty {
     color: gray;
 }

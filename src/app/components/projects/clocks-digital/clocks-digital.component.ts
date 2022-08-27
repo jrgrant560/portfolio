@@ -242,6 +242,6 @@ export class ClocksDigitalComponent implements OnInit {
       }
     }
 
-    console.log("setDate works")
+    // console.log("setDate works")
   };
 }
