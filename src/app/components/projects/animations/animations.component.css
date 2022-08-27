@@ -1,4 +1,4 @@
-main {
+#animationsContainer {
     width: 100%;
 
     display: flex;
@@ -7,7 +7,7 @@ main {
     align-items: center;
 }
 
-section {
+.animationColumn {
     width: 100%;
 
     display: flex;

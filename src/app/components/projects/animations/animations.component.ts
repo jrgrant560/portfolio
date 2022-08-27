@@ -3,7 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-animations',
   templateUrl: './animations.component.html',
-  styleUrls: ['./animations.component.css', './animations.component.bounceBall.css', './animations.component.travelCircle.css']
+  styleUrls: [
+    './animations.component.css', 
+    '../project-rows.css',
+    './animations-stylesheets/animations.component.bounceBall.css',
+    './animations-stylesheets/animations.component.travelCircle.css',
+    './animations-stylesheets/animations.component.spinner.css'
+  ]
 })
 export class AnimationsComponent implements OnInit {
 
