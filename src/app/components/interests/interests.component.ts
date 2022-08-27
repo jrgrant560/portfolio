@@ -13,11 +13,14 @@ export class InterestsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  imgDefault: string = "assets\\images\\Tokens\\Frameworks\\Token-Angular-01.png";
+
   ExpDataModelInterests: ExpDataModel[] = [
     {
       id: 0,
       imgSrc: "assets\\images\\Interests\\stocksChart.png",
       title: "Stock Investing",
+      subTitle: "",
       experience: 0,
       article: ""
     },
@@ -25,6 +28,7 @@ export class InterestsComponent implements OnInit {
       id: 1,
       imgSrc: "assets\\images\\Interests\\finance.png",
       title: "Finance & Economics",
+      subTitle: "",
       experience: 0,
       article: ""
     },
@@ -32,6 +36,7 @@ export class InterestsComponent implements OnInit {
       id: 2,
       imgSrc: "assets\\images\\Interests\\business.png",
       title: "Business",
+      subTitle: "",
       experience: 0,
       article: ""
     },
@@ -39,20 +44,23 @@ export class InterestsComponent implements OnInit {
       id: 3,
       imgSrc: "assets\\images\\Interests\\emotions.png",
       title: "Emotional Wholeness",
+      subTitle: "",
       experience: 0,
       article: ""
     },
     {
       id: 4,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      imgSrc: "assets\\images\\Interests\\icon_animation.png",
       title: "Animation",
+      subTitle: "",
       experience: 0,
       article: ""
     },
     {
       id: 5,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
-      title: "Storytelling",
+      imgSrc: "assets\\images\\Interests\\storybook.png",
+      title: "Film & Storytelling",
+      subTitle: "",
       experience: 0,
       article: ""
     }
@@ -61,36 +69,41 @@ export class InterestsComponent implements OnInit {
   ExpDataModelHobbies: ExpDataModel[] = [
     {
       id: 0,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      imgSrc: this.imgDefault,
       title: "Electric Bike Riding",
+      subTitle: "",
       experience: 0,
       article: ""
     },
     {
       id: 1,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      imgSrc: this.imgDefault,
       title: "Paddleboarding",
+      subTitle: "",
       experience: 0,
       article: ""
     },
     {
       id: 2,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      imgSrc: this.imgDefault,
       title: "Pickleball",
+      subTitle: "",
       experience: 0,
       article: ""
     },
     {
       id: 3,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      imgSrc: this.imgDefault,
       title: "Exploring New Places",
+      subTitle: "",
       experience: 0,
       article: ""
     },
     {
       id: 4,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
-      title: "Legos!",
+      imgSrc: this.imgDefault,
+      title: "Playing with Legos!",
+      subTitle: "",
       experience: 0,
       article: ""
     }
@@ -101,7 +114,7 @@ export class InterestsComponent implements OnInit {
   //Creativity, Inc.
   //The 4 Hour Workweek by Tim Ferriss
   //Business Secrets from the Bible by Rabbi Daniel Lapin
-  //Make Your Bed by William H McRaven
+  //~SKIP~ Make Your Bed by William H McRaven
   //My Life and Work by Henry Ford
   //The Enneagram: A Christian Perspective
   //12 Rules for Life
@@ -116,29 +129,121 @@ export class InterestsComponent implements OnInit {
   ExpDataModelBooksNonfiction: ExpDataModel[] = [
     {
       id: 0,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
-      title: "Essentialism by Greg McKeown",
+      imgSrc: this.imgDefault,
+      title: "Essentialism",
+      subTitle: "by Greg McKeown",
       experience: 0,
       article: ""
     },
     {
       id: 1,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
-      title: "Walt Disney: An American Original by Bob Thomas",
+      imgSrc: this.imgDefault,
+      title: "Walt Disney: An American Original",
+      subTitle: "by Bob Thomas",
       experience: 0,
       article: ""
     },
     {
       id: 2,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      imgSrc: this.imgDefault,
       title: "Creativity, Inc.",
+      subTitle: "by Ed Catmull and Amy Wallace",
       experience: 0,
       article: ""
     },
     {
       id: 3,
-      imgSrc: "assets\\images\\Tokens\\Languages\\Token-JavaScript-01.png",
+      imgSrc: this.imgDefault,
+      title: "The 4 Hour Workweek",
+      subTitle: "by Tim Ferriss",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 4,
+      imgSrc: this.imgDefault,
+      title: "Business Secrets from the Bible",
+      subTitle: "by Rabbi Daniel Lapin",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 5,
+      imgSrc: this.imgDefault,
+      title: "My Life and Work",
+      subTitle: "by Henry Ford",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 6,
+      imgSrc: this.imgDefault,
+      title: "The Enneagram: A Christian Perspective",
+      subTitle: "by Richard Rohr and Andreas Ebert",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 7,
+      imgSrc: this.imgDefault,
+      title: "12 Rules for Life",
+      subTitle: "by Jordan B Peterson",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 8,
+      imgSrc: this.imgDefault,
+      title: "Beyond Order: 12 More Rules for Life",
+      subTitle: "by Jordan B Peterson",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 9,
+      imgSrc: this.imgDefault,
+      title: "The Brain that Changes Itself",
+      subTitle: "by Norman Doidge",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 10,
+      imgSrc: this.imgDefault,
+      title: "Rich Dad Poor Dad",
+      subTitle: "by Robert Kiyosaki and Sharon Lechter",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 11,
+      imgSrc: this.imgDefault,
+      title: "The 5 Second Rule",
+      subTitle: "by Mel Robbins",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 12,
+      imgSrc: this.imgDefault,
+      title: "Man's Search for Meaning",
+      subTitle: "by Viktor Frankl",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 13,
+      imgSrc: this.imgDefault,
+      title: "The Snowball: Warren Buffett and the Business of Life",
+      subTitle: "by Alice Schroeder",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 14,
+      imgSrc: this.imgDefault,
       title: "Never Split the Difference",
+      subTitle: "by Chris Voss",
       experience: 0,
       article: ""
     }
@@ -161,7 +266,6 @@ export class InterestsComponent implements OnInit {
     //The Name of the Wind
     //The Wise Man's Fear
   //The Alchemist by Paulo Coelho
-  //The Rithmatist by Brandon Sanderson
   //The Unincorporated Man by Dani Kollin & Eytan Kollin
   //Riyria Revelations by Michael J. Sullivan
     //Theft of Swords
@@ -170,11 +274,60 @@ export class InterestsComponent implements OnInit {
 
   ExpDataModelBooksFiction: ExpDataModel[] = [
     {
-      id: 3,
-      imgSrc: "assets\\images\\Tokens\\Frameworks\\Token-Angular-01.png",
-      title: "Angular",
+      id: 0,
+      imgSrc: this.imgDefault,
+      title: "The Mistborn Series",
+      subTitle: "by Brandon Sanderson",
       experience: 0,
-      article: "Angular is an open-source web framework that is used to compile sleek, highly functional Single-Page Applications (SPA's), which allow clients to download and upload new data on the front end without the need to refresh the application. It utilizes a hierarchical orchestra of components, modules, and services that divide tasks into dedicated documents that communicate with each other and allow for quick edits to specific parts of the application. Angular uses TypeScript as its core programming language. I have the most experience with the Angular framework. This portfolio site is built using Angular, and I have used it for several school and personal projects already, which I have added to the 'Projects' section here."
+      article: ""
+    },
+    {
+      id: 1,
+      imgSrc: this.imgDefault,
+      title: "Warbreaker",
+      subTitle: "by Brandon Sanderson",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 2,
+      imgSrc: this.imgDefault,
+      title: "The Stormlight Archives",
+      subTitle: "by Brandon Sanderson",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 3,
+      imgSrc: this.imgDefault,
+      title: "The Kingkiller Chronicles",
+      subTitle: "by Patrick Rothfuss",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 4,
+      imgSrc: this.imgDefault,
+      title: "The Alchemist",
+      subTitle: "by Paulo Coelho",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 5,
+      imgSrc: this.imgDefault,
+      title: "The Unincorporated Man",
+      subTitle: "by Dani Kollin & Eytan Kollin",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 6,
+      imgSrc: this.imgDefault,
+      title: "Riyria Revelations",
+      subTitle: "by Michael J. Sullivan",
+      experience: 0,
+      article: ""
     }
   ];
 
@@ -182,14 +335,6 @@ export class InterestsComponent implements OnInit {
     //Fellowship of the Ring
     //The Two Towers
     //Return of the King
-  //Marvel Cinematic Universe
-    //Captain America: The Winter Soldier
-    //Avengers: Infinity War
-    //Avengers: Endgame
-  //A Silent Voice
-  //Your Name
-  //The Incredibles
-  //Beauty and the Beast (animated)
   //Star Wars
     //Episode 1
     //Episode 2
@@ -198,14 +343,103 @@ export class InterestsComponent implements OnInit {
     //Episode 5
     //Episode 6
     //Rogue One
+  //Marvel Cinematic Universe
+  //Captain America: The Winter Soldier
+  //Avengers: Infinity War
+  //Avengers: Endgame
+  //A Silent Voice
+  //Your Name
+  //The Incredibles
+  //Beauty and the Beast (animated)
 
   ExpDataModelMovies: ExpDataModel[] = [
     {
-      id: 3,
-      imgSrc: "assets\\images\\Tokens\\Frameworks\\Token-Angular-01.png",
-      title: "Angular",
+      id: 0,
+      imgSrc: this.imgDefault,
+      title: "The Lord of The Rings",
+      subTitle: "directed by Peter Jackson",
       experience: 0,
-      article: "Angular is an open-source web framework that is used to compile sleek, highly functional Single-Page Applications (SPA's), which allow clients to download and upload new data on the front end without the need to refresh the application. It utilizes a hierarchical orchestra of components, modules, and services that divide tasks into dedicated documents that communicate with each other and allow for quick edits to specific parts of the application. Angular uses TypeScript as its core programming language. I have the most experience with the Angular framework. This portfolio site is built using Angular, and I have used it for several school and personal projects already, which I have added to the 'Projects' section here."
+      article: ""
+    },
+    {
+      id: 1,
+      imgSrc: this.imgDefault,
+      title: "Star Wars (most of them)",
+      subTitle: "Lucasfilm",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 2,
+      imgSrc: this.imgDefault,
+      title: "Captain America: The Winter Soldier",
+      subTitle: "Marvel",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 3,
+      imgSrc: this.imgDefault,
+      title: "Avengers: Infinity War & Endgame",
+      subTitle: "Marvel",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 4,
+      imgSrc: this.imgDefault,
+      title: "A Silent Voice",
+      subTitle: "Kyoto Animation",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 5,
+      imgSrc: this.imgDefault,
+      title: "Your Name",
+      subTitle: "directed by Makoto Shinkai",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 6,
+      imgSrc: this.imgDefault,
+      title: "The Incredibles",
+      subTitle: "Pixar",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 7,
+      imgSrc: this.imgDefault,
+      title: "Beauty and the Beast (Animated)",
+      subTitle: "Disney",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 8,
+      imgSrc: this.imgDefault,
+      title: "Whisper of the Heart",
+      subTitle: "Studio Ghibli",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 9,
+      imgSrc: this.imgDefault,
+      title: "Spirited Away",
+      subTitle: "Studio Ghibli",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 10,
+      imgSrc: this.imgDefault,
+      title: "Princess Mononoke",
+      subTitle: "Studio Ghibli",
+      experience: 0,
+      article: ""
     }
   ];
 
@@ -220,11 +454,76 @@ export class InterestsComponent implements OnInit {
 
   ExpDataModelShows: ExpDataModel[] = [
     {
-      id: 3,
-      imgSrc: "assets\\images\\Tokens\\Frameworks\\Token-Angular-01.png",
-      title: "Angular",
+      id: 0,
+      imgSrc: this.imgDefault,
+      title: "Avatar: The Last Airbender",
+      subTitle: "Created by Michael Dante DiMartino, Bryan Konietzko, and Aaron Ehasz",
       experience: 0,
-      article: "Angular is an open-source web framework that is used to compile sleek, highly functional Single-Page Applications (SPA's), which allow clients to download and upload new data on the front end without the need to refresh the application. It utilizes a hierarchical orchestra of components, modules, and services that divide tasks into dedicated documents that communicate with each other and allow for quick edits to specific parts of the application. Angular uses TypeScript as its core programming language. I have the most experience with the Angular framework. This portfolio site is built using Angular, and I have used it for several school and personal projects already, which I have added to the 'Projects' section here."
+      article: ""
+    },
+    {
+      id: 1,
+      imgSrc: this.imgDefault,
+      title: "Star Wars: The Clone Wars",
+      subTitle: "Lucasfilm",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 2,
+      imgSrc: this.imgDefault,
+      title: "Over the Garden Wall",
+      subTitle: "Cartoon Network",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 3,
+      imgSrc: this.imgDefault,
+      title: "The Amazing World of Gumball",
+      subTitle: "Cartoon Network",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 4,
+      imgSrc: this.imgDefault,
+      title: "The Simpsons (classic)",
+      subTitle: "Created by Matt Groening",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 5,
+      imgSrc: this.imgDefault,
+      title: "Fullmetal Alchemist: Brotherhood",
+      subTitle: "Studio Bones",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 6,
+      imgSrc: this.imgDefault,
+      title: "Re:Zero",
+      subTitle: "White Fox",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 7,
+      imgSrc: this.imgDefault,
+      title: "Mob Psycho 100",
+      subTitle: "Studio Bones",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 8,
+      imgSrc: this.imgDefault,
+      title: "Erased",
+      subTitle: "A-1 Pictures",
+      experience: 0,
+      article: ""
     }
   ];
 
@@ -235,14 +534,72 @@ export class InterestsComponent implements OnInit {
   //Joseph Carlson
   //Chris Voss
   //Kris Vallotton
+  //Bill Johnson
 
   ExpDataModelInfluencers: ExpDataModel[] = [
     {
-      id: 1,
-      imgSrc: "assets\\images\\Tokens\\Frameworks\\Token-Angular-01.png",
-      title: "Angular",
+      id: 0,
+      imgSrc: this.imgDefault,
+      title: "Jesus Christ",
+      subTitle: "Son of God, The Messiah, lots of titles",
       experience: 0,
-      article: "Angular is an open-source web framework that is used to compile sleek, highly functional Single-Page Applications (SPA's), which allow clients to download and upload new data on the front end without the need to refresh the application. It utilizes a hierarchical orchestra of components, modules, and services that divide tasks into dedicated documents that communicate with each other and allow for quick edits to specific parts of the application. Angular uses TypeScript as its core programming language. I have the most experience with the Angular framework. This portfolio site is built using Angular, and I have used it for several school and personal projects already, which I have added to the 'Projects' section here."
+      article: ""
+    },
+    {
+      id: 1,
+      imgSrc: this.imgDefault,
+      title: "Jordan B Peterson",
+      subTitle: "Psychology Professor, Clinical Psychologist, Philosopher",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 2,
+      imgSrc: this.imgDefault,
+      title: "Walt Disney",
+      subTitle: "Founder of The Walt Disney Company and Disney Animation",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 3,
+      imgSrc: this.imgDefault,
+      title: "Tim Ferriss",
+      subTitle: "Entepreneur, Lifestyle Guru",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 4,
+      imgSrc: this.imgDefault,
+      title: "Joseph Carlson",
+      subTitle: "Finance Influencer, Stock Investor",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 5,
+      imgSrc: this.imgDefault,
+      title: "Chris Voss",
+      subTitle: "CEO of The Black Swan Group, FBI Hostage Negotiator",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 6,
+      imgSrc: this.imgDefault,
+      title: "Kris Vallotton",
+      subTitle: "Christian Influencer, Senior Leader at Bethel Church",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 7,
+      imgSrc: this.imgDefault,
+      title: "Bill Johnson",
+      subTitle: "Christian Influencer, Senior Leader at Bethel Church",
+      experience: 0,
+      article: ""
     }
   ];
 
@@ -258,13 +615,78 @@ export class InterestsComponent implements OnInit {
 
   ExpDataModelVideogames: ExpDataModel[] = [
     {
-      id: 1,
-      imgSrc: "assets\\images\\Tokens\\Frameworks\\Token-Angular-01.png",
-      title: "Angular",
+      id: 0,
+      imgSrc: this.imgDefault,
+      title: "The Legend of Zelda: Ocarina of Time",
+      subTitle: "Nintendo",
       experience: 0,
-      article: "Angular is an open-source web framework that is used to compile sleek, highly functional Single-Page Applications (SPA's), which allow clients to download and upload new data on the front end without the need to refresh the application. It utilizes a hierarchical orchestra of components, modules, and services that divide tasks into dedicated documents that communicate with each other and allow for quick edits to specific parts of the application. Angular uses TypeScript as its core programming language. I have the most experience with the Angular framework. This portfolio site is built using Angular, and I have used it for several school and personal projects already, which I have added to the 'Projects' section here."
+      article: ""
+    },
+    {
+      id: 1,
+      imgSrc: this.imgDefault,
+      title: "Undertale",
+      subTitle: "Toby Fox",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 2,
+      imgSrc: this.imgDefault,
+      title: "Factorio",
+      subTitle: "Wube Software",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 3,
+      imgSrc: this.imgDefault,
+      title: "Psychonauts",
+      subTitle: "Double Fine Productions",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 4,
+      imgSrc: this.imgDefault,
+      title: "Star Wars: Battlefront 2 (Classic)",
+      subTitle: "LucasArts",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 5,
+      imgSrc: this.imgDefault,
+      title: "Command & Conquer: Generals",
+      subTitle: "EA Games",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 6,
+      imgSrc: this.imgDefault,
+      title: "Half-Life 2",
+      subTitle: "Valve",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 7,
+      imgSrc: this.imgDefault,
+      title: "Team Fortress 2",
+      subTitle: "Valve",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 8,
+      imgSrc: this.imgDefault,
+      title: "Rome: Total War",
+      subTitle: "Activision",
+      experience: 0,
+      article: ""
     }
-  ];  
+  ];
 
   // adds "expanded" class to all "expandable" elements; adds "iconFlipped" class from all "iconFlipped" elements
   expandAll() {

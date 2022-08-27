@@ -16,7 +16,7 @@
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
-                <div class="divTableCell divTableCellDesc2">
+                <div class="divTableCell divTableCellDescSingle">
                     <h2>{{ExpData.title}}</h2>
                 </div>
             </div>
@@ -35,10 +35,8 @@
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
-                <div class="divTableCell divTableCellDesc">
+                <div class="divTableCell divTableCellDescSingle">
                     <h2>{{ExpData.title}}</h2>
-                    <div class="yearsExp">Years of Experience:</div>
-                    <div class="yearsExpNumber">{{ExpData.experience}}</div>
                 </div>
             </div>
         </span>
@@ -56,10 +54,9 @@
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
-                <div class="divTableCell divTableCellDesc">
+                <div class="divTableCell divTableCellDescDouble">
                     <h2>{{ExpData.title}}</h2>
-                    <div class="yearsExp">Years of Experience:</div>
-                    <div class="yearsExpNumber">{{ExpData.experience}}</div>
+                    <div class="subTitle">{{ExpData.subTitle}}</div>
                 </div>
             </div>
         </span>
@@ -77,10 +74,9 @@
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
-                <div class="divTableCell divTableCellDesc">
+                <div class="divTableCell divTableCellDescDouble">
                     <h2>{{ExpData.title}}</h2>
-                    <div class="yearsExp">Years of Experience:</div>
-                    <div class="yearsExpNumber">{{ExpData.experience}}</div>
+                    <div class="subTitle">{{ExpData.subTitle}}</div>
                 </div>
             </div>
         </span>
@@ -91,20 +87,16 @@
             <h1 class="title">📽️ Favorite Movies</h1>
             <span id="dropDownIcon04" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
-        <span id="dropDown04" class="divTable expandable">
-            <div class="divTableRow divTableRowThreeColumn" *ngFor="let ExpData of ExpDataModelMovies">
+        <span id="dropDown04" class="divTable divTableTwoColumn expandable">
+            <div class="divTableRow divTableRowTwoColumn" *ngFor="let ExpData of ExpDataModelMovies">
                 <div class="divTableCell tokenContainer">
                     <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
-                <div class="divTableCell divTableCellDesc">
+                <div class="divTableCell divTableCellDescDouble">
                     <h2>{{ExpData.title}}</h2>
-                    <div class="yearsExp">Years of Experience:</div>
-                    <div class="yearsExpNumber">{{ExpData.experience}}</div>
-                </div>
-                <div class="divTableCell">
-                    <article>{{ExpData.article}}</article>
+                    <div class="subTitle">{{ExpData.subTitle}}</div>
                 </div>
             </div>
         </span>
@@ -115,44 +107,16 @@
             <h1 class="title">📺 Favorite TV Shows</h1>
             <span id="dropDownIcon05" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
-        <span id="dropDown05" class="divTable expandable">
-            <div class="divTableRow divTableRowThreeColumn" *ngFor="let ExpData of ExpDataModelShows">
+        <span id="dropDown05" class="divTable divTableTwoColumn expandable">
+            <div class="divTableRow divTableRowTwoColumn" *ngFor="let ExpData of ExpDataModelShows">
                 <div class="divTableCell tokenContainer">
                     <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
-                <div class="divTableCell divTableCellDesc">
+                <div class="divTableCell divTableCellDescDouble">
                     <h2>{{ExpData.title}}</h2>
-                    <div class="yearsExp">Years of Experience:</div>
-                    <div class="yearsExpNumber">{{ExpData.experience}}</div>
-                </div>
-                <div class="divTableCell">
-                    <article>{{ExpData.article}}</article>
-                </div>
-            </div>
-        </span>
-    </section>
-
-    <section>
-        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown06', 'dropDownIcon06')">
-            <h1 class="title">🎙️ Favorite Influencers</h1>
-            <span id="dropDownIcon06" class="dropDownIcon material-symbols-outlined">expand_more</span>
-        </button>
-        <span id="dropDown06" class="divTable expandable">
-            <div class="divTableRow divTableRowThreeColumn" *ngFor="let ExpData of ExpDataModelInfluencers">
-                <div class="divTableCell tokenContainer">
-                    <div class="imgContainer">
-                        <img src="{{ExpData.imgSrc}}">
-                    </div>
-                </div>
-                <div class="divTableCell divTableCellDesc">
-                    <h2>{{ExpData.title}}</h2>
-                    <div class="yearsExp">Years of Experience:</div>
-                    <div class="yearsExpNumber">{{ExpData.experience}}</div>
-                </div>
-                <div class="divTableCell">
-                    <article>{{ExpData.article}}</article>
+                    <div class="subTitle">{{ExpData.subTitle}}</div>
                 </div>
             </div>
         </span>
@@ -163,26 +127,42 @@
             <h1 class="title">🎮 Favorite Videogames</h1>
             <span id="dropDownIcon07" class="dropDownIcon material-symbols-outlined">expand_more</span>
         </button>
-        <span id="dropDown07" class="divTable expandable">
-            <div class="divTableRow divTableRowThreeColumn" *ngFor="let ExpData of ExpDataModelVideogames">
+        <span id="dropDown07" class="divTable divTableTwoColumn expandable">
+            <div class="divTableRow divTableRowTwoColumn" *ngFor="let ExpData of ExpDataModelVideogames">
                 <div class="divTableCell tokenContainer">
                     <div class="imgContainer">
                         <img src="{{ExpData.imgSrc}}">
                     </div>
                 </div>
-                <div class="divTableCell divTableCellDesc">
+                <div class="divTableCell divTableCellDescDouble">
                     <h2>{{ExpData.title}}</h2>
-                    <div class="yearsExp">Years of Experience:</div>
-                    <div class="yearsExpNumber">{{ExpData.experience}}</div>
-                </div>
-                <div class="divTableCell">
-                    <article>{{ExpData.article}}</article>
+                    <div class="subTitle">{{ExpData.subTitle}}</div>
                 </div>
             </div>
         </span>
         <!-- added a foot for the final section -->
         <div class="sectionFoot"></div>
     </section>
+
+    <!-- <section>
+        <button class="dropDownButton" (click)="dropDownButtonClick('dropDown06', 'dropDownIcon06')">
+            <h1 class="title">🎙️ Favorite Influencers</h1>
+            <span id="dropDownIcon06" class="dropDownIcon material-symbols-outlined">expand_more</span>
+        </button>
+        <span id="dropDown06" class="divTable divTableTwoColumn expandable">
+            <div class="divTableRow divTableRowTwoColumn" *ngFor="let ExpData of ExpDataModelInfluencers">
+                <div class="divTableCell tokenContainer">
+                    <div class="imgContainer">
+                        <img src="{{ExpData.imgSrc}}">
+                    </div>
+                </div>
+                <div class="divTableCell divTableCellDescDouble">
+                    <h2>{{ExpData.title}}</h2>
+                    <div class="subTitle">{{ExpData.subTitle}}</div>
+                </div>
+            </div>
+        </span>
+    </section> -->
 
     <span class="masterButtons">
         <button class="masterButton" (click)="expandAll()">Expand All</button>

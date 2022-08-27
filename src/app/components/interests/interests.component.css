@@ -91,9 +91,8 @@ button:hover {
     grid-template-columns: 22% 25% 53%;
 }
 
-.divTableCellDesc {
+.divTableCellDescSingle {
     display: grid;
-    grid-template-rows: 50% 20% 20% 10%;
     height: 100%;
     align-items: center;
     color: transparent;
@@ -101,8 +100,9 @@ button:hover {
     padding: 0em;
 }
 
-.divTableCellDesc2 {
+.divTableCellDescDouble {
     display: grid;
+    grid-template-rows: 70% 30%;
     height: 100%;
     align-items: center;
     color: transparent;
@@ -118,7 +118,7 @@ button:hover {
 
 .imgContainer {
     display: flex;
-    max-width: 120px;
+    max-width: 90%;
 }
 
 img, .iconImg {
@@ -136,7 +136,7 @@ h2 {
     color: transparent;
 }
 
-.yearsExp, .yearsExpNumber {
+.subTitle {
     font-size: calc(0.5em + 0.9vw);
     font-style: italic;
     font-weight: 500;
@@ -174,6 +174,10 @@ article {
 .expandable.expanded h2 {
     line-height: 1em;
     color: initial;
+}
+
+.expandable.expanded .subTitle {
+    line-height: initial;
 }
 
 .expandable.expanded img {
