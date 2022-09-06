@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { AnimationsComponent } from './animations/animations.component';
 
 @Component({
+  providers: [AnimationsComponent],
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css', './project-rows.css']
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private AnimationsComponent: AnimationsComponent) { }
 
   ngOnInit(): void {
   }
@@ -59,5 +61,9 @@ export class ProjectsComponent implements OnInit {
     let projectNavbar = document.getElementById("projectNav")!;
     // adds "projectNavExpanded" class to "projectNav" element
     projectNavbar.classList.add("projectNavExpanded");
+  }
+
+  loadBouncingBalls() {
+    this.AnimationsComponent.loadBouncingBalls();
   }
 }

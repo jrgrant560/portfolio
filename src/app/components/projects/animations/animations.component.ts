@@ -27,4 +27,13 @@ export class AnimationsComponent implements OnInit {
     let element = document.querySelector(id) as HTMLElement;
     element.style.opacity='75%';
   }
+
+  loadBouncingBalls() {
+    this.setOpacity100('#circleA');
+    this.setOpacity100('#circleB');
+    this.setOpacity100('#circleC');
+    this.setOpacity100('#circleD');
+    this.setOpacity100('#circleE');
+    this.setOpacity75('#travelCanvasB')
+  }
 }

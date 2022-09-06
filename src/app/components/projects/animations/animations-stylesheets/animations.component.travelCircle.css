@@ -36,15 +36,15 @@
 }
 
 #travelBarC {
-    animation-delay: 1.2s;
+    animation-delay: -1.2s;
 }
 
 #travelBarD {
-    animation-delay: 1.8s;
+    animation-delay: -1.8s;
 }
 
 #travelBarE {
-    animation-delay: 2.1s;
+    animation-delay: -2.1s;
 }
 
 .travelCircle {
@@ -69,15 +69,15 @@
 }
 
 #travelCircleC {
-    animation-delay: 1.0s;
+    animation-delay: -0.5s;
 }
 
-#travelCircleC {
-    animation-delay: 1.5s;
+#travelCircleD {
+    animation-delay: -1.5s;
 }
 
 #travelCircleE {
-    animation-delay: 1.8s;
+    animation-delay: -1.8s;
 }
 
 

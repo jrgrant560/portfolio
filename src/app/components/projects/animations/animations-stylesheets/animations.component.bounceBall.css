@@ -45,40 +45,34 @@
 
 #circleA {
     background-image: radial-gradient(ellipse farthest-corner at 25% 25%, #f00,#000);
-
-    transition-delay: 1s;
 }
 
 #circleB {
     background-image: radial-gradient(ellipse farthest-corner at 25% 25%, rgb(255, 170, 0),#000);
 
     /* animation: bounce2 1.4s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite; */
-    animation-delay: 1s;
-    transition-delay: 2s;
+    animation-delay: -1s;
 }
 
 #circleC {
     background-image: radial-gradient(ellipse farthest-corner at 25% 25%, rgb(55, 255, 155),#000);
 
     /* animation: bounce2 1.2s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite; */
-    animation-delay: 2s;
-    transition-delay: 3s;
+    animation-delay: -2s;
 }
 
 #circleD {
     background-image: radial-gradient(ellipse farthest-corner at 25% 25%, rgb(48, 185, 227),#000);
 
     /* animation: bounce2 1.2s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite; */
-    animation-delay: 2.2s;
-    transition-delay: 4s;
+    animation-delay: -2.2s;
 }
 
 #circleE {
     background-image: radial-gradient(ellipse farthest-corner at 25% 25%, rgb(218, 35, 139),#000);
 
     /* animation: bounce2 1.2s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite; */
-    animation-delay: 2.5s;
-    transition-delay: 5s;
+    animation-delay: -2.5s;
 }
 
 
