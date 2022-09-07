@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: [
     './color-sliders.component.css',
     './color-sliders-stylesheets/color-sliders.component.palette-squares.css',
-    './color-sliders-stylesheets/color-sliders.component.options.css'
+    './color-sliders-stylesheets/color-sliders.component.options.css',
+    '../project-rows.css'
   ]
 })
 export class ColorSlidersComponent implements OnInit {
@@ -215,27 +216,4 @@ export class ColorSlidersComponent implements OnInit {
     }
   }
 
-  // w3color(color, elmnt) {
-  //   if (!(this instanceof w3color)) { return new w3color(color, elmnt); }
-  //   if (typeof color == "object") {return color; }
-  //   this.attachValues(toColorObject(color));
-  //   if (elmnt) {elmnt.style.backgroundColor = this.toRgbString();}
-  // }
-
-  // w3color.prototype = {
-  //   toRgbString : function () {
-  //     return "rgb(" + this.red + ", " + this.green + ", " + this.blue + ")";
-  //   }
-  // }
-
-  // w3SetColorsByAttributeCMYK() {
-  //   var z;
-  //   var att;
-
-  //   z = document.getElementById("displayCMYK") as CustomElement;
-
-  //   att = z["data-w3-color"];
-
-  //   z.style.backgroundColor = w3color(att).toRgbString();
-  // }
 }
