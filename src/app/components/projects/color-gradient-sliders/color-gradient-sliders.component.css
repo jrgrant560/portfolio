@@ -1,6 +1,7 @@
 #pickerContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 4em;
     align-items: center;
 }
 
@@ -9,8 +10,6 @@
 }
 
 .picker {
-    width: 90%;
-    margin: 5%;
     font-size: 1.6em;
 }
 
@@ -98,12 +97,14 @@ input, select {
 #displayLinearGradient {
     height: auto;
     aspect-ratio: 1 / 1;
+    max-width: 350px;
     background-image: linear-gradient(90deg, red, green, blue);
 }
 
 #displayRadialGradient {
     height: auto;
     aspect-ratio: 1 / 1;
+    max-width: 350px;
     border-radius: 50%;
     background-image: radial-gradient(ellipse at 25% 25%,red, green, blue);
 }

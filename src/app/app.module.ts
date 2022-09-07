@@ -23,6 +23,7 @@ import { ClocksAnalogComponent } from './components/projects/clocks-analog/clock
 import { ClocksDigitalComponent } from './components/projects/clocks-digital/clocks-digital.component';
 import { AnimationsComponent } from './components/projects/animations/animations.component';
 import { ColorSlidersComponent } from './components/projects/color-sliders/color-sliders.component';
+import { ColorGradientSlidersComponent } from './components/projects/color-gradient-sliders/color-gradient-sliders.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ColorSlidersComponent } from './components/projects/color-sliders/color
     ClocksAnalogComponent,
     ClocksDigitalComponent,
     AnimationsComponent,
-    ColorSlidersComponent
+    ColorSlidersComponent,
+    ColorGradientSlidersComponent
   ],
   imports: [
     BrowserModule,
