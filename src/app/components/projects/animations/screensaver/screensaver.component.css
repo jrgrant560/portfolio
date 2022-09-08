@@ -1,0 +1,29 @@
+#screensaver {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    min-width: 110px;
+    background-color: black;
+
+    border: rgb(83, 83, 83) solid 0.5em;
+    border-radius: 0.5em;
+}
+
+#screensaverScreen {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#screensaverImgContainer {
+    position: absolute;
+    width: 80px;
+    display: flex;
+}
+
+#screensaverImg {
+    width: 100%;
+    height: auto;
+    opacity: 80%;
+}

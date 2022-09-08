@@ -1,19 +1,34 @@
 #animationsContainer {
     width: 100%;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+    justify-items: center;
+    align-content: center;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.animationColumn, .animationTwoColumn, .animationFourColumn {
+    width: 100%;
+
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.animationColumn {
-    width: 100%;
+.animationTwoColumn {
+    grid-column: span 2;
+}
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.animationThreeColumn {
+    grid-column: span 3;
+}
+
+.animationFourColumn {
+    grid-column: span 4;
 }
 
 button:hover {

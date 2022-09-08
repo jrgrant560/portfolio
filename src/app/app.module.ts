@@ -24,6 +24,7 @@ import { ClocksDigitalComponent } from './components/projects/clocks-digital/clo
 import { AnimationsComponent } from './components/projects/animations/animations.component';
 import { ColorSlidersComponent } from './components/projects/color-sliders/color-sliders.component';
 import { ColorGradientSlidersComponent } from './components/projects/color-gradient-sliders/color-gradient-sliders.component';
+import { ScreensaverComponent } from './components/projects/animations/screensaver/screensaver.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ColorGradientSlidersComponent } from './components/projects/color-gradi
     ClocksDigitalComponent,
     AnimationsComponent,
     ColorSlidersComponent,
-    ColorGradientSlidersComponent
+    ColorGradientSlidersComponent,
+    ScreensaverComponent
   ],
   imports: [
     BrowserModule,
