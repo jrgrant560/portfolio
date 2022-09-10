@@ -25,6 +25,7 @@ import { AnimationsComponent } from './components/projects/animations/animations
 import { ColorSlidersComponent } from './components/projects/color-sliders/color-sliders.component';
 import { ColorGradientSlidersComponent } from './components/projects/color-gradient-sliders/color-gradient-sliders.component';
 import { ScreensaverComponent } from './components/projects/animations/screensaver/screensaver.component';
+import { AnimationBarberpoleComponent } from './components/projects/animations/animation-barberpole/animation-barberpole.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ScreensaverComponent } from './components/projects/animations/screensav
     AnimationsComponent,
     ColorSlidersComponent,
     ColorGradientSlidersComponent,
-    ScreensaverComponent
+    ScreensaverComponent,
+    AnimationBarberpoleComponent
   ],
   imports: [
     BrowserModule,

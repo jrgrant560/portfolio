@@ -1,0 +1,98 @@
+main {
+    width: 100%;
+    height: auto;
+    background-color: #424242;
+    display: flex;
+    border-radius: 5%;
+}
+
+.barberContainer {
+    display: block;
+    width: 80px;
+    aspect-ratio: 1 / 3;
+    margin: auto;
+}
+
+.capBall {
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    border-radius: 50%;
+    background: radial-gradient(
+        ellipse at 25% 25%,
+        white 15%,
+        #6a6a6a
+    );
+}
+
+.capEnd {
+    width: 60%;
+    aspect-ratio: 3 / 1;
+    margin: auto;
+    background: radial-gradient(
+        ellipse at 25% 25%,
+        white 15%,
+        #6a6a6a
+    );}
+
+.capBottom {
+    width: 100%;
+    aspect-ratio: 5 / 1;
+    background: radial-gradient(
+        ellipse at 25% 25%,
+        white 15%,
+        #6a6a6a
+    );}
+
+.poleContainer {
+    width: 80%;
+    aspect-ratio: 1 / 2.5;
+    margin: auto;
+}
+
+.pole {
+    height: 100%;
+    background: linear-gradient(
+        -45deg,
+        white 0%,
+        white 12.5%,
+        red 12.5%,
+        red 25%,
+        white 25%,
+        white 37.5%,
+        blue 37.5%,
+        blue 50%,
+        white 50%,
+        white 62.5%,
+        red 62.5%,
+        red 75%,
+        white 75%,
+        white 87.5%,
+        blue 87.5%,
+        blue 100%
+    );
+    background-size: 50% 20%;
+
+    -webkit-animation: barberpole 1.5s infinite linear;
+    animation: barberpole 1.5s infinite linear;
+}
+
+@-webkit-keyframes barberpole {
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 100%;
+    }
+}
+
+@keyframes barberpole {
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 100%;
+    }
+}
