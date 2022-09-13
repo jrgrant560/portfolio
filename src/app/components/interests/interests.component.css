@@ -203,3 +203,11 @@ article {
     color: initial;
     padding: 0.25em;
 }
+
+#dropDown02.expanded .imgContainer,
+#dropDown03.expanded .imgContainer,
+#dropDown04.expanded .imgContainer,
+#dropDown05.expanded .imgContainer,
+#dropDown07.expanded .imgContainer {
+    border: 2px solid;
+}

@@ -129,7 +129,7 @@ export class InterestsComponent implements OnInit {
   ExpDataModelBooksNonfiction: ExpDataModel[] = [
     {
       id: 0,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\essentialism.jpg",
       title: "Essentialism",
       subTitle: "by Greg McKeown",
       experience: 0,
@@ -137,7 +137,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 1,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\waltdisney.jpg",
       title: "Walt Disney: An American Original",
       subTitle: "by Bob Thomas",
       experience: 0,
@@ -145,7 +145,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 2,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\CreativityInc.jpg",
       title: "Creativity, Inc.",
       subTitle: "by Ed Catmull and Amy Wallace",
       experience: 0,
@@ -153,7 +153,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 3,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\4hourworkweek.jpg",
       title: "The 4 Hour Workweek",
       subTitle: "by Tim Ferriss",
       experience: 0,
@@ -161,7 +161,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 4,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\businesssecrets.jpg",
       title: "Business Secrets from the Bible",
       subTitle: "by Rabbi Daniel Lapin",
       experience: 0,
@@ -169,7 +169,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 5,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\henryford.jpg",
       title: "My Life and Work",
       subTitle: "by Henry Ford",
       experience: 0,
@@ -177,7 +177,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 6,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\enneagram.jpg",
       title: "The Enneagram: A Christian Perspective",
       subTitle: "by Richard Rohr and Andreas Ebert",
       experience: 0,
@@ -185,7 +185,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 7,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\12rules.jpg",
       title: "12 Rules for Life",
       subTitle: "by Jordan B Peterson",
       experience: 0,
@@ -193,7 +193,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 8,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\beyondOrder.jpg",
       title: "Beyond Order: 12 More Rules for Life",
       subTitle: "by Jordan B Peterson",
       experience: 0,
@@ -201,7 +201,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 9,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\brainChangesItself.jpg",
       title: "The Brain that Changes Itself",
       subTitle: "by Norman Doidge",
       experience: 0,
@@ -209,7 +209,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 10,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\richdadpoordad.jpg",
       title: "Rich Dad Poor Dad",
       subTitle: "by Robert Kiyosaki and Sharon Lechter",
       experience: 0,
@@ -217,7 +217,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 11,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\5secondrule.jpg",
       title: "The 5 Second Rule",
       subTitle: "by Mel Robbins",
       experience: 0,
@@ -225,7 +225,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 12,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\manMeaning.jpg",
       title: "Man's Search for Meaning",
       subTitle: "by Viktor Frankl",
       experience: 0,
@@ -233,7 +233,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 13,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\snowball.jpg",
       title: "The Snowball: Warren Buffett and the Business of Life",
       subTitle: "by Alice Schroeder",
       experience: 0,
@@ -241,7 +241,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 14,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\neverSplit.jpg",
       title: "Never Split the Difference",
       subTitle: "by Chris Voss",
       experience: 0,
@@ -275,7 +275,7 @@ export class InterestsComponent implements OnInit {
   ExpDataModelBooksFiction: ExpDataModel[] = [
     {
       id: 0,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\fiction\\mistbornseries.jpg",
       title: "The Mistborn Series",
       subTitle: "by Brandon Sanderson",
       experience: 0,
@@ -283,7 +283,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 1,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\fiction\\warbreaker.jpg",
       title: "Warbreaker",
       subTitle: "by Brandon Sanderson",
       experience: 0,
@@ -291,7 +291,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 2,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\fiction\\stormlight.jpg",
       title: "The Stormlight Archives",
       subTitle: "by Brandon Sanderson",
       experience: 0,
@@ -299,7 +299,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 3,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\fiction\\kingkiller.jpg",
       title: "The Kingkiller Chronicles",
       subTitle: "by Patrick Rothfuss",
       experience: 0,
@@ -307,7 +307,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 4,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\fiction\\alchemist.jpg",
       title: "The Alchemist",
       subTitle: "by Paulo Coelho",
       experience: 0,
@@ -315,7 +315,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 5,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\fiction\\unincorporatedMan.jpg",
       title: "The Unincorporated Man",
       subTitle: "by Dani Kollin & Eytan Kollin",
       experience: 0,
@@ -323,7 +323,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 6,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Books\\fiction\\riyriaRevelations.webp",
       title: "Riyria Revelations",
       subTitle: "by Michael J. Sullivan",
       experience: 0,
@@ -355,7 +355,7 @@ export class InterestsComponent implements OnInit {
   ExpDataModelMovies: ExpDataModel[] = [
     {
       id: 0,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Movies\\LOTR.webp",
       title: "The Lord of The Rings",
       subTitle: "directed by Peter Jackson",
       experience: 0,
@@ -363,7 +363,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 1,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Movies\\starwars.jpg",
       title: "Star Wars (most of them)",
       subTitle: "Lucasfilm",
       experience: 0,
@@ -371,7 +371,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 2,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Movies\\wintersoldier.jpg",
       title: "Captain America: The Winter Soldier",
       subTitle: "Marvel",
       experience: 0,
@@ -379,7 +379,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 3,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Movies\\infinityWar.jpg",
       title: "Avengers: Infinity War & Endgame",
       subTitle: "Marvel",
       experience: 0,
@@ -387,7 +387,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 4,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Movies\\silentvoice.jpg",
       title: "A Silent Voice",
       subTitle: "Kyoto Animation",
       experience: 0,
@@ -395,7 +395,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 5,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Movies\\YourName.jpg",
       title: "Your Name",
       subTitle: "directed by Makoto Shinkai",
       experience: 0,
@@ -403,7 +403,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 6,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Movies\\incredibles.jpg",
       title: "The Incredibles",
       subTitle: "Pixar",
       experience: 0,
@@ -411,31 +411,39 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 7,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Movies\\coco.jpg",
+      title: "Coco",
+      subTitle: "Pixar",
+      experience: 0,
+      article: ""
+    },
+    {
+      id: 8,
+      imgSrc: "assets\\images\\Interests\\Movies\\beautybeast.jpg",
       title: "Beauty and the Beast (Animated)",
       subTitle: "Disney",
       experience: 0,
       article: ""
     },
     {
-      id: 8,
-      imgSrc: this.imgDefault,
+      id: 9,
+      imgSrc: "assets\\images\\Interests\\Movies\\whisperheart.jpg",
       title: "Whisper of the Heart",
       subTitle: "Studio Ghibli",
       experience: 0,
       article: ""
     },
     {
-      id: 9,
-      imgSrc: this.imgDefault,
+      id: 10,
+      imgSrc: "assets\\images\\Interests\\Movies\\spirited.jpg",
       title: "Spirited Away",
       subTitle: "Studio Ghibli",
       experience: 0,
       article: ""
     },
     {
-      id: 10,
-      imgSrc: this.imgDefault,
+      id: 11,
+      imgSrc: "assets\\images\\Interests\\Movies\\Princess_Mononoke.webp",
       title: "Princess Mononoke",
       subTitle: "Studio Ghibli",
       experience: 0,
@@ -455,7 +463,7 @@ export class InterestsComponent implements OnInit {
   ExpDataModelShows: ExpDataModel[] = [
     {
       id: 0,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\TV\\airbender.jpg",
       title: "Avatar: The Last Airbender",
       subTitle: "Created by Michael Dante DiMartino, Bryan Konietzko, and Aaron Ehasz",
       experience: 0,
@@ -463,7 +471,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 1,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\TV\\clonewars.jpg",
       title: "Star Wars: The Clone Wars",
       subTitle: "Lucasfilm",
       experience: 0,
@@ -471,23 +479,23 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 2,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\TV\\otgw.jpg",
       title: "Over the Garden Wall",
       subTitle: "Cartoon Network",
       experience: 0,
       article: ""
     },
-    {
-      id: 3,
-      imgSrc: this.imgDefault,
-      title: "The Amazing World of Gumball",
-      subTitle: "Cartoon Network",
-      experience: 0,
-      article: ""
-    },
+    // {
+    //   id: 3,
+    //   imgSrc: this.imgDefault,
+    //   title: "The Amazing World of Gumball",
+    //   subTitle: "Cartoon Network",
+    //   experience: 0,
+    //   article: ""
+    // },
     {
       id: 4,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\TV\\simpsons.jpg",
       title: "The Simpsons (classic)",
       subTitle: "Created by Matt Groening",
       experience: 0,
@@ -495,7 +503,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 5,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\TV\\fullmetal.jpg",
       title: "Fullmetal Alchemist: Brotherhood",
       subTitle: "Studio Bones",
       experience: 0,
@@ -503,7 +511,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 6,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\TV\\reZero.jpg",
       title: "Re:Zero",
       subTitle: "White Fox",
       experience: 0,
@@ -511,7 +519,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 7,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\TV\\mobpsycho.jpg",
       title: "Mob Psycho 100",
       subTitle: "Studio Bones",
       experience: 0,
@@ -519,7 +527,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 8,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\TV\\erased.jpg",
       title: "Erased",
       subTitle: "A-1 Pictures",
       experience: 0,
@@ -616,7 +624,7 @@ export class InterestsComponent implements OnInit {
   ExpDataModelVideogames: ExpDataModel[] = [
     {
       id: 0,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\videogames\\ocarina.jpg",
       title: "The Legend of Zelda: Ocarina of Time",
       subTitle: "Nintendo",
       experience: 0,
@@ -624,15 +632,15 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 1,
-      imgSrc: this.imgDefault,
-      title: "Undertale",
-      subTitle: "Toby Fox",
+      imgSrc: "assets\\images\\Interests\\videogames\\battlefront2.jpg",
+      title: "Star Wars: Battlefront 2 (Classic)",
+      subTitle: "LucasArts",
       experience: 0,
       article: ""
     },
     {
       id: 2,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\videogames\\factorio.jpg",
       title: "Factorio",
       subTitle: "Wube Software",
       experience: 0,
@@ -640,7 +648,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 3,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\videogames\\psychonauts.jpg",
       title: "Psychonauts",
       subTitle: "Double Fine Productions",
       experience: 0,
@@ -648,23 +656,23 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 4,
-      imgSrc: this.imgDefault,
-      title: "Star Wars: Battlefront 2 (Classic)",
-      subTitle: "LucasArts",
-      experience: 0,
-      article: ""
-    },
-    {
-      id: 5,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\videogames\\ccc.webp",
       title: "Command & Conquer: Generals",
       subTitle: "EA Games",
       experience: 0,
       article: ""
     },
     {
+      id: 5,
+      imgSrc: "assets\\images\\Interests\\videogames\\undertale.jpg",
+      title: "Undertale",
+      subTitle: "Toby Fox",
+      experience: 0,
+      article: ""
+    },
+    {
       id: 6,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\videogames\\HalfLife2.jpg",
       title: "Half-Life 2",
       subTitle: "Valve",
       experience: 0,
@@ -672,7 +680,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 7,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\videogames\\tf2.jpg",
       title: "Team Fortress 2",
       subTitle: "Valve",
       experience: 0,
@@ -680,7 +688,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 8,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\videogames\\romeTotalWar.jpg",
       title: "Rome: Total War",
       subTitle: "Activision",
       experience: 0,
