@@ -5,7 +5,7 @@ nav {
 }
 
 .btn-group {
-    width: 60%;
+    width: 100%;
 }
 
 button {
@@ -22,10 +22,10 @@ button {
     background-color: #fff;
 }
 
-#space-empty {
-    width: 40%;
-}
-
 #boundary {
     padding: 2em;
+}
+
+router-outlet {
+    border-bottom: 4px solid;
 }

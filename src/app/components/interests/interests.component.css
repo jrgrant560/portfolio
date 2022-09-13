@@ -2,6 +2,11 @@ main {
     display: grid;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 .masterButtons {
     display: flex;
     flex-direction: column;
@@ -118,7 +123,7 @@ button:hover {
 
 .imgContainer {
     display: flex;
-    max-width: 90%;
+    max-width: 140px;
 }
 
 img, .iconImg {

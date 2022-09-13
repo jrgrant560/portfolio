@@ -50,7 +50,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 4,
-      imgSrc: "assets\\images\\Interests\\icon_animation.png",
+      imgSrc: "assets\\images\\Interests\\icon_animation_2.png",
       title: "Animation",
       subTitle: "",
       experience: 0,
@@ -69,15 +69,15 @@ export class InterestsComponent implements OnInit {
   ExpDataModelHobbies: ExpDataModel[] = [
     {
       id: 0,
-      imgSrc: this.imgDefault,
-      title: "Electric Bike Riding",
+      imgSrc: "assets\\images\\Interests\\Hobbies\\ebike.png",
+      title: "Electric Bikes",
       subTitle: "",
       experience: 0,
       article: ""
     },
     {
       id: 1,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Hobbies\\paddleboard_2.png",
       title: "Paddleboarding",
       subTitle: "",
       experience: 0,
@@ -85,7 +85,7 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 2,
-      imgSrc: this.imgDefault,
+      imgSrc: "assets\\images\\Interests\\Hobbies\\pickleball.png",
       title: "Pickleball",
       subTitle: "",
       experience: 0,
@@ -93,16 +93,16 @@ export class InterestsComponent implements OnInit {
     },
     {
       id: 3,
-      imgSrc: this.imgDefault,
-      title: "Exploring New Places",
+      imgSrc: "assets\\images\\Interests\\Hobbies\\hiker.png",
+      title: "Exploring",
       subTitle: "",
       experience: 0,
       article: ""
     },
     {
       id: 4,
-      imgSrc: this.imgDefault,
-      title: "Playing with Legos!",
+      imgSrc: "assets\\images\\Interests\\Hobbies\\lego-framed_2.png",
+      title: "Legos",
       subTitle: "",
       experience: 0,
       article: ""

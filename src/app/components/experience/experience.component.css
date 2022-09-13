@@ -2,6 +2,11 @@ main {
     display: grid;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 .masterButtons {
     display: flex;
     flex-direction: column;
@@ -120,7 +125,7 @@ img {
     margin-right: auto;
 }
 
-h2 {
+.divTable h2 {
     font-size: calc(1rem + 0.9vw);
     margin: 0em;
     line-height: 0em;

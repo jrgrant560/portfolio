@@ -12,11 +12,8 @@ h3 {
     font-size: calc(1.375rem + 1vw);
 }
 
-hr {
-    height: 7px;
-    border-radius: 100px;
-    opacity: 0.8;
-    margin: 8vw 0;
+section {
+    margin-bottom: 4em;
 }
 
 .pageButtonContainer {
@@ -28,9 +25,4 @@ hr {
     min-width: 350px;
     min-height: 70px;
     font-size: 40px;
-}
-
-.projectsLinkButton:hover {
-    color: #d9534f;
-    background-color: #fff;
 }

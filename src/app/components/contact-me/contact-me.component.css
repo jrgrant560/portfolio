@@ -3,19 +3,30 @@ h1 {
     font-weight: bold;
 }
 
-table {
+main {
     display: grid;
-    max-width: 450px;
-    width: 50%;
-    grid-row-gap: 17px;
+    grid-row-gap: 1em;
 }
 
-tr {
+section {
+    width: 75%;
+
     display: grid;
-    grid-template-columns: 1fr 7fr 1fr;
+    grid-row-gap: 17px;
+    align-items: center;
+
     font-size: 2vw;
     font-style: italic;
 }
+
+.rowEmail {
+    grid-template-columns: 1fr 3fr 5fr;
+}
+
+.rowTwo {
+    grid-template-columns: 1fr 8fr;
+}
+
 
 /* tr>* {
     border-color: red;
@@ -23,7 +34,7 @@ tr {
     border-width: 1px;
 } */
 
-td {
+/* td {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,24 +45,33 @@ hr {
     border-radius: 100px;
     height: 4px;
     opacity: .75;
-}
+} */
 
 .material-icons-outlined {
-    font-size: 3.2vw;
+    font-size: 4.2vw;
+    margin: auto;
 }
 
 .fa-linkedin {
+    width: 40px;
+    height: 46px;
+    margin: auto;
     border-radius: 4px;
 }
 
 .fa-github {
+    width: 46px;
+    height: 46px;
+    margin: auto;
     border-radius: 50%;
 }
 
 .copyButton {
+    width: 46px;
+    height: 46px;
+
     display: flex;
     align-items: center;
-    justify-content: left;
-    max-width: 100%;
+    justify-content: center;
     border-radius: 6px;
 }
