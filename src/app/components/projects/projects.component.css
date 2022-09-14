@@ -5,7 +5,7 @@ h1 {
 
 #projectNav {
     display: grid;
-    grid-template-columns: 0.5fr repeat(6, 1fr) 0.5fr;
+    grid-template-columns: 0.5fr repeat(5, 1fr) 0.5fr;
     margin-bottom: 1em;
 }
 
@@ -52,10 +52,11 @@ button:hover {
 } */
 
 .urlContainer {
-    max-width: 450px;
 }
 
 .buttonContainer {
+    max-width: 450px;
+    margin: auto;
 }
 
 .btn-outline-info {
@@ -79,7 +80,9 @@ button:hover {
 }
 
 .textbox {
-    font-size: 2vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5em;
 }
 
 .gradientSquare {

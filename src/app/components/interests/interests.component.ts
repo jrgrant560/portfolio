@@ -611,16 +611,6 @@ export class InterestsComponent implements OnInit {
     }
   ];
 
-  //The Legend of Zelda: Ocarina of Time
-  //Undertale
-  //Factorio
-  //Psychonauts
-  //Star Wars: Battlefront 2 (Classic)
-  //Command & Conquer: Generals
-  //Half-Life 2
-  //Team Fortress 2
-  //Rome: Total War
-
   ExpDataModelVideogames: ExpDataModel[] = [
     {
       id: 0,
@@ -657,7 +647,7 @@ export class InterestsComponent implements OnInit {
     {
       id: 4,
       imgSrc: "assets\\images\\Interests\\videogames\\ccc.webp",
-      title: "Command & Conquer: Generals",
+      title: "Command & Conquer: Generals Zero Hour",
       subTitle: "EA Games",
       experience: 0,
       article: ""

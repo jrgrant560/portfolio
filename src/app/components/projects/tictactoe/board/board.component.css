@@ -7,20 +7,21 @@ main {
     flex-wrap: wrap;
 }
 
-h4 {
-    width: 100%;
-    text-align: center;
+h1 {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #newGameButton {
     width: 100%;
     display: flex;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
-    font-weight: bold;
-    color: rgb(69, 69, 69);
-    background-color:rgb(217, 217, 217);
+    font-size: 1.5em;
 }
 
 #board {
@@ -36,11 +37,6 @@ app-tictactoe-square {
     border: 1px gray solid;
     min-height: 100%;
     aspect-ratio: 1 / 1;
-}
-
-#winnerDisplay {
-    height: calc(2.1rem + 0.3vw);
-    width: 100%;
 }
 
 /* 

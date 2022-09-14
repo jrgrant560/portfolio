@@ -6,7 +6,6 @@
     <button class="projectNavButton" (click)="revealProject('project00')">Group Project: "The Outdoorsman"</button>
     <button class="projectNavButton" (click)="revealProject('project01')">❎<br>TicTacToe</button>
     <button class="projectNavButton" (click)="revealProject('project02')">🕑<br>Clocks (Analog)</button>
-    <button class="projectNavButton" (click)="revealProject('project03')">🕑<br>Clocks (Digital)</button>
     <button class="projectNavButton" (click)="revealProject('project04')">➕➖✖️➗<br>Calculator</button>
     <button class="projectNavButtonEmpty" (click)="hideAllProjects(); maximizeNavBar()">[ Hide All ]</button>
     <div></div>
@@ -15,7 +14,6 @@
     <button class="projectNavButton" (click)="revealProject('project05'); loadBouncingBalls()">▶️<br>Web Animations</button>
     <button class="projectNavButton" (click)="revealProject('project06')">🟥🟩🟦<br>Color Sliders</button>
     <button class="projectNavButton" (click)="revealProject('project07')"><div class="gradientSquare"></div>Color Gradients</button>
-    <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
     <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
     <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
     <div></div>
@@ -36,13 +34,48 @@
         </div>
         <span id="row-tokens">
             <div class="img-container img-token">
-                <img src="assets\images\Tokens\Frameworks\Token-Angular2-01.png">
+                <img src="assets\images\Tokens\Frameworks\Token-Angular-01.png">
+            </div>
+            <div class="token-plus">
+                [
+            </div>
+            <div class="img-container img-token">
+                <img src="assets\images\Tokens\Languages\Token-HTML-01.png">
             </div>
             <div class="token-plus">
                 +
             </div>
             <div class="img-container img-token">
-                <img src="assets\images\Tokens\Frameworks\Token-DotNet2-01.png">
+                <img src="assets\images\Tokens\Languages\Token-CSS-01.png">
+            </div>
+            <div class="token-plus">
+                +
+            </div>
+            <div class="img-container img-token">
+                <img src="assets\images\Tokens\Languages\Token-JavaScript-01.png">
+            </div>
+            <div class="token-plus">
+                ]
+            </div>
+        </span>
+        <span id="row-tokens">
+            <div class="img-container img-token">
+                <img src="assets\images\Tokens\Frameworks\Token-DotNet-01.png">
+            </div>
+            <div class="token-plus">
+                [
+            </div>
+            <div class="img-container img-token">
+                <img src="assets\images\Tokens\Languages\Token-CSharp-01.png">
+            </div>
+            <div class="token-plus">
+                +
+            </div>
+            <div class="img-container img-token">
+                <img src="assets\images\Tokens\Languages\Token-SQL-01.png">
+            </div>
+            <div class="token-plus">
+                ]
             </div>
         </span>
         <div id="row-main">
@@ -54,10 +87,10 @@
                         </div>
                     </button>
                 </div>
-                <div class="textbox">
+                <article class="textbox">
                     My Roles: Project Manager, CRUD for Users (Backend), JSON Web Token User Authentication (Backend),
                     Assisting Other Team Members
-                </div>
+                </article>
             </main>
         </div>
     </main>
