@@ -1,0 +1,72 @@
+#gearsContainer {
+    position: relative;
+    display: block;
+    height: 185px;
+    width: 185px;
+}
+
+.gearImgContainer {
+    position: absolute;
+    display: flex;
+    width: 100px;
+}
+
+.gear01 {
+    top: 82px;
+    left: 83px;
+    rotate: 18deg;
+    width: 120px;
+
+    animation: gearRotate01 1s infinite;
+}
+
+.gear02 {
+    top: 59px;
+
+    animation: gearRotate02 1s infinite;
+}
+
+.gear03 {
+    left: 60px;
+    top: 2px;
+    width: 80px;
+    rotate: 17deg;
+
+    animation: gearRotate03 1s infinite;
+}
+
+.gearImg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes gearRotate01 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(36deg);
+    }
+}
+
+@keyframes gearRotate02 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-36deg);
+    }
+}
+
+@keyframes gearRotate03 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(36deg);
+    }
+}

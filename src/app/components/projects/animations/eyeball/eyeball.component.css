@@ -1,0 +1,115 @@
+.eyeContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye {
+    position: relative;
+    width: 200px;
+    height: 129.6px;
+
+}
+
+.eyelidImgContainer {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 200px;
+    height: 129.6px;
+}
+
+.eyelidImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: hue-rotate(85deg);
+}
+
+.eyeball {
+    position: absolute;
+    left: 86px;
+    top: 50px;
+    width: 30px;
+
+    animation: eyeMove 30s infinite;
+
+}
+
+.eyeIris {
+    display: block;
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+
+    border-radius: 50%;
+    background-color: #008eb9;
+    /* background-image: linear-gradient(-135deg, rgb(195, 255, 235), aquamarine 33%, rgb(50, 105, 87) ); */
+}
+
+/* .eyePupil {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+
+    display: block;
+    width: 12px;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+
+    border-radius: 50%;
+    background-image: radial-gradient( black 50%, white );
+} */
+
+@keyframes eyeMove {
+    0%, 10% {
+        left: 86px;
+        top: 50px;
+    }
+
+    11%, 21% {
+        left: 102px;
+        top: 66px;
+    }
+
+    22%, 32% {
+        left: 49px;
+        top: 39px;    
+    }
+
+    33%, 38% {
+        left: 132px;
+        top: 42px;    
+    }
+
+    39%, 42% {
+        left: 140px;
+        top: 56px;  
+    }
+
+    44%, 50% {
+        left: 65px;
+        top: 65px;
+    }
+
+    51%, 58% {
+        left: 80px;
+        top: 68px;
+    }
+
+    59%, 69% {
+        left: 112px;
+        top: 41px;
+    }
+
+    76%, 88% {
+        left: 41px;
+    }
+
+    89%, 95% {
+        left: 124px;
+        top: 63px;
+    }
+}

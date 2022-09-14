@@ -1,6 +1,7 @@
 main {
     width: 100%;
     height: auto;
+    padding: 1em;
     background-color: #424242;
     display: flex;
     border-radius: 5%;

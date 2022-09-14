@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
     '../project-rows.css',
     './animations-stylesheets/animations.component.bounceBall.css',
     './animations-stylesheets/animations.component.travelCircle.css',
-    './animations-stylesheets/animations.component.spinner.css'
+    './animations-stylesheets/animations.component.spinner.css',
+    './animations-stylesheets/animations.component.gears.css'
   ]
 })
 export class AnimationsComponent implements OnInit {

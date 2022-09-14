@@ -48,8 +48,12 @@ hr {
 } */
 
 .material-icons-outlined {
-    font-size: 4.2vw;
+    font-size: 48px;
     margin: auto;
+}
+
+.copyIcon {
+    font-size:36px;
 }
 
 .fa-linkedin {
@@ -57,6 +61,8 @@ hr {
     height: 46px;
     margin: auto;
     border-radius: 4px;
+
+    font-size: 34px;
 }
 
 .fa-github {
@@ -64,6 +70,11 @@ hr {
     height: 46px;
     margin: auto;
     border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
 }
 
 .copyButton {
