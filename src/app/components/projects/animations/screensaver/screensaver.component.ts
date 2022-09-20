@@ -69,12 +69,10 @@ export class ScreensaverComponent implements OnInit {
       if (xPos + screensaverObject.offsetWidth >= screensaverScreen.offsetWidth || xPos <= 0) {
         xSpeed = -xSpeed;
         imgSwitch();
-        console.log(i);
       }
       if (yPos + screensaverObject.offsetHeight >= screensaverScreen.offsetHeight || yPos <= 0) {
         ySpeed = -ySpeed;
         imgSwitch();
-        console.log(i);
       }
 
       xPos += xSpeed;

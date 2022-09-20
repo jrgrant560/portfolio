@@ -46,13 +46,30 @@ main {
     );}
 
 .poleContainer {
+    position: relative;
     width: 80%;
     aspect-ratio: 1 / 2.5;
     margin: auto;
 }
 
-.pole {
+.pole, .poleShadow {
+    position: absolute;
+    width: 100%;
     height: 100%;
+}
+
+.poleShadow {
+    z-index: 1;
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.526) 5%,
+        transparent 15%, transparent 85%,
+        rgba(0, 0, 0, 0.526) 95%
+    );
+}
+
+.pole {
+    z-index: 0;
     background: linear-gradient(
         -45deg,
         white 0%,
