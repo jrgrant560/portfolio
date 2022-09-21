@@ -11,12 +11,6 @@ export class AnimationTypingComponent implements OnInit {
 
   ngOnInit(): void {
     // fetched elements
-    // this.textField = document.getElementById("textField")!;
-    // this.typeBlock = document.getElementById("typeBlock")!;
-
-    // this.init();
-
-    // fetched elements
     const textField = document.getElementById("textField")!;
     const typeBlock = document.getElementById("typeBlock")!;
 

@@ -35,6 +35,29 @@
     align-items: center;
 }
 
+.ghLink {
+    color: transparent;
+    margin-bottom: auto;
+}
+
+.fa-github {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50%;
+    background: black;
+    border: black 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 46px;
+}
+
+.fa-github:hover {
+    background: white;
+    color:black
+}
+
 .img-container {
     display: flex;
 }
