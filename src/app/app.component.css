@@ -1,4 +1,6 @@
 nav {
+    position: relative;
+    z-index: 2;
     margin-right: auto;
     justify-content: left;
     display: flex;
@@ -23,6 +25,8 @@ button {
 }
 
 #boundary {
+    position: relative;
+    z-index: 1;
     padding: 2em;
 }
 

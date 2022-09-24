@@ -9,19 +9,22 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  // ~~NOTE TO CODE REVIEWER: I hijacked this code from one of my animation projects, so it's a bit of a mess here.
+  // For the clean version, Check out the JS TypeWriter Github files in the Web Animations in the Projects Page.
+
   ngOnInit(): void {
     // fetched elements
     const headerTitle = document.getElementById("headerTitle")!;
     const headerSub = document.getElementById("headerSub")!;
-    // const typeBlockCollection = document.getElementsByClassName("typeBlock") as HTMLCollectionOf<HTMLElement>;
-    // const typeBlocks = Array.from(typeBlockCollection);
     const typeBlockA = document.getElementById("typeBlockA")!;
     const typeBlockB = document.getElementById("typeBlockB")!;
+    const homeScrollSection = document.getElementById("homeScroll")!;
+    const infoContainer = document.getElementById("infoContainer")!;
+    const ghAlert = document.getElementById("ghAlert")!;
 
-    //array of messages
+    // messages
     let messageA = "Hi. I'm Jacob.";
-
-    let messageB = "Web Developer | Coordinator | Graphic Designer";
+    let messageB = "Web Developer | Data Engineer | Graphic Designer | Operations Specialist";
 
     // type cursor blinking animation
     function typeBlockBlink(typeBlock: HTMLElement) {
@@ -76,7 +79,7 @@ export class HomeComponent implements OnInit {
 
 
     // interval to start typing
-    let intervalTypeStartDelay = 2500;
+    let intervalTypeStartDelay = 3000;
     // interval between initialization + completion of typing string, and then start untyping
     // let intervalUnType = 0;
 
@@ -112,6 +115,12 @@ export class HomeComponent implements OnInit {
 
       let i = 0;
 
+      let typeStart = intervalTypeStartDelay;
+
+      // if (typeBlock == typeBlockB) {
+      //   typeStart = intervalTypeStartDelay + 2000;
+      // }
+
       // types message, pauses cursor blinking
       setTimeout(function () {
         typeWriter(text, element, speed, i);
@@ -119,8 +128,17 @@ export class HomeComponent implements OnInit {
         setTimeout(function () {
           // startBlink(typeBlock, intervalName);
           typeBlock.style.backgroundColor = 'transparent';
-        }, (typeLength + 1500));
-      }, intervalTypeStartDelay);
+          if (element == headerSub) {
+            homeScrollSection.style.top = '0';
+            setTimeout(function () {
+              infoContainer.style.top = '-2em';
+            }, 1000)
+            setTimeout(function () {
+              ghAlert.style.opacity = '100%';
+            }, 6000)
+          }
+        }, (typeLength + 500));
+      }, typeStart);
 
       // untypes message, pauses cursor blinking
       // setTimeout(function () {
@@ -155,15 +173,29 @@ export class HomeComponent implements OnInit {
 
     // set type cursor to orange and start blinking animation; begin typing all messages
     function init() {
-      typeBlockA.style.backgroundColor = 'orange';
-      typeBlockB.style.backgroundColor = 'orange';
-      startBlink(typeBlockA, 'IntervalA');
-      startBlink(typeBlockB, 'IntervalB');
+      // set typeblock bg's to transparent
+      typeBlockA.style.backgroundColor = 'transparent';
+      typeBlockB.style.backgroundColor = 'transparent';
+
+      setTimeout(function () {
+        startBlink(typeBlockA, 'IntervalA');
+      }, 1000);
+      setTimeout(function () {
+        startBlink(typeBlockB, 'IntervalB');
+      }, 4000);
+
       typeThis(messageA, headerTitle, 80, typeBlockA, 'IntervalA');
-      typeThis(messageB, headerSub, 50, typeBlockB, 'IntervalB');
+      setTimeout(function () {
+        typeThis(messageB, headerSub, 50, typeBlockB, 'IntervalB');
+      }, 3000);
     }
 
     init();
+  }
+
+  msgBlockHide() {
+    const msgBlock = document.getElementById("msgBlock")!;
+    msgBlock.style.display = "none";
   }
 
 }

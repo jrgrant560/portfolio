@@ -1,15 +1,49 @@
 #titles {
+    position: relative;
+    z-index: 10;
     margin-bottom: 10vw;
 }
 
-.ghLinkContainer {
+#infoContainer {
+    position: relative;
+    top: -10em;
+
     display: flex;
-    justify-content: right;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+#ghAlert {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+    opacity: 0%;
+    transition: all 1.5s ease-in-out;
+}
+
+.ghAlertArrowContainer {
+    position: relative;
+    width: 60px;
+    height: 40px;
+}
+
+.fa-arrow-left {
+    position: absolute;
+    left: 0px;
+    font-size: 40px;
+    animation: ghAlertArrowMove 1s infinite
+}
+
+.ghAlertText {
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .ghLink {
     width: 60px;
     height: 60px;
+    margin: 5px 0;
     color: transparent;
 }
 
@@ -19,6 +53,7 @@
     border-radius: 50%;
     background: black;
     border: black 2px solid;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,39 +65,121 @@
     color:black
 }
 
+#msgBlock {
+    position: relative;
+    width: 240px;
+    height: calc(2em + 60px);
+    margin-left: auto;
+    padding-top: 6px;
+
+    background: white;
+    border: black solid;
+    border-width: 0 3px 3px 3px;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+
+    text-align: center;
+}
+
+#msgBlock :nth-child(1) {
+    font-size: 20px;
+}
+
+#msgBlock :nth-child(3) {
+    display: inline-block;
+    font-size: 32px;
+}
+
+.fa-angular {
+    color: #dd1b16;
+    font-size: 120px;
+}
+
+#msgBlock .fa-angular {
+    display: inline-block;
+    padding: 0;
+    margin-right: 10px;
+    font-size: 44px;
+}
+
+.fa-xmark {
+    position: absolute;
+    left: 6px;
+    bottom: 6px;
+    color: #3e3f3aa8;
+}
+
+.fa-xmark:hover {
+    cursor: pointer;
+}
+
+/* .headerRow {
+    margin: 3vw 0;
+} */
+
 #headerTitle {
     font-size: calc(1.375rem + 5.5vw);
     font-weight: 500;
-    margin-bottom: 3.5vw;
 }
 
 .typeBlock {
     display: inline-block;
     height: calc(1.375rem + 5.5vw);
     width: 28px;
-    background-color: orange;
+    background-color: transparent;
 }
 
 .typeBlockB {
-    height: calc(1.375rem + 1vw);
+    height: calc(1.375rem + 0.6vw);
     width: 18px;
 }
 
 #headerSub {
-    font-size: calc(1.375rem + 1vw);
+    font-size: calc(1.375rem + 0.6vw);
 }
 
-section {
+#homeScroll {
+    height: 0;
+    position: relative;
+    z-index: 1;
+    top: -2000px;
+    transition: all 1s ease-in-out;
+}
+
+.pageContainer {
     margin-bottom: 4em;
 }
 
 .pageButtonContainer {
-    display: flex;
-    justify-content: center;
 }
 
 .projectsLinkButton {
-    min-width: 350px;
-    min-height: 70px;
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    width: 350px;
+    height: 70px;
     font-size: 40px;
+}
+
+
+.homeScrollFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.faFoot {
+    width: 200px;
+}
+
+@keyframes ghAlertArrowMove {
+    0% {
+        left: 30px;
+    }
+
+    100% {
+        left: 0px;
+    }
 }

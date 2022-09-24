@@ -1,19 +1,44 @@
 <header id="titles">
-    <div class="ghLinkContainer">
+    <div id="infoContainer">
         <a class="ghLink" href="https://github.com/jrgrant560/portfolio" target="_blank">
-            <i class="fa fa-github"></i>
+            <i class="fa-brands fa-github"></i>
         </a>
+        <div id="ghAlert">
+            <div class="ghAlertArrowContainer">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="ghAlertText"><em>check out this site's code on <strong>GitHub</strong></em></div>
+        </div>
+        <span id="msgBlock">
+            <div>This site was built using</div>
+            <i class="fa-brands fa-angular"></i>
+            <div>Angular</div>
+            <i class="fa-solid fa-xmark" (click)="msgBlockHide()"></i>
+        </span>
     </div>
-    <span id="headerTitle"></span><div id="typeBlockA" class="typeBlock typeBlockA"></div>
+    <div class="headerRow">
+        <span id="headerTitle"></span>
+        <div id="typeBlockA" class="typeBlock typeBlockA"></div>
+    </div>
     <br>
-    <span id="headerSub"></span><div id="typeBlockB" class="typeBlock typeBlockB"></div>
+    <div class="headerRow">
+        <span id="headerSub"></span>
+        <div id="typeBlockB" class="typeBlock typeBlockB"></div>
+    </div>
 </header>
-<section class="pageContainer">
-    <app-about-me></app-about-me>
-</section>
-<section class="pageContainer">
-    <app-experience></app-experience>
-</section>
-<section class="pageButtonContainer">
-    <button class="btn-dark projectsLinkButton" routerLink="projects">See My Work!</button>
-</section>
+<main id="homeScroll">
+    <!-- <section class="pageContainer">
+        <app-about-me></app-about-me>
+    </section>
+    <section class="pageContainer">
+        <app-experience></app-experience>
+    </section> -->
+    <!-- <section class="pageContainer pageButtonContainer">
+        <button class="btn-dark projectsLinkButton" routerLink="projects">See My Work!</button>
+    </section> -->
+    <footer class="homeScrollFooter">
+        <app-contact-button></app-contact-button>
+        <button class="btn-dark projectsLinkButton" routerLink="projects">See My Work!</button>
+        <i class="fa-brands fa-angular faFoot"></i>
+    </footer>
+</main>
