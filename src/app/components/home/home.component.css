@@ -129,13 +129,17 @@
     background-color: transparent;
 }
 
-.typeBlockB {
-    height: calc(1.375rem + 0.6vw);
-    width: 18px;
+.headerRowSub {
+    margin-left: 36px;
 }
 
-#headerSub {
+.headerSub {
     font-size: calc(1.375rem + 0.6vw);
+}
+
+.typeBlockSub {
+    height: calc(1.375rem + 0.6vw);
+    width: 12px;
 }
 
 #homeScroll {

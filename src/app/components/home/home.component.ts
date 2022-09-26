@@ -15,16 +15,28 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     // fetched elements
     const headerTitle = document.getElementById("headerTitle")!;
-    const headerSub = document.getElementById("headerSub")!;
+    const headerSubA = document.getElementById("headerSubA")!;
+    const headerSubB = document.getElementById("headerSubB")!;
+    const headerSubC = document.getElementById("headerSubC")!;
+    const headerSubD = document.getElementById("headerSubD")!;
+
+    const typeBlockTitle = document.getElementById("typeBlockTitle")!;
     const typeBlockA = document.getElementById("typeBlockA")!;
     const typeBlockB = document.getElementById("typeBlockB")!;
+    const typeBlockC = document.getElementById("typeBlockC")!;
+    const typeBlockD = document.getElementById("typeBlockD")!;
+
     const homeScrollSection = document.getElementById("homeScroll")!;
     const infoContainer = document.getElementById("infoContainer")!;
     const ghAlert = document.getElementById("ghAlert")!;
 
     // messages
-    let messageA = "Hi. I'm Jacob.";
-    let messageB = "Web Developer | Data Engineer | Graphic Designer | Operations Specialist";
+    let messageTitle = "Hi. I'm Jacob.";
+    let messageSubA = "Web Developer";
+    let messageSubB = "Data Engineer";
+    let messageSubC = "Graphic Designer";
+    let messageSubD = "Operations Specialist";
+
 
     // type cursor blinking animation
     function typeBlockBlink(typeBlock: HTMLElement) {
@@ -36,35 +48,63 @@ export class HomeComponent implements OnInit {
     };
 
     // declare interval for blinking animation
-    let IntervalA: any;
-    let IntervalB: any;
+    let IntervalTitle: any;
+    let IntervalSubA: any;
+    let IntervalSubB: any;
+    let IntervalSubC: any;
+    let IntervalSubD: any;
 
     // start type cursor blinking animation
     function startBlink(typeBlock: HTMLElement, intervalName: string) {
-      if (intervalName == 'IntervalA') {
-        IntervalA = setInterval(function () {
-          typeBlockBlink(typeBlock)
-        }, 500);
+      function setBlock() {
+        typeBlockBlink(typeBlock);
+      };
+
+      switch (intervalName) {
+        case 'IntervalTitle':
+          IntervalTitle = setInterval(setBlock, 300);
+          break;
+        case 'IntervalSubA':
+          IntervalSubA = setInterval(setBlock, 300);
+          break;
+        case 'IntervalSubB':
+          IntervalSubB = setInterval(setBlock, 300);
+          break;
+        case 'IntervalSubC':
+          IntervalSubC = setInterval(setBlock, 300);
+          break;
+        case 'IntervalSubD':
+          IntervalSubD = setInterval(setBlock, 300);
+          break;
       }
 
-      if (intervalName == 'IntervalB') {
-        IntervalB = setInterval(function () {
-          typeBlockBlink(typeBlock)
-        }, 500);
-      }
     }
 
     // end type cursor blinking animation
     function endBlink(typeBlock: HTMLElement, intervalName: string) {
-      if (intervalName == 'IntervalA') {
-        clearInterval(IntervalA);
+      function stopBlinking(intervalSwitch: any) {
+        clearInterval(intervalSwitch);
         typeBlock.style.backgroundColor = 'orange';
       }
 
-      if (intervalName == 'IntervalB') {
-        clearInterval(IntervalB);
-        typeBlock.style.backgroundColor = 'orange';
+      switch (intervalName) {
+        case 'IntervalTitle':
+          stopBlinking(IntervalTitle);
+          break;
+        case 'IntervalSubA':
+          stopBlinking(IntervalSubA);
+          break;
+        case 'IntervalSubB':
+          stopBlinking(IntervalSubB);
+          break;
+        case 'IntervalSubC':
+          stopBlinking(IntervalSubC);
+          break;
+        case 'IntervalSubD':
+          stopBlinking(IntervalSubD);
+          break;
       }
+
     }
 
     // declare text to enter in headerTitle
@@ -77,9 +117,6 @@ export class HomeComponent implements OnInit {
     // declare duration to complete on full typing function
     // let typingDuration = 0;
 
-
-    // interval to start typing
-    let intervalTypeStartDelay = 3000;
     // interval between initialization + completion of typing string, and then start untyping
     // let intervalUnType = 0;
 
@@ -105,40 +142,49 @@ export class HomeComponent implements OnInit {
     // }
 
     // types, then untypes a message; pauses cursor blinking during typing
-    function typeThis(text: string, element: HTMLElement, speed: number, typeBlock: HTMLElement, intervalName: string) {
-      //change typeText to parameter
-      // typeText = text;
-      // typeSpeed = speed;
+    function typeThis(text: string, element: HTMLElement, speed: number, typeBlock: HTMLElement, intervalName: string, delay: number) {
+
       let typeLength = text.length * speed;
-      // intervalUnType = (intervalTypeStartDelay * 2) + typeLength;
-      // typingDuration = typeLength + intervalUnType;
+      let typeStartDelay = delay;
 
       let i = 0;
 
-      let typeStart = intervalTypeStartDelay;
-
-      // if (typeBlock == typeBlockB) {
-      //   typeStart = intervalTypeStartDelay + 2000;
-      // }
-
       // types message, pauses cursor blinking
       setTimeout(function () {
+        //types message
         typeWriter(text, element, speed, i);
+        //stops cursor blinking
         endBlink(typeBlock, intervalName);
+
+        //restarts cursor blinking
         setTimeout(function () {
-          // startBlink(typeBlock, intervalName);
-          typeBlock.style.backgroundColor = 'transparent';
-          if (element == headerSub) {
-            homeScrollSection.style.top = '0';
+          startBlink(typeBlock, intervalName);
+
+          //animation sequence for other HomePage elements (starts after 'headerTitle' has completed)
+          if (element == headerTitle) {
+            infoContainer.style.top = '-2em';
             setTimeout(function () {
-              infoContainer.style.top = '-2em';
-            }, 1000)
+              homeScrollSection.style.top = '0';
+            }, 100)
             setTimeout(function () {
               ghAlert.style.opacity = '100%';
             }, 6000)
-          }
-        }, (typeLength + 500));
-      }, typeStart);
+          };
+
+        }, typeLength);
+
+        //makes cursor dissapear some time after typing has completed
+        setTimeout(function () {
+          //stops cursor blinking
+          endBlink(typeBlock, intervalName);
+          //makes cursor invisible
+          typeBlock.style.backgroundColor = 'transparent';
+
+        }, (typeLength + 1000));
+
+
+
+      }, typeStartDelay);
 
       // untypes message, pauses cursor blinking
       // setTimeout(function () {
@@ -174,20 +220,46 @@ export class HomeComponent implements OnInit {
     // set type cursor to orange and start blinking animation; begin typing all messages
     function init() {
       // set typeblock bg's to transparent
+      typeBlockTitle.style.backgroundColor = 'transparent';
       typeBlockA.style.backgroundColor = 'transparent';
       typeBlockB.style.backgroundColor = 'transparent';
 
-      setTimeout(function () {
-        startBlink(typeBlockA, 'IntervalA');
-      }, 1000);
-      setTimeout(function () {
-        startBlink(typeBlockB, 'IntervalB');
-      }, 4000);
 
-      typeThis(messageA, headerTitle, 80, typeBlockA, 'IntervalA');
+      startBlink(typeBlockTitle, 'IntervalTitle');
+
       setTimeout(function () {
-        typeThis(messageB, headerSub, 50, typeBlockB, 'IntervalB');
-      }, 3000);
+        startBlink(typeBlockA, 'IntervalSubA');
+        startBlink(typeBlockC, 'IntervalSubC');
+      }, 1840);
+
+      setTimeout(function () {
+        startBlink(typeBlockB, 'IntervalSubB');
+        startBlink(typeBlockD, 'IntervalSubD');
+      }, (1840 + 200));
+
+      //type title
+      typeThis(messageTitle, headerTitle, 60, typeBlockTitle, 'IntervalTitle', 1000);
+
+      //type sub header A
+      setTimeout(function () {
+        typeThis(messageSubA, headerSubA, 80, typeBlockA, 'IntervalSubA', 2000);
+      }, (1840 + 200));
+
+      //type sub header B
+      setTimeout(function () {
+        typeThis(messageSubB, headerSubB, 80, typeBlockB, 'IntervalSubB', 2000);
+      }, 1840);
+
+      //type sub header C
+      setTimeout(function () {
+        typeThis(messageSubC, headerSubC, 80, typeBlockC, 'IntervalSubC', 2000);
+      }, (1840 + 500));
+
+      //type sub header D
+      setTimeout(function () {
+        typeThis(messageSubD, headerSubD, 80, typeBlockD, 'IntervalSubD', 2000);
+      }, (1840 + 300));
+
     }
 
     init();
