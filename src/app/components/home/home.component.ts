@@ -242,22 +242,22 @@ export class HomeComponent implements OnInit {
 
       //type sub header A
       setTimeout(function () {
-        typeThis(messageSubA, headerSubA, 80, typeBlockA, 'IntervalSubA', 2000);
+        typeThis(messageSubA, headerSubA, 80, typeBlockA, 'IntervalSubA', 1000);
       }, (1840 + 200));
 
       //type sub header B
       setTimeout(function () {
-        typeThis(messageSubB, headerSubB, 80, typeBlockB, 'IntervalSubB', 2000);
+        typeThis(messageSubB, headerSubB, 80, typeBlockB, 'IntervalSubB', 1000);
       }, 1840);
 
       //type sub header C
       setTimeout(function () {
-        typeThis(messageSubC, headerSubC, 80, typeBlockC, 'IntervalSubC', 2000);
+        typeThis(messageSubC, headerSubC, 80, typeBlockC, 'IntervalSubC', 1000);
       }, (1840 + 500));
 
       //type sub header D
       setTimeout(function () {
-        typeThis(messageSubD, headerSubD, 80, typeBlockD, 'IntervalSubD', 2000);
+        typeThis(messageSubD, headerSubD, 80, typeBlockD, 'IntervalSubD', 1000);
       }, (1840 + 300));
 
     }
