@@ -9,12 +9,12 @@
             </div>
             <div class="ghAlertText"><em>check out this site's code on <strong>GitHub</strong></em></div>
         </div>
-        <!-- <span id="msgBlock">
+        <span id="msgBlock">
             <div>This site was built using</div>
             <i class="fa-brands fa-angular"></i>
             <div>Angular</div>
             <i class="fa-solid fa-xmark" (click)="msgBlockHide()"></i>
-        </span> -->
+        </span>
     </div>
     <div class="headerRow">
         <span id="headerTitle"></span>
@@ -51,9 +51,8 @@
     <!-- <section class="pageContainer pageButtonContainer">
         <button class="btn-dark projectsLinkButton" routerLink="projects">See My Work!</button>
     </section> -->
-    <footer class="homeScrollFooter">
-        <app-contact-button></app-contact-button>
-        <button class="btn-dark projectsLinkButton" routerLink="projects">See My Work!</button>
-        <i class="fa-brands fa-angular faFoot"></i>
-    </footer>
+    <nav class="hexButtonContainer">
+        <button class="hexButton btnContact" routerLink="contactMe">Contact Me</button>
+        <button class="hexButton btnProjects" routerLink="projects">See Some of My Work!</button>
+    </nav>
 </main>

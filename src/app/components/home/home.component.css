@@ -154,29 +154,44 @@
     margin-bottom: 4em;
 }
 
-.pageButtonContainer {
+.hexButtonContainer {
+    position: relative;
+
 }
 
-.projectsLinkButton {
+.hexButton {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.btnContact {
+    position: absolute;
+    background-color: #29abe0;
+    border-color: #29abe0;
+}
+
+.btnContact:hover {
+    color: #29abe0;
+    background-color: #fff;
+}
+
+.btnProjects {
+    position: absolute;
+    left: 100px;
+    background-color: #3e3f3a;
+    border-color: #3e3f3a;
+}
+
+.btnProjects:hover {
+    color: #3e3f3a;
+    background-color: #fff;
+}
+
+/* .projectsLinkButton {
     display: block;
-    /* margin-left: auto;
-    margin-right: auto; */
-
-    width: 350px;
-    height: 70px;
-    font-size: 40px;
-}
-
-
-.homeScrollFooter {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.faFoot {
-    width: 200px;
-}
+} */
 
 @keyframes ghAlertArrowMove {
     0% {
