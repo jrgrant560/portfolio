@@ -7,6 +7,7 @@
 #infoContainer {
     position: relative;
     top: -10em;
+    height: 92px;
 
     display: flex;
     align-items: center;
@@ -160,6 +161,7 @@
 }
 
 .hexButton {
+    position: absolute;
     width: 100px;
     height: 100px;
     color: #fff;
@@ -167,7 +169,6 @@
 }
 
 .btnContact {
-    position: absolute;
     background-color: #29abe0;
     border-color: #29abe0;
 }
@@ -178,13 +179,30 @@
 }
 
 .btnProjects {
-    position: absolute;
     left: 100px;
     background-color: #3e3f3a;
     border-color: #3e3f3a;
 }
 
 .btnProjects:hover {
+    color: #3e3f3a;
+    background-color: #fff;
+}
+
+.btnGH {
+    left: 200px;
+    background-color: #3e3f3a;
+    border-color: #3e3f3a;
+}
+
+/* .btnGH>a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff
+} */
+
+.btnGH:hover {
     color: #3e3f3a;
     background-color: #fff;
 }

@@ -6,11 +6,20 @@
 
 .imgContainer {
     width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    clip-path: polygon(25% 8%, 75% 8%, 100% 51.25%, 75% 94.5%, 25% 94.5%, 0% 51.25%);
+    filter: sepia(1);
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+#bio {
+    padding: 0 40px;
 }
 
 h1 {
