@@ -1,4 +1,4 @@
-nav {
+.navbarPrimary {
     position: relative;
     z-index: 2;
     margin-right: auto;
@@ -6,20 +6,35 @@ nav {
     display: flex;
 }
 
-.btn-group {
+.btnGroup {
     width: 100%;
+    display: inline-flex;
+    vertical-align: middle;
 }
 
-button {
-    width: 100%;
+.buttonRouterNav {
+    color: #fff;
+    background-color: #3e3f3a;
+    border-color: #3e3f3a;
 }
 
-.contactNav:focus {
+.buttonRouterNav:hover {
+    color: #3e3f3a;
+    background-color: #fff;
+}
+
+.buttonContactNav {
+    color: #fff;
+    background-color: #29abe0;
+    border-color: #29abe0;
+}
+
+.buttonContactNav:focus {
     background-color: #fff;
     color: #3e3f3a;
-  }
+}
 
-.contactNav:hover, .contactNav:focus {
+.buttonContactNav:hover {
     color: #29abe0;
     background-color: #fff;
 }

@@ -53,8 +53,10 @@
     height: 60px;
     border-radius: 50%;
     background: black;
-    border: black 2px solid;
     color: white;
+    border: black 2px solid;
+    padding: 0px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,61 +157,63 @@
     margin-bottom: 4em;
 }
 
-.hexButtonContainer {
+.hexButtons {
     position: relative;
 
 }
 
-.hexButton {
+.hexButtonContainer {
+    display: flex;
     position: absolute;
+    width: 110px;
+    aspect-ratio: 52 / 45;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexButton {
     width: 100px;
-    height: 100px;
+    aspect-ratio: 52 / 45;
+    margin: auto;
     color: #fff;
     font-size: 20px;
+    border: none;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
-.btnContact {
+.btnContact, .btnContact>.hexButton {
     background-color: #29abe0;
-    border-color: #29abe0;
 }
 
-.btnContact:hover {
+.btnContact>.hexButton:hover {
     color: #29abe0;
     background-color: #fff;
 }
 
 .btnProjects {
-    left: 100px;
-    background-color: #3e3f3a;
-    border-color: #3e3f3a;
+    left: 110px;
 }
 
-.btnProjects:hover {
-    color: #3e3f3a;
+.btnProjects, .btnProjects>.hexButton {
+    background-color: orange;
+}
+
+.btnProjects>.hexButton:hover {
+    color: orange;
     background-color: #fff;
 }
 
 .btnGH {
-    left: 200px;
-    background-color: #3e3f3a;
-    border-color: #3e3f3a;
+    left: 220px;
 }
 
-/* .btnGH>a {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: #fff
-} */
+.btnGH, .btnGH>.hexButton {
+    background-color: #3e3f3a;
+}
 
-.btnGH:hover {
+.btnGH>.hexButton:hover {
     color: #3e3f3a;
     background-color: #fff;
 }
-
-/* .projectsLinkButton {
-    display: block;
-} */
 
 @keyframes ghAlertArrowMove {
     0% {
