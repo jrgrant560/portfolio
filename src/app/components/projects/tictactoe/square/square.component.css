@@ -3,5 +3,38 @@ button {
     height: 100%;
     font-size: 6vh;
     font-weight: bold;
-    border: none;
+    color: #fff;
+    background-color: #3e3f3a;
+    border: 4px #3e3f3a solid;
+}
+
+/* .tttButtonEmpty {
+    color: #fff;
+    background-color: #3e3f3a;
+} */
+
+.tttButtonEmpty:hover {
+    color: #3e3f3a;
+    background-color: #fff;
+}
+
+.tttButtonX {
+    color: #fff;
+    background-color: orange;
+}
+
+.tttButtonX:hover {
+    color: orange;
+    background-color: #fff;
+}
+
+.tttButtonO {
+    color: #fff;
+    background-color: #29abe0;
+
+}
+
+.tttButtonO:hover {
+    color: #29abe0;
+    background-color: #fff;
 }

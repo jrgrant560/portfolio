@@ -30,11 +30,11 @@ h1 {
     aspect-ratio: 1/1;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0px;
-    border: 1px rgb(217, 217, 217) solid;
+    border: 4px #3e3f3a solid;
 }
   
 app-tictactoe-square {
-    border: 1px gray solid;
+    /* border: 1px gray solid; */
     min-height: 100%;
     aspect-ratio: 1 / 1;
 }
