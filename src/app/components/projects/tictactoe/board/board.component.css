@@ -1,4 +1,5 @@
-main {
+#tttContainer {
+    position: relative;
     width: 100%;
     min-width: 250px;
     /* max-width: 450px; */
@@ -7,10 +8,69 @@ main {
     flex-wrap: wrap;
 }
 
-h1 {
+.victoryFlair {
+    position: absolute;
+    top: 49px;
+    left: 225px;
+    /* width: 4px;
+    height: 4px;
+    background: red; */
+}
+
+.playerBlock {
+    width: 36px;
+    margin-left: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: orange;
+}
+
+.victoryFlair>.playerBlock {
+    position: absolute;
+    width: 24px;
+    margin: 0;
+}
+
+.victoryFlair :nth-child(1) {
+    left: -86px;
+    top: -28px;
+    rotate: 330deg;
+}
+
+.victoryFlair :nth-child(2) {
+    left: 10px;
+    top: -28px;
+    rotate: 12deg;
+}
+
+.victoryFlair :nth-child(3) {
+    left: 73px;
+    top: -22px;
+    rotate: 47deg;
+}
+
+.victoryFlair :nth-child(4) {
+    left: 43px;
+    top: 9px;
+    rotate: 152deg;
+}
+
+.victoryFlair :nth-child(5) {
+    left: -52px;
+    top: 9px;
+    rotate: 201deg;
+}
+
+#playerTitle {
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
+    font-size: 2em;
+}
+
+#playerTitle>* {
+    display: inline-block;
 }
 
 #newGameButton {
@@ -22,6 +82,11 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
+}
+
+#newGameButton:hover {
+    background-color: rgb(163,163,163);
+    color: rgb(240, 240, 240);
 }
 
 #board {

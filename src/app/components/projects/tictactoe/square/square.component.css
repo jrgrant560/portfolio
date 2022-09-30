@@ -1,4 +1,4 @@
-button {
+.tttButton {
     width: 100%;
     height: 100%;
     font-size: 6vh;
@@ -14,27 +14,31 @@ button {
 } */
 
 .tttButtonEmpty:hover {
-    color: #3e3f3a;
-    background-color: #fff;
+    background-color: #9b9f8d;
 }
 
 .tttButtonX {
-    color: #fff;
     background-color: orange;
 }
 
-.tttButtonX:hover {
+/* .tttButtonX:hover {
     color: orange;
     background-color: #fff;
-}
+} */
 
 .tttButtonO {
-    color: #fff;
     background-color: #29abe0;
-
 }
 
-.tttButtonO:hover {
+.tttButtonWhite {
+    background-color: #fff;
+}
+
+/* .tttButtonO:hover {
     color: #29abe0;
     background-color: #fff;
+} */
+
+.tttButtonX:hover, .tttButtonO:hover {
+    cursor: auto;
 }

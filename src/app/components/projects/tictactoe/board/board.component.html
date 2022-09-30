@@ -1,8 +1,18 @@
-<main>
-    <h1 *ngIf="!winner">Current Player: {{ player }}</h1>
-    <h1 *ngIf="winner">Player {{ player }} won the game!</h1>
+<main id="tttContainer">
+    <span class="victoryFlair">
+        <div class="playerBlock">{{ player }}</div>
+        <div class="playerBlock">{{ player }}</div>
+        <div class="playerBlock">{{ player }}</div>
+        <div class="playerBlock">{{ player }}</div>
+        <div class="playerBlock">{{ player }}</div>
+    </span>
+    <h1 id="playerTitle">
+        <div *ngIf="winner">Winning Player: </div>
+        <div *ngIf="!winner">Current Player: </div>
+        <div class="playerBlock">{{ player }}</div>
+    </h1>
     <!--button that uses a "click" event-->
-    <button id="newGameButton" class="btn-dark" (click)="newGame()">Start New Game</button>
+    <button id="newGameButton" (click)="newGame(); playerTitleBGset()">Start New Game</button>
     <!-- the tictactoe board -->
     <span id="board">
         <app-tictactoe-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">

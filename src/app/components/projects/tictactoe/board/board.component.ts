@@ -16,11 +16,14 @@ export class TictactoeBoardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.newGame()
+    this.newGame();
   }
 
   //generates a new board with the necessary objects when the webpage is loaded
   newGame() {
+    this.resetBoard();
+
+    // sets all square values to null
     this.squares = Array(9).fill(null);
     this.winner = "";
     this.xIsNext = true;
@@ -46,9 +49,26 @@ export class TictactoeBoardComponent implements OnInit {
     if (this.winner != null) {
       this.xIsNext = !this.xIsNext;
     }
+
+    let tttButtonsCollection = document.getElementsByClassName('tttButton')! as HTMLCollectionOf<HTMLElement>;
+    let tttButtonsArray = Array.from(tttButtonsCollection);
+
+     //if statement that runs victory animation
+     if (this.winner != null && this.player == 'X') {
+      tttButtonsArray.forEach(tttButton => {
+        tttButton.style.transition = '500ms';
+        this.buttonVictory(tttButton, 'tttButtonX');
+      });
+    } else if (this.winner != null && this.player == 'O') {
+      tttButtonsArray.forEach(tttButton => {
+        tttButton.style.transition = '500ms';
+        this.buttonVictory(tttButton, 'tttButtonO');
+      });
+    }
+
+    this.playerTitleBGset();
   }
 
-  //copied this code
   calculateWinner() {
     //an array of valid winning conditions (straight lines on the board)
     const lines = [
@@ -61,7 +81,7 @@ export class TictactoeBoardComponent implements OnInit {
       [0, 4, 8],
       [2, 4, 6]
     ];
-    //checks if...?
+    //for loop that checks if...?
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       if (
@@ -73,6 +93,45 @@ export class TictactoeBoardComponent implements OnInit {
       }
     }
     return null;
+  }
+
+// function that applies color changes to target button element
+  buttonVictory(button: HTMLElement, className: string) {
+    setTimeout(function () {
+      button.classList.add('tttButtonWhite');
+    }, 100);
+    setTimeout(function () {
+      button.classList.remove('tttButtonWhite');
+      button.classList.add(className);
+    }, 600);
+  }
+
+  //changes PlayerTitle background color depending on active player
+  playerTitleBGset() {
+    let playerBlocksCollection = document.getElementsByClassName('playerBlock')! as HTMLCollectionOf<HTMLElement>;
+    let playerBlocksArray = Array.from(playerBlocksCollection);
+
+    //if statement that changes the background color for the playerTitle
+    if (this.player == 'X') {
+      playerBlocksArray.forEach(playerBlock => {
+        playerBlock.style.backgroundColor = 'orange';
+      });
+    } else if (this.player == 'O') {
+      playerBlocksArray.forEach(playerBlock => {
+        playerBlock.style.backgroundColor = '#29abe0';
+      });
+    }
+  }
+
+  //function that resets the board
+  resetBoard() {
+    let tttButtonsCollection = document.getElementsByClassName('tttButton')! as HTMLCollectionOf<HTMLElement>;
+    let tttButtonsArray = Array.from(tttButtonsCollection);
+
+    tttButtonsArray.forEach(tttButton => {
+      tttButton.style.removeProperty('transition');
+      tttButton.classList.remove('tttButtonX', 'tttButtonO', 'tttButtonWhite');
+    });
   }
 
 }
