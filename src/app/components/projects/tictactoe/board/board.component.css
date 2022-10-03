@@ -1,5 +1,6 @@
 #tttContainer {
     position: relative;
+    z-index: 0;
     width: 100%;
     min-width: 250px;
     /* max-width: 450px; */
@@ -9,58 +10,96 @@
 }
 
 .victoryFlair {
+    --blockFlair1-left: -105px;
+    --blockFlair1-top: -7px;
+    --blockFlair2-left: -26px;
+    --blockFlair2-top: -7px;
+    --blockFlair3-left: 66px;
+    --blockFlair3-top: -6px;
+    --blockFlair4-left: 19px;
+    --blockFlair4-top: 12px;
+    --blockFlair5-left: -76px;
+    --blockFlair5-top: 17px;
+
     position: absolute;
     top: 49px;
     left: 225px;
-    /* width: 4px;
-    height: 4px;
-    background: red; */
+    z-index: -1;
 }
 
 .playerBlock {
     width: 36px;
     margin-left: 12px;
+    
     text-align: center;
     font-weight: bold;
     color: #fff;
     background-color: orange;
 }
 
-.victoryFlair>.playerBlock {
+.playerBlockFlairContainer {
     position: absolute;
-    width: 24px;
-    margin: 0;
+    transform: translate(-50%,-50%);
+    width: 3em;
+    height: 3em;
+
+    transition: 1500ms;
 }
 
-.victoryFlair :nth-child(1) {
-    left: -86px;
-    top: -28px;
+.playerBlockFlair {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+
+    opacity: 0%;
+    transition: 750ms;
+}
+
+.playerBlockFlairContainer1 {
+    left: var(--blockFlair1-left);
+    top: var(--blockFlair1-top);
+}
+
+.playerBlockFlairContainer2 {
+    left: var(--blockFlair2-left);
+    top: var(--blockFlair2-top);
+}
+
+.playerBlockFlairContainer3 {
+    left: var(--blockFlair3-left);
+    top: var(--blockFlair3-top);
+}
+
+.playerBlockFlairContainer4 {
+    left: var(--blockFlair4-left);
+    top: var(--blockFlair4-top);
+}
+
+.playerBlockFlairContainer5 {
+    left: var(--blockFlair5-left);
+    top: var(--blockFlair5-top);
+}
+
+.playerBlockFlair1 {
     rotate: 330deg;
 }
 
-.victoryFlair :nth-child(2) {
-    left: 10px;
-    top: -28px;
+.playerBlockFlair2 {
     rotate: 12deg;
 }
 
-.victoryFlair :nth-child(3) {
-    left: 73px;
-    top: -22px;
+.playerBlockFlair3 {
     rotate: 47deg;
 }
 
-.victoryFlair :nth-child(4) {
-    left: 43px;
-    top: 9px;
+.playerBlockFlair4 {
     rotate: 152deg;
 }
 
-.victoryFlair :nth-child(5) {
-    left: -52px;
-    top: 9px;
+.playerBlockFlair5 {
     rotate: 201deg;
 }
+
 
 #playerTitle {
     margin-top: 1em;
@@ -71,6 +110,10 @@
 
 #playerTitle>* {
     display: inline-block;
+}
+
+#winningPlayer {
+    font-weight: bold;
 }
 
 #newGameButton {

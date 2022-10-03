@@ -21,6 +21,13 @@ export class TictactoeBoardComponent implements OnInit {
 
   //generates a new board with the necessary objects when the webpage is loaded
   newGame() {
+    let winningPlayerTitle = document.getElementById('winningPlayer') as HTMLElement;
+    let currentPlayerTitle = document.getElementById('currentPlayer') as HTMLElement;
+    
+    // swaps displays for player titles
+    winningPlayerTitle.style.display = 'none';
+    currentPlayerTitle.style.display = 'inline-block';
+
     this.resetBoard();
 
     // sets all square values to null
@@ -44,28 +51,42 @@ export class TictactoeBoardComponent implements OnInit {
       this.xIsNext = !this.xIsNext;
     }
 
+
     this.winner = this.calculateWinner();
-    //added this if statement, because the "Player _ has won the game" announcement displayed the opposite player
+
+    //if statement that runs if there is a winner
     if (this.winner != null) {
+      let winningPlayerTitle = document.getElementById('winningPlayer') as HTMLElement;
+      let currentPlayerTitle = document.getElementById('currentPlayer') as HTMLElement;
+
+      // swaps displays for player titles
+      winningPlayerTitle.style.display = 'inline-block';
+      currentPlayerTitle.style.display = 'none';
+
+      //added this if statement, because the "Player _ has won the game" announcement displayed the opposite player
       this.xIsNext = !this.xIsNext;
+
+      //run victory Flair Animation
+      this.victoryFlair();
+
+      let tttButtonsCollection = document.getElementsByClassName('tttButton')! as HTMLCollectionOf<HTMLElement>;
+      let tttButtonsArray = Array.from(tttButtonsCollection);
+
+      //if statement that runs style changes for victory, depending on player
+      if (this.player == 'X') {
+        winningPlayerTitle.style.color = 'orange';
+        tttButtonsArray.forEach(tttButton => {
+          tttButton.style.transition = '500ms';
+          this.buttonVictory(tttButton, 'tttButtonX');
+        });
+      } else if (this.player == 'O') {
+        winningPlayerTitle.style.color = '#29abe0';
+        tttButtonsArray.forEach(tttButton => {
+          tttButton.style.transition = '500ms';
+          this.buttonVictory(tttButton, 'tttButtonO');
+        });
+      }
     }
-
-    let tttButtonsCollection = document.getElementsByClassName('tttButton')! as HTMLCollectionOf<HTMLElement>;
-    let tttButtonsArray = Array.from(tttButtonsCollection);
-
-     //if statement that runs victory animation
-     if (this.winner != null && this.player == 'X') {
-      tttButtonsArray.forEach(tttButton => {
-        tttButton.style.transition = '500ms';
-        this.buttonVictory(tttButton, 'tttButtonX');
-      });
-    } else if (this.winner != null && this.player == 'O') {
-      tttButtonsArray.forEach(tttButton => {
-        tttButton.style.transition = '500ms';
-        this.buttonVictory(tttButton, 'tttButtonO');
-      });
-    }
-
     this.playerTitleBGset();
   }
 
@@ -95,7 +116,7 @@ export class TictactoeBoardComponent implements OnInit {
     return null;
   }
 
-// function that applies color changes to target button element
+  // function that applies color changes to target button element after victory
   buttonVictory(button: HTMLElement, className: string) {
     setTimeout(function () {
       button.classList.add('tttButtonWhite');
@@ -110,17 +131,91 @@ export class TictactoeBoardComponent implements OnInit {
   playerTitleBGset() {
     let playerBlocksCollection = document.getElementsByClassName('playerBlock')! as HTMLCollectionOf<HTMLElement>;
     let playerBlocksArray = Array.from(playerBlocksCollection);
+    let playerBlocksFlairCollection = document.getElementsByClassName('playerBlockFlair')! as HTMLCollectionOf<HTMLElement>;
+    let playerBlocksFlairArray = Array.from(playerBlocksFlairCollection);
+
 
     //if statement that changes the background color for the playerTitle
     if (this.player == 'X') {
       playerBlocksArray.forEach(playerBlock => {
         playerBlock.style.backgroundColor = 'orange';
       });
+      playerBlocksFlairArray.forEach(playerBlockFlair => {
+        playerBlockFlair.style.color = 'orange';
+      });
     } else if (this.player == 'O') {
       playerBlocksArray.forEach(playerBlock => {
         playerBlock.style.backgroundColor = '#29abe0';
       });
+      playerBlocksFlairArray.forEach(playerBlockFlair => {
+        playerBlockFlair.style.color = '#29abe0';
+      });
     }
+  }
+
+  // victory flair animation on all flair elements
+  victoryFlair() {
+    let playerBlockFlairContainer1 = document.querySelector('.playerBlockFlairContainer1') as HTMLElement;
+    let playerBlockFlairContainer2 = document.querySelector('.playerBlockFlairContainer2') as HTMLElement;
+    let playerBlockFlairContainer3 = document.querySelector('.playerBlockFlairContainer3') as HTMLElement;
+    let playerBlockFlairContainer4 = document.querySelector('.playerBlockFlairContainer4') as HTMLElement;
+    let playerBlockFlairContainer5 = document.querySelector('.playerBlockFlairContainer5') as HTMLElement;
+
+    let playerBlockFlair1 = document.querySelector('.playerBlockFlair1') as HTMLElement;
+    let playerBlockFlair2 = document.querySelector('.playerBlockFlair2') as HTMLElement;
+    let playerBlockFlair3 = document.querySelector('.playerBlockFlair3') as HTMLElement;
+    let playerBlockFlair4 = document.querySelector('.playerBlockFlair4') as HTMLElement;
+    let playerBlockFlair5 = document.querySelector('.playerBlockFlair5') as HTMLElement;
+
+    playerBlockFlairContainer1.style.left = 'calc(var(--blockFlair1-left) * 2)';
+    playerBlockFlairContainer1.style.top = 'calc(var(--blockFlair1-top) * 2)';
+
+    playerBlockFlairContainer2.style.left = 'calc(var(--blockFlair2-left) * 2)';
+    playerBlockFlairContainer2.style.top = 'calc(var(--blockFlair2-top) * 8)';
+
+    playerBlockFlairContainer3.style.left = 'calc(var(--blockFlair3-left) * 2)';
+    playerBlockFlairContainer3.style.top = 'calc(var(--blockFlair3-top) * 4)';
+
+    playerBlockFlairContainer4.style.left = 'calc(var(--blockFlair4-left) * 2)';
+    playerBlockFlairContainer4.style.top = 'calc(var(--blockFlair4-top) * 6)';
+
+    playerBlockFlairContainer5.style.left = 'calc(var(--blockFlair5-left) * 2)';
+    playerBlockFlairContainer5.style.top = 'calc(var(--blockFlair5-top) * 3)';
+
+    //resets position of all playerBlockFlairContainers after 1500ms
+    setTimeout(function () {
+      playerBlockFlairContainer1.style.left = 'calc(var(--blockFlair1-left))';
+      playerBlockFlairContainer1.style.top = 'calc(var(--blockFlair1-top))';
+
+      playerBlockFlairContainer2.style.left = 'calc(var(--blockFlair2-left))';
+      playerBlockFlairContainer2.style.top = 'calc(var(--blockFlair2-top))';
+
+      playerBlockFlairContainer3.style.left = 'calc(var(--blockFlair3-left))';
+      playerBlockFlairContainer3.style.top = 'calc(var(--blockFlair3-top))';
+
+      playerBlockFlairContainer4.style.left = 'calc(var(--blockFlair4-left))';
+      playerBlockFlairContainer4.style.top = 'calc(var(--blockFlair4-top))';
+
+      playerBlockFlairContainer5.style.left = 'calc(var(--blockFlair5-left))';
+      playerBlockFlairContainer5.style.top = 'calc(var(--blockFlair5-top))';
+    }, 1500);
+
+
+    //sets playerBlockFlairs to 100%
+    playerBlockFlair1.style.opacity = '100%';
+    playerBlockFlair2.style.opacity = '100%';
+    playerBlockFlair3.style.opacity = '100%';
+    playerBlockFlair4.style.opacity = '100%';
+    playerBlockFlair5.style.opacity = '100%';
+
+    //sets playerBlockFlairs to 0% after 750ms
+    setTimeout(function () {
+      playerBlockFlair1.style.opacity = '0%';
+      playerBlockFlair2.style.opacity = '0%';
+      playerBlockFlair3.style.opacity = '0%';
+      playerBlockFlair4.style.opacity = '0%';
+      playerBlockFlair5.style.opacity = '0%';
+    }, 750);
   }
 
   //function that resets the board

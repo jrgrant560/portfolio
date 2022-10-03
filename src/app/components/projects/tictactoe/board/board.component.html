@@ -1,16 +1,27 @@
 <main id="tttContainer">
     <span class="victoryFlair">
-        <div class="playerBlock">{{ player }}</div>
-        <div class="playerBlock">{{ player }}</div>
-        <div class="playerBlock">{{ player }}</div>
-        <div class="playerBlock">{{ player }}</div>
-        <div class="playerBlock">{{ player }}</div>
+        <div class="playerBlockFlairContainer playerBlockFlairContainer1">
+            <div class="playerBlockFlair playerBlockFlair1">{{ player }}</div>
+        </div>
+        <div class="playerBlockFlairContainer playerBlockFlairContainer2">
+            <div class="playerBlockFlair playerBlockFlair2">{{ player }}</div>
+        </div>
+        <div class="playerBlockFlairContainer playerBlockFlairContainer3">
+            <div class="playerBlockFlair playerBlockFlair3">{{ player }}</div>
+        </div>
+        <div class="playerBlockFlairContainer playerBlockFlairContainer4">
+            <div class="playerBlockFlair playerBlockFlair4">{{ player }}</div>
+        </div>
+        <div class="playerBlockFlairContainer playerBlockFlairContainer5">
+            <div class="playerBlockFlair playerBlockFlair5">{{ player }}</div>
+        </div>
     </span>
     <h1 id="playerTitle">
-        <div *ngIf="winner">Winning Player: </div>
-        <div *ngIf="!winner">Current Player: </div>
+        <div id="winningPlayer">Winning Player: </div>
+        <div id="currentPlayer">Current Player: </div>
         <div class="playerBlock">{{ player }}</div>
     </h1>
+
     <!--button that uses a "click" event-->
     <button id="newGameButton" (click)="newGame(); playerTitleBGset()">Start New Game</button>
     <!-- the tictactoe board -->
