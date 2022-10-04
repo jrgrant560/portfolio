@@ -35,12 +35,12 @@
     align-items: center;
 }
 
-.ghLink {
+/* .ghLink {
     color: transparent;
     margin-bottom: auto;
 }
 
-.fa-github {
+.ghLink>.fa-github {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -55,10 +55,10 @@
     font-size: 46px;
 }
 
-.fa-github:hover {
+.ghLink>.fa-github:hover {
     background: white;
     color:black
-}
+} */
 
 .img-container {
     display: flex;

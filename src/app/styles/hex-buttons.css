@@ -1,0 +1,133 @@
+.hexButtonsContainer {
+    position: relative;
+}
+
+.hexButtonContainer {
+    display: flex;
+    position: absolute;
+    width: 150px;
+    aspect-ratio: 52 / 45;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexButton {
+    width: 130px;
+    aspect-ratio: 52 / 45;
+    margin: auto;
+    color: #fff;
+    font-size: 26px;
+    border: none;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* Icon settings */
+.material-symbols-outlined {
+    margin: auto;
+    font-size:36px;
+    color: white;
+}
+
+.fa-linkedin-in {
+    font-size: 66px;
+    color: white;
+    background-color: transparent;
+}
+
+.emailIcon, .contactIcon, .lightIcon {
+    display: block;
+    font-size: 82px;
+    color: white;
+}
+
+.arrowIcon, .tabIcon, .copyIcon {
+    display: none;
+}
+
+.btnGH>.hexButton>.fa-github, .btnGHlink>.hexButton>.fa-github {
+    margin: auto;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+}
+
+.btnGHlink>.hexButton>.tabIcon {
+    font-size: 18px;
+}
+
+.btnGHlink>.hexButton>.fa-github {
+    font-size: 44px;
+    padding: 0px;
+}
+
+.btnGH>.hexButton>.fa-github {
+    font-size: 82px;
+}
+
+/* Colors */
+.btnEmail>.hexButton:hover, .btnContact>.hexButton:hover, .btnLinkedIn>.hexButton:hover, .btnProjects>.hexButton:hover, .btnGH>.hexButton:hover, .btnGHlink>.hexButton:hover {
+    background-color: white;
+}
+
+.btnEmail, .btnEmail>.hexButton, .btnContact, .btnContact>.hexButton {
+    background-color: #29abe0;
+}
+
+.btnEmail>.hexButton:hover>*, .btnContact>.hexButton:hover>* {
+    color: #29abe0;
+}
+
+.btnLinkedIn, .btnLinkedIn>.hexButton {
+    background-color: #007bb5;
+}
+
+.btnLinkedIn>.hexButton:hover>* {
+    color: #007bb5;
+}
+
+.btnProjects, .btnProjects>.hexButton {
+    background-color: orange;
+}
+
+.btnProjects>.hexButton:hover>* {
+    color: orange;
+}
+
+.btnGH, .btnGH>.hexButton, .btnGHlink, .btnGHlink>.hexButton {
+    background-color: #171515;
+}
+
+.btnGH>.hexButton:hover>*, .btnGHlink>.hexButton:hover>* {
+    color: #171515;
+}
+
+/* text settings */
+.hexButtonText {
+    display: none;
+}
+
+.hexButtonTextContact {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.hexButtonTextLinkedIn {
+    margin-top: 20px;
+}
+
+.btnGHlink>.hexButton>.hexButtonTextGH {
+    font-size: 14px;
+}
+
+/* positions */
+.btnLinkedIn, .btnContact {
+    top: 129px;
+}
+
+.btnGH {
+    top: 65px;
+    left: 112px;
+}
+
+.btnGHlink {
+    position: initial;
+}

@@ -1,7 +1,14 @@
 <div id="infoContainer">
-    <a class="ghLink" href="https://github.com/jrgrant560/portfolio" target="_blank">
-        <i class="fa-brands fa-github"></i>
-    </a>
+    <div class="hexButtonContainer btnGHlink">
+        <button class="hexButton"
+            (mouseover)="hideMe('.btnGHlink>.hexButton>.fa-github'); revealMe('.btnGHlink>.hexButton>.hexButtonTextGH'); revealMe('.btnGHlink>.hexButton>.tabIcon')"
+            (mouseout)="hideMe('.btnGHlink>.hexButton>.hexButtonTextGH'); revealMe('.btnGHlink>.hexButton>.fa-github'); hideMe('.btnGHlink>.hexButton>.tabIcon')"
+            onclick="window.open('https://github.com/jrgrant560/portfolio')">
+            <i class="fa-brands fa-github"></i>
+            <div class="hexButtonText hexButtonTextGH">GitHub</div>
+            <span class="material-symbols-outlined tabIcon">open_in_new</span>
+        </button>
+    </div>
     <div id="ghAlert">
         <div class="ghAlertArrowContainer">
             <i class="fa-solid fa-arrow-left"></i>
@@ -52,7 +59,7 @@
         <!-- <section class="pageContainer pageButtonContainer">
         <button class="btn-dark projectsLinkButton" routerLink="projects">See My Work!</button>
     </section> -->
-        <nav class="hexButtons">
+        <nav class="hexButtonsContainer">
             <!-- <div class="hexButtonContainer btnContact">
             <button class="hexButton" routerLink="contactMe">Contact Me</button>
         </div>
@@ -85,8 +92,8 @@
             </div>
             <div class="hexButtonContainer btnGH">
                 <button class="hexButton"
-                    (mouseover)="hideMe('.btnGH>.hexButton>.fa-github'); revealMe('.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.tabIcon')"
-                    (mouseout)="hideMe('.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.fa-github'); hideMe('.btnGH>.hexButton>.tabIcon')"
+                    (mouseover)="hideMe('.btnGH>.hexButton>.fa-github'); revealMe('.btnGH>.hexButton>.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.tabIcon')"
+                    (mouseout)="hideMe('.btnGH>.hexButton>.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.fa-github'); hideMe('.btnGH>.hexButton>.tabIcon')"
                     onclick="window.open('https://github.com/jrgrant560')">
                     <i class="fa-brands fa-github"></i>
                     <div class="hexButtonText hexButtonTextGH">GitHub</div>

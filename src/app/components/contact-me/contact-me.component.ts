@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalFunctionsService } from 'src/app/services/global-functions.service';
 
 @Component({
   selector: 'app-contact-me',
@@ -13,21 +14,30 @@ export class ContactMeComponent implements OnInit {
   /* Tooltip for the copied text */
   // tooltip = document.getElementById("myTooltip")!;
 
-  constructor() {
-  }
+  constructor(
+    private globalFuncs: GlobalFunctionsService
+  ) { }
+
+  revealMe(elementTarg: string) {
+    this.globalFuncs.revealMe(elementTarg)
+  };
+
+  hideMe(elementTarg: string) {
+    this.globalFuncs.hideMe(elementTarg)
+  };
 
   ngOnInit(): void {
-    
+
   }
 
   copyEmail() {
     /* Get the text field */
-    let copyItem= document.getElementById("myEmail")!;
-  
+    let copyItem = document.getElementById("myEmail")!;
+
     /* Select the text field */
     // copyEmail.select();
     // copyEmail.setSelectionRange(0, 99999); /* For mobile devices */
-     /* Copy the text inside the text field */
+    /* Copy the text inside the text field */
     navigator.clipboard.writeText('jrgrant560@gmail.com');
     this.alertEmailCopied();
   }
@@ -40,24 +50,10 @@ export class ContactMeComponent implements OnInit {
     }, 2000)
   }
 
-  //sets target element display to block
-  revealMe(elementTarg: string) {
-    let element = document.querySelector(elementTarg) as HTMLElement;
-    element.style.display = 'block';
-  }
-
-  //sets target element display to none
-  hideMe(elementTarg: string) {
-    let element = document.querySelector(elementTarg) as HTMLElement;
-    element.style.display = 'none';
-  }
-
-
-
   // copyLinkedIn() {
   //   /* Get the text field */
   //   let copyItem= document.getElementById("myLinkedIn")!;
-  
+
   //   /* Select the text field */
   //   // copyEmail.select();
   //   // copyEmail.setSelectionRange(0, 99999); /* For mobile devices */
@@ -69,7 +65,7 @@ export class ContactMeComponent implements OnInit {
   // copyGitHub() {
   //   /* Get the text field */
   //   let copyItem= document.getElementById("myGitHub")!;
-  
+
   //   /* Select the text field */
   //   // copyEmail.select();
   //   // copyEmail.setSelectionRange(0, 99999); /* For mobile devices */

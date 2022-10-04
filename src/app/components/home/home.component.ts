@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalFunctionsService } from 'src/app/services/global-functions.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css', '../contact-me/contact-me.component.css']
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private globalFuncs: GlobalFunctionsService
+  ) {}
 
-  // ~~NOTE TO CODE REVIEWER: I hijacked this code from one of my animation projects, so it's a bit of a mess here.
+  revealMe(elementTarg: string) {
+    this.globalFuncs.revealMe(elementTarg)
+  };
+
+  hideMe(elementTarg: string) {
+    this.globalFuncs.hideMe(elementTarg)
+  };
+
+  // ~~NOTE TO CODE REVIEWER: I hijacked the typewriter code from one of my animation projects and added several timing functions, so it's a bit of a mess here.
   // For the clean version, Check out the JS TypeWriter Github files in the Web Animations in the Projects Page.
 
   ngOnInit(): void {
@@ -269,17 +280,4 @@ export class HomeComponent implements OnInit {
     const msgBlock = document.getElementById("msgBlock")!;
     msgBlock.style.display = "none";
   }
-
-  //sets target element display to block
-  revealMe(elementTarg: string) {
-    let element = document.querySelector(elementTarg) as HTMLElement;
-    element.style.display = 'block';
-  }
-
-  //sets target element display to none
-  hideMe(elementTarg: string) {
-    let element = document.querySelector(elementTarg) as HTMLElement;
-    element.style.display = 'none';
-  }
-
 }

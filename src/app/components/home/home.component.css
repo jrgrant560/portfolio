@@ -49,27 +49,6 @@
     width: 60px;
     height: 60px;
     margin: 5px 0;
-    color: transparent;
-}
-
-.ghLink>.fa-github {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: black;
-    color: white;
-    border: black 2px solid;
-    padding: 0px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 46px;
-}
-
-.fa-github:hover {
-    background: white;
-    color:black
 }
 
 #msgBlock {
@@ -164,7 +143,7 @@
     margin-bottom: 4em;
 }
 
-.hexButtons {
+.hexButtonsContainer {
     width: 262px;
     height: 259px;
 
@@ -172,28 +151,6 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-}
-
-.btnContact, .btnContact>.hexButton {
-    background-color: #29abe0;
-}
-
-.btnContact>.hexButton:hover {
-    color: #29abe0;
-    background-color: #fff;
-}
-
-.btnGH {
-    left: 220px;
-}
-
-.btnGH, .btnGH>.hexButton {
-    background-color: #3e3f3a;
-}
-
-.btnGH>.hexButton:hover {
-    color: #3e3f3a;
-    background-color: #fff;
 }
 
 @keyframes ghAlertArrowMove {
