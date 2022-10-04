@@ -27,10 +27,32 @@ export class ContactMeComponent implements OnInit {
     /* Select the text field */
     // copyEmail.select();
     // copyEmail.setSelectionRange(0, 99999); /* For mobile devices */
-    console.log(copyItem.innerText);
      /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyItem.innerText);
+    navigator.clipboard.writeText('jrgrant560@gmail.com');
+    this.alertEmailCopied();
   }
+
+  alertEmailCopied() {
+    let emailAlertBox = document.querySelector('#emailAlertBox') as HTMLElement;
+    emailAlertBox.style.opacity = '100%';
+    setTimeout(function () {
+      emailAlertBox.style.opacity = '0%';
+    }, 2000)
+  }
+
+  //sets target element display to block
+  revealMe(elementTarg: string) {
+    let element = document.querySelector(elementTarg) as HTMLElement;
+    element.style.display = 'block';
+  }
+
+  //sets target element display to none
+  hideMe(elementTarg: string) {
+    let element = document.querySelector(elementTarg) as HTMLElement;
+    element.style.display = 'none';
+  }
+
+
 
   // copyLinkedIn() {
   //   /* Get the text field */

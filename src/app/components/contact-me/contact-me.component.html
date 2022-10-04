@@ -1,25 +1,43 @@
-<h1>
+<h1 id="contactTitle">
     Contact Me
 </h1>
-<main>
-    <section class="rowEmail">
-        <span class="material-icons-outlined">alternate_email</span>
-        <!-- The text field -->
-        <div id="myEmail">jrgrant560@gmail.com</div>
-        <!-- Copy Button -->
-        <button class="btn-info copyButton" (click)="copyEmail()">
-            <span class="material-symbols-outlined copyIcon">content_copy</span>
-        </button>
-    </section>
-    <section class="rowTwo">
-        <i class="fa-brands fa-linkedin-in"></i>
-        <!-- The text field -->
-        <a href="https://www.linkedin.com/in/jacobryangrant/"
-            id="myLinkedIn">https://www.linkedin.com/in/jacobryangrant/</a>
-    </section>
-    <section class="rowTwo">
-        <i class="fa-brands fa-github"></i>
-        <!-- The text field -->
-        <a href="https://github.com/jrgrant560" id="myLinkedIn">https://github.com/jrgrant560</a>
-    </section>
+<main id="contactMain">
+    <div id="emailAlertBox">
+        <div id="emailPopup">email copied!</div>
+    </div>
+    <nav class="hexButtons">
+        <div class="hexButtonContainer btnEmail">
+            <button class="hexButton"
+                (click)="copyEmail()"
+                (mouseover)="hideMe('.emailIcon'); revealMe('.hexButtonTextEmail'); revealMe('.copyIcon')"
+                (mouseout)="hideMe('.hexButtonTextEmail'); revealMe('.emailIcon'); hideMe('.copyIcon')"
+            >
+                <span class="material-icons-outlined emailIcon">alternate_email</span>
+                <div class="hexButtonText hexButtonTextEmail">Email</div>
+                <span class="material-symbols-outlined copyIcon">content_copy</span>
+            </button>
+        </div>
+        <div class="hexButtonContainer btnLinkedIn">
+            <button class="hexButton"
+                (mouseover)="hideMe('.fa-linkedin-in'); revealMe('.hexButtonTextLinkedIn'); revealMe('.btnLinkedIn>.hexButton>.tabIcon')"
+                (mouseout)="hideMe('.hexButtonTextLinkedIn'); revealMe('.fa-linkedin-in'); hideMe('.btnLinkedIn>.hexButton>.tabIcon')"
+                onclick="window.open('https://www.linkedin.com/in/jacobryangrant/')"
+            >
+                <i class="fa-brands fa-linkedin-in"></i>
+                <div class="hexButtonText hexButtonTextLinkedIn">LinkedIn</div>
+                <span class="material-symbols-outlined tabIcon">open_in_new</span>
+            </button>
+        </div>
+        <div class="hexButtonContainer btnGH">
+            <button class="hexButton"
+                (mouseover)="hideMe('.fa-github'); revealMe('.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.tabIcon')"
+                (mouseout)="hideMe('.hexButtonTextGH'); revealMe('.fa-github'); hideMe('.btnGH>.hexButton>.tabIcon')"
+                onclick="window.open('https://github.com/jrgrant560')"
+            >
+                <i class="fa-brands fa-github"></i>
+                <div class="hexButtonText hexButtonTextGH">GitHub</div>
+                <span class="material-symbols-outlined tabIcon">open_in_new</span>
+            </button>
+        </div>
+    </nav>
 </main>

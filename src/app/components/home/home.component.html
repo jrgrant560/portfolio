@@ -52,7 +52,7 @@
         <button class="btn-dark projectsLinkButton" routerLink="projects">See My Work!</button>
     </section> -->
     <nav class="hexButtons">
-        <div class="hexButtonContainer btnContact">
+        <!-- <div class="hexButtonContainer btnContact">
             <button class="hexButton" routerLink="contactMe">Contact Me</button>
         </div>
         <div class="hexButtonContainer btnProjects">
@@ -61,7 +61,40 @@
         <div class="hexButtonContainer btnGH">
             <button class="hexButton" onclick="window.open('https://github.com/jrgrant560')"
                 type="button">GitHub</button>
-        </div>
+        </div> -->
 
+            <div class="hexButtonContainer btnContact">
+                <button class="hexButton"
+                    (mouseover)="hideMe('.contactIcon'); revealMe('.hexButtonTextContact'); revealMe('.arrowIcon')"
+                    (mouseout)="hideMe('.hexButtonTextContact'); revealMe('.contactIcon'); hideMe('.arrowIcon')"
+                    routerLink="contactMe"
+                >
+                    <span class="material-icons-outlined contactIcon">contact_page</span>
+                    <div class="hexButtonText hexButtonTextContact">Contact Me</div>
+                    <span class="material-symbols-outlined arrowIcon">arrow_outward</span>
+                </button>
+            </div>
+            <div class="hexButtonContainer btnProjects">
+                <button class="hexButton"
+                    (mouseover)="hideMe('.lightIcon'); revealMe('.hexButtonTextProjects'); revealMe('.btnProjects>.hexButton>.tabIcon')"
+                    (mouseout)="hideMe('.hexButtonTextProjects'); revealMe('.lightIcon'); hideMe('.btnProjects>.hexButton>.tabIcon')"
+                    routerLink="projects"
+                >
+                <span class="material-symbols-outlined lightIcon">emoji_objects</span>
+                    <div class="hexButtonText hexButtonTextProjects">Projects</div>
+                    <span class="material-symbols-outlined tabIcon">arrow_outward</span>
+                </button>
+            </div>
+            <div class="hexButtonContainer btnGH">
+                <button class="hexButton"
+                    (mouseover)="hideMe('.btnGH>.hexButton>.fa-github'); revealMe('.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.tabIcon')"
+                    (mouseout)="hideMe('.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.fa-github'); hideMe('.btnGH>.hexButton>.tabIcon')"
+                    onclick="window.open('https://github.com/jrgrant560')"
+                >
+                    <i class="fa-brands fa-github"></i>
+                    <div class="hexButtonText hexButtonTextGH">GitHub</div>
+                    <span class="material-symbols-outlined tabIcon">open_in_new</span>
+                </button>
+            </div>
     </nav>
 </main>

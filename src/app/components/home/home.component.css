@@ -48,7 +48,7 @@
     color: transparent;
 }
 
-.fa-github {
+.ghLink>.fa-github {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -186,19 +186,6 @@
 
 .btnContact>.hexButton:hover {
     color: #29abe0;
-    background-color: #fff;
-}
-
-.btnProjects {
-    left: 110px;
-}
-
-.btnProjects, .btnProjects>.hexButton {
-    background-color: orange;
-}
-
-.btnProjects>.hexButton:hover {
-    color: orange;
     background-color: #fff;
 }
 
