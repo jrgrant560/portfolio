@@ -1,7 +1,11 @@
+#homeBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 #titles {
     position: relative;
     z-index: 10;
-    margin-bottom: 10vw;
 }
 
 #infoContainer {
@@ -146,11 +150,14 @@
 }
 
 #homeScroll {
-    height: 0;
     position: relative;
     z-index: 1;
     top: -2000px;
     transition: all 1s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pageContainer {
@@ -158,26 +165,13 @@
 }
 
 .hexButtons {
-    position: relative;
+    width: 262px;
+    height: 259px;
 
-}
-
-.hexButtonContainer {
-    display: flex;
-    position: absolute;
-    width: 110px;
-    aspect-ratio: 52 / 45;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-}
-
-.hexButton {
-    width: 100px;
-    aspect-ratio: 52 / 45;
-    margin: auto;
-    color: #fff;
-    font-size: 20px;
-    border: none;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .btnContact, .btnContact>.hexButton {

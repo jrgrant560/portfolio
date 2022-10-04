@@ -1,58 +1,59 @@
-<header id="titles">
-    <div id="infoContainer">
-        <a class="ghLink" href="https://github.com/jrgrant560/portfolio" target="_blank">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <div id="ghAlert">
-            <div class="ghAlertArrowContainer">
-                <i class="fa-solid fa-arrow-left"></i>
+<div id="infoContainer">
+    <a class="ghLink" href="https://github.com/jrgrant560/portfolio" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+    <div id="ghAlert">
+        <div class="ghAlertArrowContainer">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="ghAlertText"><em>check out this site's code on <strong>GitHub</strong></em></div>
+    </div>
+    <span id="msgBlock">
+        <div>This site was built using</div>
+        <i class="fa-brands fa-angular"></i>
+        <div>Angular</div>
+        <i class="fa-solid fa-xmark" (click)="msgBlockHide()"></i>
+    </span>
+</div>
+<main id="homeBody">
+    <header id="titles">
+        <div class="headerRow">
+            <span id="headerTitle"></span>
+            <div id="typeBlockTitle" class="typeBlock"></div>
+        </div>
+        <br>
+        <!-- sub headers -->
+        <div class="headerRow headerRowSub">
+            <div>
+                <span id="headerSubA" class="headerSub"></span>
+                <div id="typeBlockA" class="typeBlock typeBlockSub"></div>
             </div>
-            <div class="ghAlertText"><em>check out this site's code on <strong>GitHub</strong></em></div>
+            <div>
+                <span id="headerSubB" class="headerSub"></span>
+                <div id="typeBlockB" class="typeBlock typeBlockSub"></div>
+            </div>
+            <div>
+                <span id="headerSubC" class="headerSub"></span>
+                <div id="typeBlockC" class="typeBlock typeBlockSub"></div>
+            </div>
+            <div>
+                <span id="headerSubD" class="headerSub"></span>
+                <div id="typeBlockD" class="typeBlock typeBlockSub"></div>
+            </div>
         </div>
-        <span id="msgBlock">
-            <div>This site was built using</div>
-            <i class="fa-brands fa-angular"></i>
-            <div>Angular</div>
-            <i class="fa-solid fa-xmark" (click)="msgBlockHide()"></i>
-        </span>
-    </div>
-    <div class="headerRow">
-        <span id="headerTitle"></span>
-        <div id="typeBlockTitle" class="typeBlock"></div>
-    </div>
-    <br>
-    <!-- sub headers -->
-    <div class="headerRow headerRowSub">
-        <div>
-            <span id="headerSubA" class="headerSub"></span>
-            <div id="typeBlockA" class="typeBlock typeBlockSub"></div>
-        </div>
-        <div>
-            <span id="headerSubB" class="headerSub"></span>
-            <div id="typeBlockB" class="typeBlock typeBlockSub"></div>
-        </div>
-        <div>
-            <span id="headerSubC" class="headerSub"></span>
-            <div id="typeBlockC" class="typeBlock typeBlockSub"></div>
-        </div>
-        <div>
-            <span id="headerSubD" class="headerSub"></span>
-            <div id="typeBlockD" class="typeBlock typeBlockSub"></div>
-        </div>
-    </div>
-</header>
-<main id="homeScroll">
-    <!-- <section class="pageContainer">
+    </header>
+    <section id="homeScroll">
+        <!-- <section class="pageContainer">
         <app-about-me></app-about-me>
     </section>
     <section class="pageContainer">
         <app-experience></app-experience>
     </section> -->
-    <!-- <section class="pageContainer pageButtonContainer">
+        <!-- <section class="pageContainer pageButtonContainer">
         <button class="btn-dark projectsLinkButton" routerLink="projects">See My Work!</button>
     </section> -->
-    <nav class="hexButtons">
-        <!-- <div class="hexButtonContainer btnContact">
+        <nav class="hexButtons">
+            <!-- <div class="hexButtonContainer btnContact">
             <button class="hexButton" routerLink="contactMe">Contact Me</button>
         </div>
         <div class="hexButtonContainer btnProjects">
@@ -62,13 +63,11 @@
             <button class="hexButton" onclick="window.open('https://github.com/jrgrant560')"
                 type="button">GitHub</button>
         </div> -->
-
             <div class="hexButtonContainer btnContact">
                 <button class="hexButton"
                     (mouseover)="hideMe('.contactIcon'); revealMe('.hexButtonTextContact'); revealMe('.arrowIcon')"
                     (mouseout)="hideMe('.hexButtonTextContact'); revealMe('.contactIcon'); hideMe('.arrowIcon')"
-                    routerLink="contactMe"
-                >
+                    routerLink="contactMe">
                     <span class="material-icons-outlined contactIcon">contact_page</span>
                     <div class="hexButtonText hexButtonTextContact">Contact Me</div>
                     <span class="material-symbols-outlined arrowIcon">arrow_outward</span>
@@ -78,9 +77,8 @@
                 <button class="hexButton"
                     (mouseover)="hideMe('.lightIcon'); revealMe('.hexButtonTextProjects'); revealMe('.btnProjects>.hexButton>.tabIcon')"
                     (mouseout)="hideMe('.hexButtonTextProjects'); revealMe('.lightIcon'); hideMe('.btnProjects>.hexButton>.tabIcon')"
-                    routerLink="projects"
-                >
-                <span class="material-symbols-outlined lightIcon">emoji_objects</span>
+                    routerLink="projects">
+                    <span class="material-symbols-outlined lightIcon">emoji_objects</span>
                     <div class="hexButtonText hexButtonTextProjects">Projects</div>
                     <span class="material-symbols-outlined tabIcon">arrow_outward</span>
                 </button>
@@ -89,12 +87,12 @@
                 <button class="hexButton"
                     (mouseover)="hideMe('.btnGH>.hexButton>.fa-github'); revealMe('.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.tabIcon')"
                     (mouseout)="hideMe('.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.fa-github'); hideMe('.btnGH>.hexButton>.tabIcon')"
-                    onclick="window.open('https://github.com/jrgrant560')"
-                >
+                    onclick="window.open('https://github.com/jrgrant560')">
                     <i class="fa-brands fa-github"></i>
                     <div class="hexButtonText hexButtonTextGH">GitHub</div>
                     <span class="material-symbols-outlined tabIcon">open_in_new</span>
                 </button>
             </div>
-    </nav>
+        </nav>
+    </section>
 </main>

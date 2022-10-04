@@ -162,13 +162,13 @@ export class HomeComponent implements OnInit {
 
           //animation sequence for other HomePage elements (starts after 'headerTitle' has completed)
           if (element == headerTitle) {
-            infoContainer.style.top = '-2em';
+            homeScrollSection.style.top = '0';
             setTimeout(function () {
-              homeScrollSection.style.top = '0';
-            }, 100)
+              infoContainer.style.top = '-2em';
+            }, 1500)
             setTimeout(function () {
               ghAlert.style.opacity = '100%';
-            }, 6000)
+            }, 7000)
           };
 
         }, typeLength);
