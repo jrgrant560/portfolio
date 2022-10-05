@@ -162,3 +162,31 @@
         left: 0px;
     }
 }
+
+
+/* ----------- PHONES ----------- */
+/* Portrait and Landscape */
+@media only screen
+/* and (min-device-width: 414px)
+and (max-device-width: 736px) */
+and (max-device-width: 768px)
+{
+
+}
+
+/* ----------- TABLET (iPad 3 and 4) ----------- */
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 768px)
+/* and (max-device-width: 1024px) */
+{
+
+}
+
+/* ----------- LAPTOP/DESKTOP (Non-Retina Screens) ----------- */
+@media only screen
+and (min-device-width: 1200px)
+/* and (max-device-width: 1600px) */
+{
+
+}
