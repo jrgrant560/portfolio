@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { ScreensaverComponent } from './components/projects/animations/screensav
 import { AnimationBarberpoleComponent } from './components/projects/animations/animation-barberpole/animation-barberpole.component';
 import { EyeballComponent } from './components/projects/animations/eyeball/eyeball.component';
 import { AnimationTypingComponent } from './components/projects/animations/animation-typing/animation-typing.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -56,11 +58,13 @@ import { AnimationTypingComponent } from './components/projects/animations/anima
     ScreensaverComponent,
     AnimationBarberpoleComponent,
     EyeballComponent,
-    AnimationTypingComponent
+    AnimationTypingComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,120 @@
+#navbarPrimary {
+    position: relative;
+    z-index: 2;
+}
+
+#navCover {
+    position: fixed;
+    z-index: -1;
+    width: 0vw;
+
+    height: 110vh;
+    background: #3e3f3a75;
+}
+
+#navbarHB {
+    display: none;
+    width: 100%;
+    background-color: #3e3f3a;
+}
+
+.buttonRouterNav {
+    width: 100%;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+.btnGroup {
+    width: 100%;
+    display: inline-flex;
+    vertical-align: middle;
+    background-color: #3e3f3a;
+    border-color: #3e3f3a;
+}
+
+.btnGroupHB {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: -350px;
+    width: 300px;
+    height: 100vh;
+    transition: 400ms;
+}
+
+.btnGroupHB>* {
+    text-align: left;
+    font-size: 1.6em;
+    height: 2em;
+}
+
+.buttonRouterNav {
+    color: #fff;
+    background-color: #3e3f3a;
+    border-color: #3e3f3a;
+}
+
+#navbarHB>.buttonRouterNav {
+    width: 40px;
+    height: 20px;
+    font-size: 1.6em;
+    height: 2em;
+}
+
+.btnGroupFull>.buttonRouterNav:hover {
+    color: #3e3f3a;
+    background-color: #fff;
+}
+
+.buttonRouterNav.contact {
+    color: #fff;
+    background-color: #29abe0;
+    border-color: #29abe0;
+}
+
+.buttonRouterNav.contact:focus {
+    background-color: #fff;
+    color: #3e3f3a;
+}
+
+.btnGroupFull>.buttonRouterNav.contact:hover {
+    color: #29abe0;
+    background-color: #fff;
+}
+
+
+/* ----------- PHONES ----------- */
+/* Portrait and Landscape */
+@media only screen
+
+/* and (min-device-width: 414px)
+and (max-device-width: 736px) */
+and (max-device-width: 768px) {
+
+    #navbarHB, .btnGroupHB {
+        display: block;
+    }
+
+    .btnGroupFull {
+        display: none;
+    }
+}
+
+/* ----------- TABLET (iPad 3 and 4) ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px)
+/* and (max-device-width: 1024px) */
+{
+
+}
+
+/* ----------- LAPTOP/DESKTOP (Non-Retina Screens) ----------- */
+@media only screen and (min-device-width: 1200px)
+
+/* and (max-device-width: 1600px) */
+{
+
+}
