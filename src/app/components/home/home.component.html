@@ -15,12 +15,12 @@
         </div>
         <div class="ghAlertText"><em>check out this site's code on <strong>GitHub</strong></em></div>
     </div>
-    <span id="msgBlock">
+    <!-- <span id="msgBlock">
         <div>This site was built using</div>
         <i class="fa-brands fa-angular"></i>
         <div>Angular</div>
         <i class="fa-solid fa-xmark" (click)="msgBlockHide()"></i>
-    </span>
+    </span> -->
 </div>
 <main id="homeBody">
     <header id="titles">
@@ -85,7 +85,7 @@
                     (mouseover)="hideMe('.lightIcon'); revealMe('.hexButtonTextProjects'); revealMe('.btnProjects>.hexButton>.tabIcon')"
                     (mouseout)="hideMe('.hexButtonTextProjects'); revealMe('.lightIcon'); hideMe('.btnProjects>.hexButton>.tabIcon')"
                     routerLink="projects">
-                    <span class="material-symbols-outlined lightIcon">emoji_objects</span>
+                    <i class="fa-solid fa-lightbulb lightIcon"></i>
                     <div class="hexButtonText hexButtonTextProjects">Projects</div>
                     <span class="material-symbols-outlined tabIcon">arrow_outward</span>
                 </button>
@@ -102,4 +102,9 @@
             </div>
         </nav>
     </section>
+
+    <footer id="angularFooter">
+        <i class="fa-brands fa-angular faFoot"></i>
+        <div><em>This site was built using Angular</em></div>
+    </footer>
 </main>

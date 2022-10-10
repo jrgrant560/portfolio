@@ -188,9 +188,9 @@ export class HomeComponent implements OnInit {
         //makes cursor dissapear some time after typing has completed
         setTimeout(function () {
           //stops cursor blinking
-          endBlink(typeBlock, intervalName);
-          //makes cursor invisible
-          typeBlock.style.backgroundColor = 'transparent';
+          // endBlink(typeBlock, intervalName);
+          //removes cursor
+          typeBlock.remove();
 
         }, (typeLength + 1000));
 
@@ -277,8 +277,8 @@ export class HomeComponent implements OnInit {
     init();
   }
 
-  msgBlockHide() {
-    const msgBlock = document.getElementById("msgBlock")!;
-    msgBlock.style.display = "none";
-  }
+  // msgBlockHide() {
+  //   const msgBlock = document.getElementById("msgBlock")!;
+  //   msgBlock.style.display = "none";
+  // }
 }

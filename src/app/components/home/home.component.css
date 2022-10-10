@@ -1,6 +1,7 @@
 #homeBody {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10vh;
 }
 
 #titles {
@@ -67,7 +68,7 @@
     text-align: center;
 }
 
-#msgBlock :nth-child(1) {
+/* #msgBlock :nth-child(1) {
     font-size: 20px;
 }
 
@@ -86,9 +87,9 @@
     padding: 0;
     margin-right: 10px;
     font-size: 44px;
-}
+} */
 
-.fa-xmark {
+/* .fa-xmark {
     position: absolute;
     left: 6px;
     bottom: 6px;
@@ -97,7 +98,7 @@
 
 .fa-xmark:hover {
     cursor: pointer;
-}
+} */
 
 /* .headerRow {
     margin: 3vw 0;
@@ -151,6 +152,19 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+#angularFooter {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4em;
+    color: #dd1b169e;
+}
+
+.fa-angular {
+    font-size: 80px;
 }
 
 @keyframes ghAlertArrowMove {
