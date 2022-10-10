@@ -37,8 +37,12 @@ section {
 }
 
 button:hover {
-    background-color: rgb(163,163,163);
-    color: rgb(240, 240, 240);
+    background-color: rgb(163, 163, 163);
+    color: #fff;
+}
+
+button:hover .dropDownIcon {
+    color: #fff;
 }
 
 .title {
@@ -56,9 +60,12 @@ button:hover {
 .title>div {
     font-size: 0.6em;
     font-style: italic;
-    margin-right: 3px;}
+    margin-right: 3px;
+}
 
 .dropDownIcon {
+    margin: 0;
+    color: var(--bs-body-color);
     font-size: 2.4em;
     transition: transform 0.5s ease-in-out;
 }
@@ -71,7 +78,15 @@ button:hover {
     height: 4px;
 } */
 
-.expandable, .divTable, .divTableRow, .divTableCell, .tokencontainer, .imgContainer, img, h2, article {
+.expandable,
+.divTable,
+.divTableRow,
+.divTableCell,
+.tokencontainer,
+.imgContainer,
+img,
+h2,
+article {
     transition: all 1s ease-in-out;
 }
 
@@ -136,7 +151,8 @@ img {
     color: transparent;
 }
 
-.yearsExp, .yearsExpNumber {
+.yearsExp,
+.yearsExpNumber {
     font-size: calc(0.5em + 0.9vw);
     font-style: italic;
     font-weight: 500;
