@@ -6,13 +6,14 @@
 #navCover {
     position: fixed;
     z-index: -1;
-    width: 0vw;
+    width: 0%;
 
-    height: 110vh;
+    height: 100%;
     background: #3e3f3a75;
 }
 
 #navbarHB {
+    position: fixed;
     display: none;
     width: 100%;
     background-color: #3e3f3a;
@@ -37,11 +38,11 @@
 
 .btnGroupHB {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: -350px;
     width: 300px;
-    height: 100vh;
+    height: 100%;
     transition: 400ms;
 }
 
@@ -59,7 +60,6 @@
 
 #navbarHB>.buttonRouterNav {
     width: 40px;
-    height: 20px;
     font-size: 1.6em;
     height: 2em;
 }
@@ -108,7 +108,7 @@ and (max-device-width: 768px) {
 @media only screen and (min-device-width: 768px)
 /* and (max-device-width: 1024px) */
 {
-
+    
 }
 
 /* ----------- LAPTOP/DESKTOP (Non-Retina Screens) ----------- */

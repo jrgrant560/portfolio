@@ -49,7 +49,7 @@ export class NavbarComponent implements OnInit {
       navCover.style.width = '0vw';
     } else {
       navbarBtnGroupHB.style.left = '0px';
-      navCover.style.width = '110vw';
+      navCover.style.width = '100%';
     }
   }
 

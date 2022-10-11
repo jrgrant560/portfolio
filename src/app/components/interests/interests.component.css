@@ -215,7 +215,7 @@ article {
 
 .expandable.expanded .divTableCell {
     color: initial;
-    padding: 0.25em;
+    padding: 0 0.25em;
 }
 
 #dropDown02.expanded .imgContainer,
@@ -224,4 +224,21 @@ article {
 #dropDown05.expanded .imgContainer,
 #dropDown07.expanded .imgContainer {
     border: 2px solid;
+}
+
+@media only screen
+and (max-device-width: 768px)
+{
+    .masterButtons {
+        width: auto;
+    }
+
+    .divTableTwoColumn {
+        grid-template-columns: 100%;
+    }
+
+    .divTableRowTwoColumn {
+        grid-template-columns: 25% 75%;
+    }
+
 }

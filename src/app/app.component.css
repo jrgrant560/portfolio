@@ -15,7 +15,9 @@ router-outlet {
 and (max-device-width: 736px) */
 and (max-device-width: 768px)
 {
-
+    #boundary {
+        padding-top: 5em;
+    }
 }
 
 /* ----------- TABLET (iPad 3 and 4) ----------- */
