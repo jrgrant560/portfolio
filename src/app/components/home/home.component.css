@@ -171,6 +171,7 @@ and (max-device-width: 768px)
 {
     #homeBody {
         grid-template-columns: 1fr;
+        grid-gap: 8vh;
     }
 
     #titles {
