@@ -23,12 +23,12 @@ img {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: bold;
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 
 #p-close {
@@ -49,7 +49,9 @@ p {
 and (max-device-width: 736px) */
 and (max-device-width: 768px)
 {
-
+    h1 {
+        font-size: 2.2em;
+    }
 }
 
 /* 768px-900px */
@@ -71,7 +73,7 @@ and (max-device-width: 900px)
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.1em;;
     }
 
     #interestsSection {

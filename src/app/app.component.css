@@ -1,3 +1,10 @@
+#appContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #boundary {
     position: relative;
     z-index: 1;
@@ -8,13 +15,27 @@ router-outlet {
     border-bottom: 4px solid;
 }
 
+#angularFooter {
+    margin: 0 auto 1em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4em;
+    color: #dd1b169e;
+}
+
+.fa-angular {
+    font-size: 80px;
+}
+
 /* ----------- PHONES ----------- */
 /* Portrait and Landscape */
 @media only screen
+
 /* and (min-device-width: 414px)
 and (max-device-width: 736px) */
-and (max-device-width: 768px)
-{
+and (max-device-width: 768px) {
     #boundary {
         padding-top: 5em;
     }
@@ -22,17 +43,13 @@ and (max-device-width: 768px)
 
 /* ----------- TABLET (iPad 3 and 4) ----------- */
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 768px)
-/* and (max-device-width: 1024px) */
-{
+@media only screen and (min-device-width: 768px)
 
-}
+/* and (max-device-width: 1024px) */
+    {}
 
 /* ----------- LAPTOP/DESKTOP (Non-Retina Screens) ----------- */
-@media only screen
-and (min-device-width: 1200px)
-/* and (max-device-width: 1600px) */
-{
+@media only screen and (min-device-width: 1200px)
 
-}
+/* and (max-device-width: 1600px) */
+    {}

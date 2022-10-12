@@ -2,13 +2,13 @@ main {
     display: grid;
 }
 
-h1 {
-    font-size: 3rem;
+#titleMain {
+    font-size: 3em;
     font-weight: bold;
 }
 
-h3 {
-    font-size: 1.75rem;
+#subtitleMain {
+    font-size: 2em;
 }
 
 .masterButtons {
@@ -26,8 +26,9 @@ section {
 }
 
 .dropDownButton {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-width: 0px 3px;
     width: 100%;
 }
@@ -117,7 +118,7 @@ article {
 
 .divTableCellDesc {
     display: grid;
-    grid-template-rows: 50% 20% 20% 10%;
+    grid-template-rows: 50% 25% 10%;
     height: 100%;
     align-items: center;
     color: transparent;
@@ -145,7 +146,7 @@ img {
 }
 
 .divTable h2 {
-    font-size: calc(1rem + 0.9vw);
+    font-size: 1.7em;
     margin: 0em;
     line-height: 0em;
     color: transparent;
@@ -153,9 +154,13 @@ img {
 
 .yearsExp,
 .yearsExpNumber {
-    font-size: calc(0.5em + 0.9vw);
+    font-size: 1.3em;
     font-style: italic;
     font-weight: 500;
+}
+
+.yearsExpNumber {
+    font-size: 1.5em;
 }
 
 article {
@@ -165,7 +170,6 @@ article {
 }
 
 .sectionFoot {
-    width: 100%;
     height: 4px;
     background-color: buttonface;
     border-color: buttonborder;
@@ -209,4 +213,53 @@ article {
 .expandable.expanded .divTableCell {
     color: initial;
     padding: 0 0.25em;
+}
+
+.expandable.expanded .divTableCellDesc {
+    line-height: 1;
+}
+
+
+@media only screen and (max-device-width: 768px) {
+
+    #titleMain {
+        font-size: 2em;
+    }
+    
+    #subtitleMain {
+        font-size: 1.4em;
+    }
+    
+    .masterButtons {
+        width: auto;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .divTableTwoColumn {
+        grid-template-columns: 100%;
+    }
+
+    .divTableRowTwoColumn {
+        grid-template-columns: 25% 75%;
+    }
+
+    .divTableRowThreeColumn {
+        grid-template-columns: 25% 75%;
+    }
+
+    .divTableRowThreeColumn>:nth-child(3) {
+        display: none;
+    }
+
+    .divTableCellDesc {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 38% 62%;
+    }
+
+    .divTableCellDesc>:nth-child(1) {
+        grid-column: span 2;
+    }
 }

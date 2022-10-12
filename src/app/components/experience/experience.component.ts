@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { ExpDataModel } from 'src/app/models/exp-data-model/exp-data-model';
 
 @Component({
@@ -11,27 +12,24 @@ export class ExperienceComponent implements OnInit {
   // ExpDataModels: ExpDataModel[] = [];
   today: Date = new Date();
 
-  constructor() { }
+  constructor(
+    public breakpointObserver: BreakpointObserver
+  ) { }
   // constructor(private outdoorsmanService:OutdoorsmanService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+
+    //monitors viewport breakpoints and runs code if the observed viewpoint is reached
+    // this.breakpointObserver
+    //   .observe(['(max-width: 768px)'])
+    //   .subscribe((state: BreakpointState) => {
+    //     if (state.matches) {
+    //       this.dropdownRespond('mobile');
+    //     } else {
+    //       this.dropdownRespond('normal');
+    //     }
+    //   });
   }
-
-  // createTime() {
-  //   //Date object that is the current timestamp when the browser runs the code
-  //   let today = new Date();
-
-  //   //variable that is the current date in yyyy-mm-dd format
-  //   let date =
-  //     //the current 4-digit year
-  //     today.getFullYear()
-  //     + '-' +
-  //     //the current numerical month; add 1 to translate index[0]
-  //     (today.getMonth() + 1)
-  //     + '-' +
-  //     //the current numerical day
-  //     today.getDate();
-  // }
 
   //calculates a number of years from a given date
   calculateYears(date: number) {
@@ -302,6 +300,37 @@ export class ExperienceComponent implements OnInit {
   swapButtonClick(swapId: string) {
     this.setAllSwapsInvisible();
     this.setSwapVisible(swapId);
+  }
+
+  //hides articles in dropdown rows that have them (divTableRowThreeColumn)
+  articlesAction(cmd: string) {
+    const threeColumnRows = Array.from(document.getElementsByClassName('divTableRowThreeColumn')) as HTMLElement[];
+
+    if (cmd == 'hide') {
+      threeColumnRows.forEach(row => {
+        row.style.gridTemplateColumns = '25% 75%';
+        let articleColumn = row.children[2] as HTMLElement;
+        articleColumn.style.display = 'none';
+      })
+    } else if (cmd == 'reveal') {
+      threeColumnRows.forEach(row => {
+        row.style.removeProperty('grid-template-columns');
+        let articleColumn = row.children[2] as HTMLElement;
+        articleColumn.style.removeProperty('display');
+      })
+    }
+  }
+
+  dropdownRespond(cmd: string) {
+
+
+    if (cmd == 'mobile') {
+      this.articlesAction('hide');
+      
+    } else if (cmd == 'normal') {
+      this.articlesAction('reveal');
+
+    }
   }
 
 }

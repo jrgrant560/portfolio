@@ -1,7 +1,6 @@
 #homeBody {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 10vh;
 }
 
 #titles {
@@ -13,7 +12,7 @@
 #infoContainer {
     position: relative;
     top: -10em;
-    height: 92px;
+    padding: 12px 0;
 
     display: flex;
     align-items: center;
@@ -155,19 +154,6 @@
     margin-bottom: auto;
 }
 
-#angularFooter {
-    grid-column: span 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.4em;
-    color: #dd1b169e;
-}
-
-.fa-angular {
-    font-size: 80px;
-}
-
 @keyframes ghAlertArrowMove {
     0% {
         left: 30px;
@@ -187,7 +173,7 @@ and (max-device-width: 768px)
         grid-template-columns: 1fr;
     }
 
-    #titles, #angularFooter {
+    #titles {
         grid-column: span 1;
     }
 }
