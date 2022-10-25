@@ -5,12 +5,31 @@
     <div id="emailAlertBox">
         <div id="emailPopup">email copied!</div>
     </div>
+
+    <nav class="hexRowButtonsContainer">
+        <button class="hexRowButton btnEmail" (click)="copyMe('jrgrant560@gmail.com'); alertEmailCopied()">
+            <span class="material-icons-outlined emailIcon">alternate_email</span>
+            <div>jrgrant560@gmail.com</div>
+            <span class="material-symbols-outlined copyIcon">content_copy</span>
+        </button>
+        <button class="hexRowButton btnLinkedIn" onclick="window.open('https://www.linkedin.com/in/jacobryangrant/')">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>/in/jacobryangrant</div>
+            <span class="material-symbols-outlined tabIcon">open_in_new</span>
+        </button>
+        <button class="hexRowButton btnGH" onclick="window.open('https://github.com/jrgrant560')">
+            <i class="fa-brands fa-github"></i>
+            <div>github.com/jrgrant560</div>
+            <span class="material-symbols-outlined tabIcon">open_in_new</span>
+        </button>
+    </nav>
+
     <nav class="hexButtonsContainer">
         <div class="hexButtonContainer btnEmail">
             <button class="hexButton"
-                (click)="copyEmail()"
-                (mouseover)="hideMe('.emailIcon'); revealMe('.hexButtonTextEmail'); revealMe('.copyIcon')"
-                (mouseout)="hideMe('.hexButtonTextEmail'); revealMe('.emailIcon'); hideMe('.copyIcon')"
+                (click)="copyMe('jrgrant560@gmail.com'); alertEmailCopied()"
+                (mouseover)="hideMe('.hexButton>.emailIcon'); revealMe('.hexButtonTextEmail'); revealMe('.hexButton>.copyIcon')"
+                (mouseout)="hideMe('.hexButtonTextEmail'); revealMe('.hexButton>.emailIcon'); hideMe('.hexButton>.copyIcon')"
             >
                 <span class="material-icons-outlined emailIcon">alternate_email</span>
                 <div class="hexButtonText hexButtonTextEmail">Email</div>
@@ -19,8 +38,8 @@
         </div>
         <div class="hexButtonContainer btnLinkedIn">
             <button class="hexButton"
-                (mouseover)="hideMe('.fa-linkedin-in'); revealMe('.hexButtonTextLinkedIn'); revealMe('.btnLinkedIn>.hexButton>.tabIcon')"
-                (mouseout)="hideMe('.hexButtonTextLinkedIn'); revealMe('.fa-linkedin-in'); hideMe('.btnLinkedIn>.hexButton>.tabIcon')"
+                (mouseover)="hideMe('.hexButton>.fa-linkedin-in'); revealMe('.hexButtonTextLinkedIn'); revealMe('.btnLinkedIn>.hexButton>.tabIcon')"
+                (mouseout)="hideMe('.hexButtonTextLinkedIn'); revealMe('.hexButton>.fa-linkedin-in'); hideMe('.btnLinkedIn>.hexButton>.tabIcon')"
                 onclick="window.open('https://www.linkedin.com/in/jacobryangrant/')"
             >
                 <i class="fa-brands fa-linkedin-in"></i>
@@ -30,8 +49,8 @@
         </div>
         <div class="hexButtonContainer btnGH">
             <button class="hexButton"
-                (mouseover)="hideMe('.fa-github'); revealMe('.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.tabIcon')"
-                (mouseout)="hideMe('.hexButtonTextGH'); revealMe('.fa-github'); hideMe('.btnGH>.hexButton>.tabIcon')"
+                (mouseover)="hideMe('.hexButton>.fa-github'); revealMe('.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.tabIcon')"
+                (mouseout)="hideMe('.hexButtonTextGH'); revealMe('.hexButton>.fa-github'); hideMe('.btnGH>.hexButton>.tabIcon')"
                 onclick="window.open('https://github.com/jrgrant560')"
             >
                 <i class="fa-brands fa-github"></i>

@@ -18,4 +18,9 @@ export class GlobalFunctionsService {
     let element = document.querySelector(elementTarg) as HTMLElement;
     element.style.display = 'none';
   }
+
+  //copies a given string into the user clipboard
+  copyMe(text: string) {
+    navigator.clipboard.writeText(text);
+  }
 }

@@ -1,3 +1,4 @@
+/* ~~HEX BUTTONS~~ */
 .hexButtonsContainer {
     position: relative;
 }
@@ -20,10 +21,65 @@
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
+/* ~~HEX ICON ROWS~~ */
+.hexRowButtonsContainer {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hexRowButton {
+    width: 320px;
+    height: 60px;
+    margin: auto;
+    clip-path: polygon(17px 0%, 303px 0%, 100% 50%, 303px 100%, 17px 100%, 0% 50%);
+    border: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #fff;
+}
+
+.hexRowButton :nth-child(1) {
+    margin: 0;
+    margin-left: 12px;
+}
+
+.hexRowButton :nth-child(2) {
+    font-size: 18px;
+}
+
+.hexRowButton :nth-child(3) {
+    margin: 0;
+    margin-right: 12px;
+}
+
+.hexRowButton .material-icons-outlined, .hexRowButton .fa-brands {
+    font-size: 44px;
+    color: white;
+    background-color: transparent;
+}
+
+.hexRowButton .fa-brands {
+    font-size: 38px;
+}
+
+/* GH Buttons */
+.btnGHlink {
+    width: 70px;
+}
+
+.btnGHlink>.hexButton {
+    width: 60px;
+    padding: 0px;
+}
+
 /* Icon settings */
 .material-symbols-outlined {
     margin: auto;
-    font-size:36px;
+    font-size: 36px;
     color: white;
 }
 
@@ -33,17 +89,23 @@
     background-color: transparent;
 }
 
-.emailIcon, .contactIcon, .lightIcon {
+.emailIcon,
+.contactIcon,
+.lightIcon {
     display: block;
     font-size: 82px;
     color: white;
 }
 
-.arrowIcon, .tabIcon, .copyIcon {
+.hexButton .arrowIcon,
+.hexButton .tabIcon,
+.hexButton .copyIcon {
     display: none;
 }
 
-.btnGH>.hexButton>.fa-github, .btnGHlink>.hexButton>.fa-github {
+.btnGH>.hexButton>.fa-github,
+.btnGHlink>.hexButton>.fa-github {
+    display: block;
     margin: auto;
     border-radius: 50%;
     background: transparent;
@@ -64,19 +126,29 @@
 }
 
 /* Colors */
-.btnEmail>.hexButton:hover, .btnContact>.hexButton:hover, .btnLinkedIn>.hexButton:hover, .btnProjects>.hexButton:hover, .btnGH>.hexButton:hover, .btnGHlink>.hexButton:hover {
+.btnEmail>.hexButton:hover,
+.btnContact>.hexButton:hover,
+.btnLinkedIn>.hexButton:hover,
+.btnProjects>.hexButton:hover,
+.btnGH>.hexButton:hover,
+.btnGHlink>.hexButton:hover {
     background-color: white;
 }
 
-.btnEmail, .btnEmail>.hexButton, .btnContact, .btnContact>.hexButton {
+.btnEmail,
+.btnEmail>.hexButton,
+.btnContact,
+.btnContact>.hexButton {
     background-color: #29abe0;
 }
 
-.btnEmail>.hexButton:hover>*, .btnContact>.hexButton:hover>* {
+.btnEmail>.hexButton:hover>*,
+.btnContact>.hexButton:hover>* {
     color: #29abe0;
 }
 
-.btnLinkedIn, .btnLinkedIn>.hexButton {
+.btnLinkedIn,
+.btnLinkedIn>.hexButton {
     background-color: #007bb5;
 }
 
@@ -84,7 +156,8 @@
     color: #007bb5;
 }
 
-.btnProjects, .btnProjects>.hexButton {
+.btnProjects,
+.btnProjects>.hexButton {
     background-color: orange;
 }
 
@@ -92,11 +165,15 @@
     color: orange;
 }
 
-.btnGH, .btnGH>.hexButton, .btnGHlink, .btnGHlink>.hexButton {
+.btnGH,
+.btnGH>.hexButton,
+.btnGHlink,
+.btnGHlink>.hexButton {
     background-color: #171515;
 }
 
-.btnGH>.hexButton:hover>*, .btnGHlink>.hexButton:hover>* {
+.btnGH>.hexButton:hover>*,
+.btnGHlink>.hexButton:hover>* {
     color: #171515;
 }
 
@@ -119,7 +196,8 @@
 }
 
 /* positions */
-.btnLinkedIn, .btnContact {
+.btnLinkedIn,
+.btnContact {
     top: 129px;
 }
 

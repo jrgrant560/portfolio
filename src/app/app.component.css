@@ -37,7 +37,7 @@ router-outlet {
 and (max-device-width: 736px) */
 and (max-device-width: 768px) {
     #boundary {
-        padding-top: 5em;
+        padding: 5em 1em 0 1em ;
     }
 }
 

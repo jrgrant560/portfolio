@@ -18,28 +18,13 @@ export class ContactMeComponent implements OnInit {
     private globalFuncs: GlobalFunctionsService
   ) { }
 
-  revealMe(elementTarg: string) {
-    this.globalFuncs.revealMe(elementTarg)
-  };
-
-  hideMe(elementTarg: string) {
-    this.globalFuncs.hideMe(elementTarg)
-  };
+  //global functions
+  revealMe(elementTarg: string) { this.globalFuncs.revealMe(elementTarg) };
+  hideMe(elementTarg: string) { this.globalFuncs.hideMe(elementTarg) };
+  copyMe(text: string) { this.globalFuncs.copyMe(text) };
 
   ngOnInit(): void {
 
-  }
-
-  copyEmail() {
-    /* Get the text field */
-    let copyItem = document.getElementById("myEmail")!;
-
-    /* Select the text field */
-    // copyEmail.select();
-    // copyEmail.setSelectionRange(0, 99999); /* For mobile devices */
-    /* Copy the text inside the text field */
-    navigator.clipboard.writeText('jrgrant560@gmail.com');
-    this.alertEmailCopied();
   }
 
   alertEmailCopied() {

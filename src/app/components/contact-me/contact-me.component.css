@@ -4,14 +4,13 @@
 }
 
 #emailAlertBox {
-    position: absolute;
     width: 100%;
     transition: 500ms;
     opacity: 0%;
 }
 
 #emailPopup {
-    margin: auto;
+    margin: 12px auto;
     width: 200px;
     height: 32px;
 
@@ -23,4 +22,16 @@
     color: white;
     background: #29abe0a1;
     border-radius: 5px;
+}
+
+@media only screen
+and (max-device-width: 768px) {
+
+    .hexRowButtonsContainer {
+        display: flex;
+    }
+
+    .hexButtonsContainer {
+        display: none;
+    }
 }
