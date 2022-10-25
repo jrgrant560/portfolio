@@ -15,20 +15,17 @@
         </div>
         <div class="ghAlertText"><em>check out this site's code on <strong>GitHub</strong></em></div>
     </div>
-    <!-- <span id="msgBlock">
-        <div>This site was built using</div>
-        <i class="fa-brands fa-angular"></i>
-        <div>Angular</div>
-        <i class="fa-solid fa-xmark" (click)="msgBlockHide()"></i>
-    </span> -->
 </div>
+
 <main id="homeBody">
+
     <header id="titles">
         <div class="headerRow">
             <span id="headerTitle"></span>
             <div id="typeBlockTitle" class="typeBlock"></div>
         </div>
         <br>
+
         <!-- sub headers -->
         <div class="headerRow headerRowSub">
             <div>
@@ -49,27 +46,28 @@
             </div>
         </div>
     </header>
+
     <section id="homeScroll">
-        <!-- <section class="pageContainer">
-        <app-about-me></app-about-me>
-    </section>
-    <section class="pageContainer">
-        <app-experience></app-experience>
-    </section> -->
-        <!-- <section class="pageContainer pageButtonContainer">
-        <button class="btn-dark projectsLinkButton" routerLink="projects">See My Work!</button>
-    </section> -->
+
+        <nav class="hexRowButtonsContainer">
+            <button class="hexRowButton btnContact" routerLink="contactMe">
+                <span class="material-icons-outlined contactIcon">contact_page</span>
+                <div>Contact Me</div>
+                <span class="material-symbols-outlined arrowIcon">arrow_outward</span>
+            </button>
+            <button class="hexRowButton btnProjects" routerLink="projects">
+                <i class="fa-solid fa-lightbulb lightIcon"></i>
+                <div>Check Out My Work!</div>
+                <span class="material-symbols-outlined arrowIcon">arrow_outward</span>
+            </button>
+            <button class="hexRowButton btnGH" onclick="window.open('https://github.com/jrgrant560')">
+                <i class="fa-brands fa-github"></i>
+                <div>My GitHub</div>
+                <span class="material-symbols-outlined tabIcon">open_in_new</span>
+            </button>
+        </nav>
+
         <nav class="hexButtonsContainer">
-            <!-- <div class="hexButtonContainer btnContact">
-            <button class="hexButton" routerLink="contactMe">Contact Me</button>
-        </div>
-        <div class="hexButtonContainer btnProjects">
-            <button class="hexButton" routerLink="projects">See Some of My Work!</button>
-        </div>
-        <div class="hexButtonContainer btnGH">
-            <button class="hexButton" onclick="window.open('https://github.com/jrgrant560')"
-                type="button">GitHub</button>
-        </div> -->
             <div class="hexButtonContainer btnContact">
                 <button class="hexButton"
                     (mouseover)="hideMe('.contactIcon'); revealMe('.hexButtonTextContact'); revealMe('.arrowIcon')"
@@ -101,5 +99,6 @@
                 </button>
             </div>
         </nav>
+
     </section>
 </main>

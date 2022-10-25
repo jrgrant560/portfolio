@@ -62,8 +62,12 @@
     background-color: transparent;
 }
 
-.hexRowButton .fa-brands {
+.hexRowButton .fa-brands, .hexRowButton .fa-solid {
     font-size: 38px;
+}
+
+.hexRowButton .lightIcon {
+    margin-left: 20px;
 }
 
 /* GH Buttons */

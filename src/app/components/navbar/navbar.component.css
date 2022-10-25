@@ -62,6 +62,7 @@
     width: 40px;
     font-size: 1.6em;
     height: 2em;
+    border: none;
 }
 
 .btnGroupFull>.buttonRouterNav:hover {
@@ -84,6 +85,8 @@
     color: #29abe0;
     background-color: #fff;
 }
+
+
 
 
 /* ----------- PHONES ----------- */
