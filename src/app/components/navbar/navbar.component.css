@@ -38,6 +38,7 @@
 
 .btnGroupHB {
     display: none;
+    flex-direction: column;
     position: fixed;
     top: 0px;
     left: -350px;
@@ -49,7 +50,10 @@
 .btnGroupHB>* {
     text-align: left;
     font-size: 1.6em;
-    height: 2em;
+}
+
+.btnGroupHB .emptySpace {
+    flex: 1 1 auto;
 }
 
 .buttonRouterNav {
@@ -61,7 +65,6 @@
 #navbarHB>.buttonRouterNav {
     width: 40px;
     font-size: 1.6em;
-    height: 2em;
     border: none;
 }
 
@@ -98,7 +101,7 @@ and (max-device-width: 736px) */
 and (max-device-width: 768px) {
 
     #navbarHB, .btnGroupHB {
-        display: block;
+        display: flex;
     }
 
     .btnGroupFull {
