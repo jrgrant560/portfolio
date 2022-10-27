@@ -29,7 +29,9 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-color: buttonborder;
     border-width: 0px 3px;
+    border-style: solid;
     width: 100%;
 }
 
@@ -117,13 +119,10 @@ article {
 }
 
 .divTableCellDesc {
-    display: grid;
-    grid-template-rows: 50% 25% 10%;
-    height: 100%;
-    align-items: center;
-    color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     line-height: 0;
-    padding: 0em;
 }
 
 .tokenContainer {
@@ -147,20 +146,24 @@ img {
 
 .divTable h2 {
     font-size: 1.7em;
+    font-size: 2em;
     margin: 0em;
     line-height: 0em;
     color: transparent;
 }
 
+.yearsExp {}
+
 .yearsExp,
 .yearsExpNumber {
-    font-size: 1.3em;
     font-style: italic;
     font-weight: 500;
+    align-items: center;
 }
 
 .yearsExpNumber {
-    font-size: 1.5em;
+    display: inline-flex;
+    margin-left: 0.2em;
 }
 
 article {
@@ -192,8 +195,14 @@ article {
 }
 
 .expandable.expanded h2 {
+    margin-bottom: 0.4em;
     line-height: 1em;
     color: initial;
+}
+
+.expandable.expanded .yearsExp,
+.expandable.expanded .yearsExpNumber {
+    font-size: 1.16em;
 }
 
 .expandable.expanded img {
@@ -225,17 +234,21 @@ article {
     #titleMain {
         font-size: 2em;
     }
-    
+
     #subtitleMain {
         font-size: 1.4em;
     }
-    
+
     .masterButtons {
         width: auto;
     }
 
     .title {
         font-size: 1em;
+    }
+
+    .title>div {
+        font-size: 0.7em;
     }
 
     .divTableTwoColumn {
@@ -254,12 +267,18 @@ article {
         display: none;
     }
 
-    .divTableCellDesc {
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 38% 62%;
+    .divTableCellDesc h2 {
+        font-size: 1.7em;
     }
 
     .divTableCellDesc>:nth-child(1) {
         grid-column: span 2;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) {
+
+    .divTableTwoColumn {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

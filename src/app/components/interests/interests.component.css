@@ -36,7 +36,9 @@ main {
 .dropDownButton {
     justify-content: space-between;
     display: flex;
+    border-color: buttonborder;
     border-width: 0px 3px;
+    border-style: solid;
     width: 100%;
 }
 
@@ -254,5 +256,12 @@ article {
 
     .divTableRowTwoColumn {
         grid-template-columns: 25% 75%;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) {
+
+    .divTableTwoColumn {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
