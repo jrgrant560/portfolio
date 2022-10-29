@@ -1,31 +1,56 @@
 <h1>My Past Work</h1>
 <br>
-<nav id="projectNav" class="projectNavExpanded">
+<div id="projectNavCover" (click)="navSlideOver()"></div>
+<button id="projectNavbarHBButton" (click)="navSlideOver()">
+    <i class="fa-solid fa-bars"></i>
+</button>
+<nav id="projectNav" class="projectNavExpanded" (click)="navMenuHide()">
     <!-- Nav Row 1 -->
-    <div></div>
-    <button class="projectNavButton" (click)="revealProject('project00')">Group Project: "The Outdoorsman"</button>
-    <button class="projectNavButton" (click)="revealProject('project01')">❎<br>TicTacToe</button>
-    <button class="projectNavButton" (click)="revealProject('project02')">🕑<br>Clocks (Analog)</button>
-    <button class="projectNavButton" (click)="revealProject('project04')">➕➖✖️➗<br>Calculator</button>
-    <button class="projectNavButtonEmpty" (click)="hideAllProjects(); maximizeNavBar()">[ Hide All ]</button>
-    <div></div>
+    <button class="projectNavButton" (click)="revealProject('project00')">
+        <div>🛶</div>
+        <div class="buttonText">Group Project: "The Outdoorsman"</div>
+    </button>
+    <button class="projectNavButton" (click)="revealProject('project01')">
+        <div>❎</div>
+        <div class="buttonText">TicTacToe</div>
+    </button>
+    <button class="projectNavButton" (click)="revealProject('project02')">
+        <div>🕑</div>
+        <div class="buttonText">Clocks (Analog)</div>              
+    </button>
+    <button class="projectNavButton" (click)="revealProject('project04')">
+        <div>➕➖✖️➗</div>
+        <div class="buttonText">Calculator</div>
+    </button>
+    <button id="projectHideButton" class="projectNavButton" (click)="hideAllProjects(); maximizeNavBar()">
+        <em>[ Hide All ]</em>
+    </button>
     <!-- Nav Row 2 -->
-    <div></div>
-    <button class="projectNavButton" (click)="revealProject('project05'); loadBouncingBalls()">▶️<br>Web Animations</button>
-    <button class="projectNavButton" (click)="revealProject('project06')">🟥🟩🟦<br>Color Sliders</button>
-    <button class="projectNavButton" (click)="revealProject('project07')"><div class="gradientSquare"></div>Color Gradients</button>
-    <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
-    <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
-    <div></div>
+    <button class="projectNavButton" (click)="revealProject('project05'); loadBouncingBalls()">
+        <div>▶️</div>
+        <div class="buttonText">Web Animations</div>
+    </button>
+    <button class="projectNavButton" (click)="revealProject('project06')">
+        <div>🟥🟩🟦</div>
+        <div class="buttonText">Color Sliders</div>
+    </button>
+    <button class="projectNavButton" (click)="revealProject('project07')">
+        <div class="gradientSquare"></div>
+        <div class="buttonText">Color Gradients</div>
+    </button>
+    <button class="projectNavButtonEmpty">
+        <em>Coming Soon...</em>
+    </button>
+    <button class="projectNavButtonEmpty">
+        <em>Coming Soon...</em>
+    </button>
     <!-- Nav Row 3 -->
-    <!-- <div></div>
+    <!-- <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
     <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
     <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
     <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
     <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
-    <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
-    <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button>
-    <div></div> -->
+    <button class="projectNavButtonEmpty"><em>Coming Soon...</em></button> -->
 </nav>
 <section id="project00" class="project-container url-connect">
     <main id="flexContainer">

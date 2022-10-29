@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimationsComponent } from './animations/animations.component';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   providers: [AnimationsComponent],
@@ -9,9 +10,28 @@ import { AnimationsComponent } from './animations/animations.component';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor(private AnimationsComponent: AnimationsComponent) { }
+  constructor(
+    private AnimationsComponent: AnimationsComponent,
+    public breakpointObserver: BreakpointObserver
+  ) { }
 
   ngOnInit(): void {
+    const projectNavMenu = document.getElementById('projectNav') as HTMLElement;
+
+    //monitors viewport breakpoints and runs code if the observed viewpoint is reached
+    this.breakpointObserver
+      .observe(['(min-width: 768px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+          //slides over HB nav menu if the breakpoint leaves mobile view, if it is in view
+          if (projectNavMenu.style.left == '16px') {
+            this.navSlideOver();
+
+          }
+        } else {
+
+        }
+      });
   }
 
   reNavA() {
@@ -65,5 +85,27 @@ export class ProjectsComponent implements OnInit {
 
   loadBouncingBalls() {
     this.AnimationsComponent.loadBouncingBalls();
+  }
+
+  //slides over HB navbar
+  navSlideOver() {
+    const projectNavMenu = document.getElementById('projectNav') as HTMLElement;
+    const projectNavCover = document.getElementById('projectNavCover') as HTMLElement;
+
+    if (projectNavMenu.style.left == '16px') {
+      projectNavMenu.style.left = '-260px';
+      projectNavCover.style.width = '0vw';
+    } else {
+      projectNavMenu.style.left = '16px';
+      projectNavCover.style.width = '100%';
+
+    }
+  }
+
+  //only runs navSlideOver() if the breakpoint is within mobile view
+  navMenuHide() {
+    if (this.breakpointObserver.isMatched(['(max-width: 768px)'])) {
+      this.navSlideOver()
+    }
   }
 }

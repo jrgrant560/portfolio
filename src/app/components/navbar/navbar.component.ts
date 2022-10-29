@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +9,7 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   constructor(
-    public breakpointObserver: BreakpointObserver,
+    public breakpointObserver: BreakpointObserver
     // public router: Router
   ) { }
 
@@ -30,6 +29,7 @@ export class NavbarComponent implements OnInit {
       .observe(['(min-width: 768px)'])
       .subscribe((state: BreakpointState) => {
         if (state.matches) {
+          //slides over HB nav menu if the breakpoint leaves mobile view, if it is in view
           if (HBnavBtnGroup.style.left == '0px') {
             this.navSlideOver();
           }
