@@ -1,4 +1,4 @@
-#flexContainer {
+#projectFlexContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,13 +14,6 @@
     width: 100%;
 }
 
-#row-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #row-tokens {
     width: 100%;
     padding-top: 1em;
@@ -32,6 +25,17 @@
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+#row-tokens .btnGHlink {
+    margin-bottom: auto;
+}
+
+#row-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -85,8 +89,7 @@ img {
 
 
 
-/* Borders for Testing */
-
+/* ~~Borders for Testing~~ */
 /* #flexContainer {
     border: 1px red dashed;
 }
@@ -102,3 +105,56 @@ img {
 #row-tokens {
     border: 1px blue dashed;
 } */
+
+@media only screen
+and (max-device-width: 400px) {
+
+    #row-tokens .btnGHlink {
+        width: 34px;
+    }
+
+    #row-tokens .btnGHlink>.hexButton>.fa-github {
+        font-size: 24px;
+    }
+
+    .img-token {
+        max-height: 36px;
+    }
+
+}
+
+@media only screen
+and (min-device-width: 400px)
+and (max-device-width: 540px) {
+
+    #row-tokens .btnGHlink {
+        width: 48px;
+    }
+
+    #row-tokens .btnGHlink>.hexButton>.fa-github {
+        font-size: 32px;
+    }
+
+    .img-token {
+        max-height: 44px;
+    }
+
+}
+
+@media only screen
+and (min-device-width: 540px)
+and (max-device-width: 768px) {
+
+    #row-tokens .btnGHlink {
+        width: 48px;
+    }
+
+    #row-tokens .btnGHlink>.hexButton>.fa-github {
+        font-size: 32px;
+    }
+
+    .img-token {
+        max-height: 60px;
+    }
+
+}

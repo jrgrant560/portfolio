@@ -6,7 +6,7 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
   providers: [AnimationsComponent],
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css', './project-rows.css']
+  styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
 
@@ -32,10 +32,6 @@ export class ProjectsComponent implements OnInit {
 
         }
       });
-  }
-
-  reNavA() {
-    window.location.href = "https://jrgrant560.github.io/Final-Project_The-Outdoorsman";
   }
 
   // removes "projectVisible" class from all "project-container" elements

@@ -1,0 +1,53 @@
+
+.buttonURLContainer {
+    max-width: 450px;
+    margin: auto;
+}
+
+.buttonURL {
+    display: flex;
+    cursor: pointer;
+    padding: 2%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container-URL {
+    display: flex;
+    max-height: 100%;
+    aspect-ratio: 2668/1650;
+}
+
+.imgURL {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(107, 107, 107);
+}
+
+.articleURL {
+    margin: 1em 10%;
+    font-size: 1.5em;
+}
+
+.articleURL h2 {
+    text-decoration-line: underline;
+}
+
+.articleURL ul {
+    padding-inline-start: 14px;
+    margin: 0;
+}
+
+.articleURL li {
+    list-style-type: none;
+}
+
+.roleIcon {
+    margin: 0 8px;
+    padding: 0;
+}
+
+.articleURL div {
+    display: inline-block;
+}
