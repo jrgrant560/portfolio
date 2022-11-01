@@ -32,12 +32,15 @@ router-outlet {
 /* ----------- PHONES ----------- */
 /* Portrait and Landscape */
 @media only screen
-
 /* and (min-device-width: 414px)
 and (max-device-width: 736px) */
 and (max-device-width: 768px) {
     #boundary {
         padding: 5em 1em 0 1em ;
+    }
+
+    #angularFooter div {
+        font-size: 0.85em;
     }
 }
 

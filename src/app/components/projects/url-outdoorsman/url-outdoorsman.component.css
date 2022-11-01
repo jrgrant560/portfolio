@@ -53,9 +53,14 @@
     display: inline-block;
 }
 
+@media only screen and (max-device-width: 360px) {
+    .articleURL li>div {
+        font-size: 0.9em;
+    }
+}
 
-
-@media only screen and (max-device-width: 500px) {
+@media only screen
+and (max-device-width: 500px) {
     .articleURL {
         font-size: 0.72em;
     }
