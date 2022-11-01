@@ -35,3 +35,37 @@ button:hover {
     background-color: rgb(163,163,163);
     color: rgb(240, 240, 240);
 }
+
+
+@media only screen and (max-device-width: 500px) {
+    #animationsContainer {
+        grid-template-columns: 1fr;
+    }
+    
+    .animationTwoColumn {
+        grid-column: span 1;
+    }
+}
+
+@media only screen
+and (min-device-width: 500px)
+and (max-device-width: 768px) {
+    #animationsContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    .animationTwoColumn {
+        grid-column: span 1;
+    }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1000px)
+{
+    #animationsContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+

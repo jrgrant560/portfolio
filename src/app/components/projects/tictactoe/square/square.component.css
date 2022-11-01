@@ -5,7 +5,7 @@
     font-weight: bold;
     color: #fff;
     background-color: #3e3f3a;
-    border: 4px #3e3f3a solid;
+    border: 4px #ffffff98 outset;
 }
 
 /* .tttButtonEmpty {
@@ -13,9 +13,9 @@
     background-color: #3e3f3a;
 } */
 
-.tttButtonEmpty:hover {
+/* .tttButtonEmpty:hover {
     background-color: #9b9f8d;
-}
+} */
 
 .tttButtonX {
     background-color: orange;

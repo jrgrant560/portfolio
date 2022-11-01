@@ -26,7 +26,11 @@
     <button id="newGameButton" (click)="newGame(); playerTitleBGset()">Start New Game</button>
     <!-- the tictactoe board -->
     <span id="board">
-        <app-tictactoe-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+        <app-tictactoe-square
+            *ngFor="let val of squares;
+            let i = index"
+            [value]="val"
+            (click)="makeMove(i)">
         </app-tictactoe-square>
     </span>
 </main>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-tictactoe-board',
@@ -13,17 +14,33 @@ export class TictactoeBoardComponent implements OnInit {
   //the winning player, either X or O
   winner: string = "";
 
-  constructor() { }
+  constructor(
+    public breakpointObserver: BreakpointObserver
+  ) { }
 
   ngOnInit(): void {
     this.newGame();
+
+    const victoryFlair = document.querySelector('.victoryFlair') as HTMLElement;
+
+    //monitors viewport breakpoints and runs code if the observed viewpoint is reached
+    this.breakpointObserver
+    .observe(['(max-width: 768px)'])
+    .subscribe((state: BreakpointState) => {
+      if (state.matches) {
+        victoryFlair.style.display = 'none'
+      } else {
+        victoryFlair.style.removeProperty('display');
+      }
+    });
+  
   }
 
   //generates a new board with the necessary objects when the webpage is loaded
   newGame() {
     let winningPlayerTitle = document.getElementById('winningPlayer') as HTMLElement;
     let currentPlayerTitle = document.getElementById('currentPlayer') as HTMLElement;
-    
+
     // swaps displays for player titles
     winningPlayerTitle.style.display = 'none';
     currentPlayerTitle.style.display = 'inline-block';
@@ -43,14 +60,13 @@ export class TictactoeBoardComponent implements OnInit {
 
   //event handler that performs an action when the user clicks on a square
   makeMove(idx: number) {
-    //if statement that runs if the square has not been clicked on
+    //if statement that runs if the square has not been clicked on???
     if (!this.squares[idx]) {
       //if the square is empty or null, splices the index of the square the user clicked on based on the current player
       this.squares.splice(idx, 1, this.player);
       //switches to the opposite player
       this.xIsNext = !this.xIsNext;
     }
-
 
     this.winner = this.calculateWinner();
 
@@ -86,6 +102,21 @@ export class TictactoeBoardComponent implements OnInit {
           this.buttonVictory(tttButton, 'tttButtonO');
         });
       }
+
+      //sets all buttons to disabled from player input; had to set a timing function on this to make it work, or the last button would remain enabled
+      //probably a better way to code this part, but I need to move on!...
+      setTimeout(function () { 
+      //re-fetch all tttButtons
+      tttButtonsCollection = document.getElementsByClassName('tttButton')! as HTMLCollectionOf<HTMLElement>;
+      tttButtonsArray = Array.from(tttButtonsCollection);
+
+      //disable all buttons from inputs
+      tttButtonsArray.forEach(tttButton => {
+        tttButton.setAttribute("disabled", "true")
+      });
+        console.log(tttButtonsArray);
+      }, 100);
+
     }
     this.playerTitleBGset();
   }
@@ -118,7 +149,7 @@ export class TictactoeBoardComponent implements OnInit {
 
   // function that applies color changes to target button element after victory
   buttonVictory(button: HTMLElement, className: string) {
-    setTimeout(function () {
+    setTimeout(function () {      
       button.classList.add('tttButtonWhite');
     }, 100);
     setTimeout(function () {
@@ -224,6 +255,8 @@ export class TictactoeBoardComponent implements OnInit {
     let tttButtonsArray = Array.from(tttButtonsCollection);
 
     tttButtonsArray.forEach(tttButton => {
+      //remove disabled attribute from all buttons
+      tttButton.removeAttribute("disabled")
       tttButton.style.removeProperty('transition');
       tttButton.classList.remove('tttButtonX', 'tttButtonO', 'tttButtonWhite');
     });

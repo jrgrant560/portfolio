@@ -30,6 +30,7 @@ import { AnimationBarberpoleComponent } from './components/projects/animations/a
 import { EyeballComponent } from './components/projects/animations/eyeball/eyeball.component';
 import { AnimationTypingComponent } from './components/projects/animations/animation-typing/animation-typing.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { UrlOutdoorsmanComponent } from './components/projects/url-outdoorsman/url-outdoorsman.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AnimationBarberpoleComponent,
     EyeballComponent,
     AnimationTypingComponent,
-    NavbarComponent
+    NavbarComponent,
+    UrlOutdoorsmanComponent
   ],
   imports: [
     BrowserModule,
