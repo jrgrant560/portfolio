@@ -27,3 +27,11 @@
     height: auto;
     opacity: 80%;
 }
+
+
+@media only screen and (max-device-width: 768px) {
+
+    #screensaverImgContainer {
+        width: 50px;
+    }
+}
