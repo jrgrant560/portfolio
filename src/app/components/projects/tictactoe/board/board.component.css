@@ -150,3 +150,10 @@ app-tictactoe-square {
 h4 {
     margin: auto;
 } */
+
+@media only screen and (max-device-width: 400px) {
+
+    #playerTitle {
+        font-size: 1.6em;
+    }
+}

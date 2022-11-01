@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-tictactoe-board',
@@ -13,10 +14,26 @@ export class TictactoeBoardComponent implements OnInit {
   //the winning player, either X or O
   winner: string = "";
 
-  constructor() { }
+  constructor(
+    public breakpointObserver: BreakpointObserver
+  ) { }
 
   ngOnInit(): void {
     this.newGame();
+
+    const victoryFlair = document.querySelector('.victoryFlair') as HTMLElement;
+
+    //monitors viewport breakpoints and runs code if the observed viewpoint is reached
+    this.breakpointObserver
+    .observe(['(max-width: 768px)'])
+    .subscribe((state: BreakpointState) => {
+      if (state.matches) {
+        victoryFlair.style.display = 'none'
+      } else {
+        victoryFlair.style.removeProperty('display');
+      }
+    });
+  
   }
 
   //generates a new board with the necessary objects when the webpage is loaded
