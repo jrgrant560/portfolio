@@ -34,7 +34,7 @@
     margin: auto;
     clip-path: polygon(17px 0%, 303px 0%, 100% 50%, 303px 100%, 17px 100%, 0% 50%);
     border: none;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,13 +56,15 @@
     margin-right: 12px;
 }
 
-.hexRowButton .material-icons-outlined, .hexRowButton .fa-brands {
+.hexRowButton .material-icons-outlined,
+.hexRowButton .fa-brands {
     font-size: 44px;
     color: white;
     background-color: transparent;
 }
 
-.hexRowButton .fa-brands, .hexRowButton .fa-solid {
+.hexRowButton .fa-brands,
+.hexRowButton .fa-solid {
     font-size: 38px;
 }
 
@@ -212,4 +214,15 @@
 
 .btnGHlink {
     position: initial;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .hexRowButton {
+        width: 250px;
+        clip-path: polygon(17px 0%, 233px 0%, 100% 50%, 233px 100%, 17px 100%, 0% 50%);
+    }
+
+    .hexRowButton :nth-child(2) {
+        font-size: 12px;
+    }
 }

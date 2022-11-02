@@ -36,17 +36,17 @@
                     <!-- step: the increment of numbers allowed; example: step of 4 in a range of 0-20 allows 0,4,8,12,16,20 -->
                     <!-- value: the default starting value; changes when the user adjust the range -->
                     <div id="paletteRgbRed" class="paletteSquare"></div>
-                    <div>Red</div>
+                    <div class="paletteName">Red</div>
                     <input type="range" min="0" max="255" step="1" id="rgbRed" value="100">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteRgbGreen" class="paletteSquare"></div>
-                    <div>Green</div>
+                    <div class="paletteName">Green</div>
                     <input type="range" min="0" max="255" step="1" id="rgbGreen" value="10">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteRgbBlue" class="paletteSquare"></div>
-                    <div>Blue</div>
+                    <div class="paletteName">Blue</div>
                     <input type="range" min="0" max="255" step="1" id="rgbBlue" value="162">
                 </div>
                 <span id="displayRGB" class="display">rgb(100, 10, 162)</span>
@@ -56,17 +56,17 @@
                 <h2 class="pickerTitle">HSL Sliders</h2>
                 <div class="rowThreeItem">
                     <div id="paletteHslHue" class="paletteSquare"></div>
-                    <div>Hue</div>
+                    <div class="paletteName">Hue</div>
                     <input type="range" min="0" max="359" step="1" id="hslHue" value="120">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteHslSaturation" class="paletteSquare"></div>
-                    <div>Saturation</div>
+                    <div class="paletteName">Saturation</div>
                     <input type="range" min="0" max="100" step="1" id="hslSaturation" value="50">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteHslLight" class="paletteSquare"></div>
-                    <div>Light</div>
+                    <div class="paletteName">Light</div>
                     <input type="range" min="0" max="100" step="1" id="hslLight" value="50">
                 </div>
                 <span id="displayHSL" class="display">hsl(120, 50%, 50%)</span>
@@ -76,32 +76,32 @@
                 <h2 class="pickerTitle">Hexadecimal Sliders</h2>
                 <div class="rowThreeItem">
                     <div id="paletteHex1" class="paletteSquare"></div>
-                    <div>H1</div>
+                    <div class="paletteName">H1</div>
                     <input type="range" min="0" max="15" step="1" id="hex1" value="5">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteHex2" class="paletteSquare"></div>
-                    <div>H2</div>
+                    <div class="paletteName">H2</div>
                     <input type="range" min="0" max="15" step="1" id="hex2" value="5">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteHex3" class="paletteSquare"></div>
-                    <div>H3</div>
+                    <div class="paletteName">H3</div>
                     <input type="range" min="0" max="15" step="1" id="hex3" value="15">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteHex4" class="paletteSquare"></div>
-                    <div>H4</div>
+                    <div class="paletteName">H4</div>
                     <input type="range" min="0" max="15" step="1" id="hex4" value="15">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteHex5" class="paletteSquare"></div>
-                    <div>H5</div>
+                    <div class="paletteName">H5</div>
                     <input type="range" min="0" max="15" step="1" id="hex5" value="14">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteHex6" class="paletteSquare"></div>
-                    <div>H6</div>
+                    <div class="paletteName">H6</div>
                     <input type="range" min="0" max="15" step="1" id="hex6" value="14">
                 </div>
                 <span id="displayHex" class="display">#55ffee</span>
@@ -111,22 +111,22 @@
                 <h2 class="pickerTitle">CMYK Sliders</h2>
                 <div class="rowThreeItem">
                     <div id="paletteCmykCyan" class="paletteSquare"></div>
-                    <div>Cyan</div>
+                    <div class="paletteName">Cyan</div>
                     <input type="range" min="0" max="100" step="1" id="cmykCyan" value="10">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteCmykMagenta" class="paletteSquare"></div>
-                    <div>Magenta</div>
+                    <div class="paletteName">Magenta</div>
                     <input type="range" min="0" max="100" step="1" id="cmykMagenta" value="100">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteCmykYellow" class="paletteSquare"></div>
-                    <div>Yellow</div>
+                    <div class="paletteName">Yellow</div>
                     <input type="range" min="0" max="100" step="1" id="cmykYellow" value="30">
                 </div>
                 <div class="rowThreeItem">
                     <div id="paletteCmykBlack" class="paletteSquare"></div>
-                    <div>Black</div>
+                    <div class="paletteName">Black</div>
                     <input type="range" min="0" max="100" step="1" id="cmykBlack" value="10">
                 </div>
                 <!-- uses w3color library to convert -->
