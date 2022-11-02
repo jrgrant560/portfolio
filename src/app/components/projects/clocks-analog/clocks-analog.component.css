@@ -180,7 +180,7 @@ p {
 
     text-align: center;
     font-weight: bold;
-    font-size: .45em;
+    font-size: 20px;
 
     padding-top: 2%;
     border: 2px solid;
@@ -414,4 +414,18 @@ p {
     background: var(--clockSplit-hand);
     width: 65%;
     height: 6px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .clockLocalContainer {
+        padding: 8px;
+    }
+    
+    .clockSplit {
+        font-size: 12px;
+    }
+
+    .clockSplit .clock {
+        margin: 4px;
+    }
 }
