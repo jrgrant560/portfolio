@@ -65,3 +65,10 @@
 #paletteCmykBlack {
     background-color: black;
 }
+
+@media only screen and (max-device-width: 768px) {
+    .paletteSquare {
+        width: 0.8em;
+        height: 0.8em;
+    }
+}
