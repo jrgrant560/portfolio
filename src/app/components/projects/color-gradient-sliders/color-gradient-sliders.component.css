@@ -1,53 +1,37 @@
 #pickerContainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 4em;
+    grid-row-gap: 2em;
     align-items: center;
-}
-
-.pickerTitle {
-    text-align: center;
 }
 
 .picker {
     font-size: 1.6em;
 }
 
-.LGPicker, .RGPicker {
-    display: grid;
-    grid-template-columns: 1fr .1fr 1fr;
+.pickerTitle {
+    text-align: center;
+    grid-column: span 2;
 }
 
-.rowThreeItem {
+.LGPicker, .RGPicker {
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 4fr 5fr;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 1em;
 }
 
 .rowTwoItem {
     display: grid;
     align-items: center;
-    grid-template-columns: 2fr 6fr;
-}
-
-.RGBpicker .rowThreeItem {
-    grid-template-columns: 1fr 2fr 6fr;
-}
-
-.HSLpicker .rowThreeItem {
-    grid-template-columns: 1fr 3fr 7fr;
-}
-
-.hexPicker .rowThreeItem {
-    grid-template-columns: 1fr 1fr 6fr;
-}
-
-.cmykPicker .rowThreeItem, .LGPicker .rowThreeItem {
-    grid-template-columns: 1fr 2fr 4fr;
+    grid-template-columns: 2fr 3fr;
 }
 
 .rowTwoItem.rowShine {
     grid-template-columns: 1fr 1fr;
+}
+
+.rowShine :nth-child(1) {
+    font-size: 0.8em;
 }
 
 input, select {
@@ -59,10 +43,8 @@ input, select {
 }
 
 .display {
-    width: 100%;
-    height: 100px;
     transition: background 200ms;
-    margin-top: 30px;
+    margin: auto 0;
     border: 1px solid #000;
 
     display: flex;
@@ -78,22 +60,6 @@ input, select {
 }
 
 /* Starting display colors */
-#displayRGB {
-    background: rgb(100,10,162);
-}
-
-#displayHSL {
-    background: hsl(120, 50%, 50%);
-}
-
-#displayHex {
-    background: #55ffee;
-}
-
-#displayCMYK {
-    background: rgb(207, 0, 161);
-}
-
 #displayLinearGradient {
     height: auto;
     aspect-ratio: 1 / 1;
@@ -107,4 +73,29 @@ input, select {
     max-width: 350px;
     border-radius: 50%;
     background-image: radial-gradient(ellipse at 25% 25%,red, green, blue);
+}
+
+@media only screen
+and (max-device-width: 500px) {
+    .picker {
+        grid-template-columns: 1fr;
+        grid-gap: 0.5em;
+        font-size: 1.2em;
+    }
+
+    .pickerTitle {
+        grid-column: span 1;
+    }
+
+    .rowTwoItem {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+@media only screen
+and (min-device-width: 500px)
+and (max-device-width: 768px) {
+    .picker {
+        font-size: 1.2em;
+    }
 }
