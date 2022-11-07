@@ -70,30 +70,30 @@
         <nav class="hexButtonsContainer">
             <div class="hexButtonContainer btnContact">
                 <button class="hexButton"
-                    (mouseover)="hideMe('.contactIcon'); revealMe('.hexButtonTextContact'); revealMe('.arrowIcon')"
-                    (mouseout)="hideMe('.hexButtonTextContact'); revealMe('.contactIcon'); hideMe('.arrowIcon')"
+                    (mouseover)="hideMe('#hexIconContact'); revealMe('.hexButtonTextContact'); revealMe('.btnContact>.hexButton>.arrowIcon')"
+                    (mouseout)="hideMe('.hexButtonTextContact'); revealMe('#hexIconContact'); hideMe('.btnContact>.hexButton>.arrowIcon')"
                     routerLink="contactMe">
-                    <span class="material-icons-outlined contactIcon">contact_page</span>
+                    <span id="hexIconContact" class="material-icons-outlined contactIcon">contact_page</span>
                     <div class="hexButtonText hexButtonTextContact">Contact Me</div>
                     <span class="material-symbols-outlined arrowIcon">arrow_outward</span>
                 </button>
             </div>
             <div class="hexButtonContainer btnProjects">
                 <button class="hexButton"
-                    (mouseover)="hideMe('.lightIcon'); revealMe('.hexButtonTextProjects'); revealMe('.btnProjects>.hexButton>.tabIcon')"
-                    (mouseout)="hideMe('.hexButtonTextProjects'); revealMe('.lightIcon'); hideMe('.btnProjects>.hexButton>.tabIcon')"
+                    (mouseover)="hideMe('#hexIconLight'); revealMe('.hexButtonTextProjects'); revealMe('.btnProjects>.hexButton>.tabIcon')"
+                    (mouseout)="hideMe('.hexButtonTextProjects'); revealMe('#hexIconLight'); hideMe('.btnProjects>.hexButton>.tabIcon')"
                     routerLink="projects">
-                    <i class="fa-solid fa-lightbulb lightIcon"></i>
+                    <i id="hexIconLight" class="fa-solid fa-lightbulb lightIcon"></i>
                     <div class="hexButtonText hexButtonTextProjects">Projects</div>
                     <span class="material-symbols-outlined tabIcon">arrow_outward</span>
                 </button>
             </div>
             <div class="hexButtonContainer btnGH">
                 <button class="hexButton"
-                    (mouseover)="hideMe('.btnGH>.hexButton>.fa-github'); revealMe('.btnGH>.hexButton>.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.tabIcon')"
-                    (mouseout)="hideMe('.btnGH>.hexButton>.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.fa-github'); hideMe('.btnGH>.hexButton>.tabIcon')"
+                    (mouseover)="hideMe('#hexIconGH'); revealMe('.btnGH>.hexButton>.hexButtonTextGH'); revealMe('.btnGH>.hexButton>.tabIcon')"
+                    (mouseout)="hideMe('.btnGH>.hexButton>.hexButtonTextGH'); revealMe('#hexIconGH'); hideMe('.btnGH>.hexButton>.tabIcon')"
                     onclick="window.open('https://github.com/jrgrant560')">
-                    <i class="fa-brands fa-github"></i>
+                    <i id="hexIconGH" class="fa-brands fa-github"></i>
                     <div class="hexButtonText hexButtonTextGH">GitHub</div>
                     <span class="material-symbols-outlined tabIcon">open_in_new</span>
                 </button>
