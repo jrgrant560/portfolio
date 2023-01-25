@@ -1,0 +1,32 @@
+{
+    "posts": [
+        {
+            "id": 0,
+            "title": "Hello",
+            "text": "Hello World"
+        },
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typicode"
+        }
+    ],
+    "ExpDataModelLanguages": [
+        {
+          "id": 0,
+          "imgSrc": "assets\\images\\Tokens\\Languages\\Token-HTML-01.png",
+          "title": "HTML",
+          "subTitle": "",
+          "experience": "this.calculateYears(2021.5)",
+          "article": ""
+        },
+        {
+          "id": 1,
+          "imgSrc": "assets\\images\\Tokens\\Languages\\Token-CSS-01.png",
+          "title": "CSS",
+          "subTitle": "",
+          "experience": "this.calculateYears(2021.5)",
+          "article": ""
+        }
+      ]
+    }
