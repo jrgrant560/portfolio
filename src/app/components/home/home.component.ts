@@ -21,8 +21,6 @@ export class HomeComponent implements OnInit {
     this.globalFuncs.hideMe(elementTarg)
   };
 
-  // ~~NOTE TO CODE REVIEWER: I hijacked the typewriter code from one of my animation projects and added several timing functions, so it's a bit of a mess here.
-  // For the clean version, Check out the JS TypeWriter Github files in the Web Animations in the Projects Page.
 
   ngOnInit(): void {
     // fetched elements
@@ -119,21 +117,7 @@ export class HomeComponent implements OnInit {
 
     }
 
-    // declare text to enter in headerTitle
-    // let typeText = '';
-    // declare speed of typing in ms
-    // let typeSpeed = 50;
-    // declare integer for characters in typeText
-    // declare length of time to complete typing the full typeText string
-    // let typeLength = 0;
-    // declare duration to complete on full typing function
-    // let typingDuration = 0;
-
-    // interval between initialization + completion of typing string, and then start untyping
-    // let intervalUnType = 0;
-
-
-    // recursive function that adds a letter, then starts the function again with 50ms interval
+    // recursive function that adds a letter, repeating at 50ms interval until end of text string
     function typeWriter(text: string, element: HTMLElement, speed: number, i: number) {
       if (i < text.length) {
         element.innerHTML += text.charAt(i);
@@ -143,15 +127,6 @@ export class HomeComponent implements OnInit {
         }, speed);
       };
     }
-
-    // recursive function that removes the end letter, then starts the function again with 50ms interval
-    // function unTypeWriter() {
-    //   if (i > -1) {
-    //     headerTitle.innerHTML = headerTitle.innerHTML.slice(0, -1);
-    //     i--;
-    //     setTimeout(unTypeWriter, typeSpeed);
-    //   };
-    // }
 
     // types, then untypes a message; pauses cursor blinking during typing
     function typeThis(text: string, element: HTMLElement, speed: number, typeBlock: HTMLElement, intervalName: string, delay: number) {
@@ -185,16 +160,11 @@ export class HomeComponent implements OnInit {
 
         }, typeLength);
 
-        //makes cursor dissapear some time after typing has completed
+        //makes cursor disappear some time after typing has completed
         setTimeout(function () {
-          //stops cursor blinking
-          // endBlink(typeBlock, intervalName);
-          //removes cursor
           typeBlock.remove();
 
         }, (typeLength + 1000));
-
-
 
       }, typeStartDelay);
 
@@ -206,30 +176,7 @@ export class HomeComponent implements OnInit {
       // }, intervalUnType);
     };
 
-    // declare time to wait before starting next message
-    // let waitToTypeNext = 0;
-    // declare integer for array of messages
-
-
-    // recursive function that types through all messages in the array
-    // function beginAllTyping(message: string, element: HTMLElement, speed: number) {
-    // if (m >= arrayOfMessages.length) {
-    //   m = 0;
-    // };
-
-    // let m = 0;
-    // if (m < arrayOfMessages.length) {
-    // typeThis(message, element, speed);
-    // waitToTypeNext = typingDuration;
-    // m++;
-    // recurse this function
-    // setTimeout(function () {
-    //   beginAllTyping(arrayOfMessages, element, speed);
-    // }, waitToTypeNext);
-    // };
-    // };
-
-    // set type cursor to orange and start blinking animation; begin typing all messages
+    // INITIALIZATION OF ALL FUNCTIONS; set type cursors to transparent and start blinking animation; begin typing all messages
     function init() {
       // set typeblock bg's to transparent
       typeBlockTitle.style.backgroundColor = 'transparent';
@@ -276,9 +223,4 @@ export class HomeComponent implements OnInit {
 
     init();
   }
-
-  // msgBlockHide() {
-  //   const msgBlock = document.getElementById("msgBlock")!;
-  //   msgBlock.style.display = "none";
-  // }
 }
