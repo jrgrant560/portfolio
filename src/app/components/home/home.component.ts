@@ -43,9 +43,9 @@ export class HomeComponent implements OnInit {
     // messages
     let messageTitle = "Hi. I'm Jacob.";
     let messageSubA = "Web Developer";
-    let messageSubB = "Data Engineer";
-    let messageSubC = "Graphic Designer";
-    let messageSubD = "Operations Specialist";
+    let messageSubB = "UI/Graphic Designer";
+    let messageSubC = "Operations Specialist";
+    let messageSubD = "Reluctant Coffee Addict ☕";
 
 
     // type cursor blinking animation
